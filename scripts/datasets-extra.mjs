@@ -1,0 +1,32 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import sharp from 'sharp';
+import {fromUrl} from 'geotiff';
+import proj4 from 'proj4';
+import {hash} from '../app/core.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),data=path.join(root,'data');
+let manifest=JSON.parse(fs.readFileSync(path.join(data,'manifest.json')));
+const size=256,tokens=new Map();
+async function json(url){for(let k=0;k<4;k++){const r=await fetch(url,{signal:AbortSignal.timeout(90000)});if(r.ok)return r.json();if([429,500,502,503].includes(r.status)){await new Promise(r=>setTimeout(r,2000*(k+1)));continue;}throw Error(r.status+' '+url);}throw Error('Request retry limit');}
+async function signed(href){const u=new URL(href),account=u.hostname.split('.')[0],container=u.pathname.split('/')[1],key=account+'/'+container;if(!tokens.has(key))tokens.set(key,(await json('https://planetarycomputer.microsoft.com/api/sas/v1/token/'+key)).token);return href+'?'+tokens.get(key);}
+async function crop(item,key,lon,lat,samples=[0]){const tif=await fromUrl(await signed(item.assets[key].href),{allowFullFile:false});const im=await tif.getImage();const epsg=item.properties['proj:epsg'],zone=epsg%100;const xy=proj4('EPSG:4326','+proj=utm +zone='+zone+(epsg>=32700?' +south':'')+' +datum=WGS84 +units=m +no_defs',[lon,lat]);const o=im.getOrigin(),r=im.getResolution(),x=Math.floor((xy[0]-o[0])/r[0])-size/2,y=Math.floor((xy[1]-o[1])/r[1])-size/2;if(x<0||y<0||x+size>im.getWidth()||y+size>im.getHeight())throw Error('Crop outside tile');return{bands:await im.readRasters({window:[x,y,x+size,y+size],samples}),transform:[r[0],0,o[0]+x*r[0],0,r[1],o[1]+y*r[1]],epsg};}
+async function asset(id,buffer,modality,extra){const file=id+'.png';await sharp(buffer,{raw:{width:size,height:size,channels:modality==='RGB'?3:1}}).png().toFile(path.join(data,file));return{id,path:file,width:size,height:size,modality,provenance:'observed',radiometric:false,sha256:hash(fs.readFileSync(path.join(data,file))),...extra};}
+function save(){manifest.sources=[...new Map(manifest.sources.map(s=>[s.name,s])).values()];fs.writeFileSync(path.join(data,'manifest.json'),JSON.stringify(manifest,null,2));}
+const sites=[['Rotterdam',4.25,51.94],['Imperial Valley',-115.55,32.95],['Amazon',-60.04,-3.10],['Yellowstone',-110.83,44.46]];
+for(const collection of ['sentinel-2-l2a','sentinel-1-rtc']){
+ const sar=collection==='sentinel-1-rtc',dataset=sar?'Sentinel-1 SAR':'Sentinel-2 NIR';
+ for(let i=0;i<sites.length;i++){
+  const[name,lon,lat]=sites[i],id=(sar?'s1-':'s2-')+String(i).padStart(3,'0');if(manifest.scenes.some(s=>s.id===id))continue;
+  try{
+   const q='https://planetarycomputer.microsoft.com/api/stac/v1/search?collections='+collection+'&bbox='+[lon-.005,lat-.005,lon+.005,lat+.005].join(',')+'&datetime=2024-06-01T00:00:00Z/2024-07-01T00:00:00Z&limit=30';const result=await json(q);let candidates=result.features.filter(x=>sar?x.assets.vv&&x.assets.vh:x.assets.B08&&x.assets.visual);if(!sar)candidates.sort((a,b)=>a.properties['eo:cloud_cover']-b.properties['eo:cloud_cover']);if(!candidates.length)throw Error('No matching source');
+   let item,rasters;for(const c of candidates.slice(0,8)){try{const keys=sar?['vv','vh']:['B08','visual'];const r={};for(const key of keys)r[key]=await crop(c,key,lon,lat,key==='visual'?[0,1,2]:[0]);item=c;rasters=r;break;}catch(e){console.log('Try next tile:',e.message);}}if(!item)throw Error('No usable crop');
+   const assets=[];
+   if(sar){for(const key of ['vv','vh']){const values=Array.from(rasters[key].bands[0],x=>x>0&&Number.isFinite(x)?10*Math.log10(x):null);const valid=values.filter(Number.isFinite);if(valid.length<size*size*.5)throw Error('SAR crop mostly nodata');const display=Buffer.from(values.map(x=>x===null?0:Math.round(255*Math.max(0,Math.min(1,(x+30)/35)))));assets.push(await asset(id+'-'+key,display,'SAR',{gsd_m:10,effective_resolution_m:22,acquired:item.properties.datetime,polarization:key.toUpperCase(),rendering:'Gamma0 power to dB; fixed -30 to +5 dB grayscale. Not temperature.',measurements_path:id+'-'+key+'-backscatter.json'}));fs.writeFileSync(path.join(data,id+'-'+key+'-backscatter.json'),JSON.stringify({units:'dB',quantity:'gamma0 backscatter',values,width:size,height:size,transform:rasters[key].transform,epsg:rasters[key].epsg}));}}
+   else{const rgb=Buffer.alloc(size*size*3);for(let p=0;p<size*size;p++)for(let k=0;k<3;k++)rgb[p*3+k]=rasters.visual.bands[k][p];assets.push(await asset(id+'-rgb',rgb,'RGB',{gsd_m:10,acquired:item.properties.datetime,rendering:'Official Sentinel-2 TCI'}));const raw=Array.from(rasters.B08.bands[0]),valid=raw.filter(x=>x>0).sort((a,b)=>a-b);if(valid.length<size*size*.5)throw Error('NIR crop mostly nodata');const low=valid[Math.floor(valid.length*.02)],high=valid[Math.floor(valid.length*.98)],display=Buffer.from(raw.map(x=>x===0?0:Math.round(255*Math.max(0,Math.min(1,(x-low)/(high-low))))));assets.push(await asset(id+'-nir',display,'NIR',{gsd_m:10,acquired:item.properties.datetime,band:'B08',wavelength_um:.842,rendering:'B08 DN, per-crop 2–98 percentile grayscale stretch. Reflected sunlight, not emitted heat. No reflectance or NDVI claims.',display_range_dn:[low,high]}));}
+   fs.writeFileSync(path.join(data,id+'-stac.json'),JSON.stringify(item,null,2));manifest.scenes.push({id,title:name+' · '+dataset,dataset,group:item.id+'-'+name,split:'engineering-holdout',assets,alignment:'Same acquisition and common grid; registration accuracy not independently measured',source:{url:'https://planetarycomputer.microsoft.com/dataset/'+collection,item:item.id,center:[lon,lat]},tags:['satellite',sar?'radar':'near-infrared'],reference:{caption_status:'No human caption ground truth; modality stress test'},license:'Contains modified Copernicus Sentinel data (2024). Preserve Copernicus attribution and source terms.'});console.log(dataset,name,'downloaded');save();
+  }catch(e){manifest.errors.push({stage:dataset+' '+name,error:e.message});console.error(dataset,name,e.message);save();}
+ }
+ manifest.sources.push({name:dataset,url:'https://planetarycomputer.microsoft.com/dataset/'+collection,license:'Copernicus Sentinel terms; retain modified-data attribution',selection:'Four geographic contexts in June 2024; first suitable SAR item / lowest cloud metadata among first 30 optical items',role:sar?'Actual radar VV/VH; no thermal or semantic truth labels':'Same-acquisition RGB and NIR; no temperature information'});save();
+}
+console.log('Total',manifest.scenes.length);

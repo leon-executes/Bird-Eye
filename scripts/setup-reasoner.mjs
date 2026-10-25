@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+const repo='unsloth/Qwen3.5-9B-GGUF',revision='3885219b6810b007914f3a7950a8d1b469d598a5';
+const files=[{remote:'Qwen3.5-9B-Q4_K_M.gguf',name:'Qwen3.5-9B-Q4_K_M.gguf',size:5680522464,sha256:'03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8'},{remote:'mmproj-F16.gguf',name:'mmproj-Qwen3.5-9B-F16.gguf',size:918166080,sha256:'f70dc3509053962b0d0d3ee8a7eacebf5d60aa560cad78254ae8698516ae029f'}];
+async function digest(file){const h=createHash('sha256');for await(const b of fs.createReadStream(file))h.update(b);return h.digest('hex');}
+for(const f of files){const dest='models/'+f.name;if(fs.existsSync(dest)){if(await digest(dest)!==f.sha256)throw Error('Existing file hash mismatch');continue;}
+ const jobs=[];for(let start=0;start<f.size;start+=33554432)jobs.push({start,end:Math.min(f.size-1,start+33554431)});let next=0,done=0;const began=Date.now();
+ async function worker(){while(next<jobs.length){const j=jobs[next++],part=dest+'.range-'+j.start,size=j.end-j.start+1;if(fs.existsSync(part)&&fs.statSync(part).size===size){done++;continue;}let error;
+ for(let attempt=0;attempt<4;attempt++){try{const r=await fetch('https://huggingface.co/'+repo+'/resolve/'+revision+'/'+f.remote,{headers:{Range:'bytes='+j.start+'-'+j.end},signal:AbortSignal.timeout(180000)});if(r.status!==206||!r.headers.get('content-range')?.startsWith('bytes '+j.start+'-'+j.end+'/'))throw Error('Range rejected '+r.status);let n=0;const fd=fs.openSync(part,'w');try{for await(const b of r.body){fs.writeSync(fd,b);n+=b.length;}}finally{fs.closeSync(fd);}if(n!==size)throw Error('Short range');error=null;break;}catch(e){error=e;await new Promise(r=>setTimeout(r,1500));}}if(error)throw error;done++;if(done%8===0||done===jobs.length)console.log(f.name,done+'/'+jobs.length,Math.round((Date.now()-began)/1000)+'s');}}
+ await Promise.all(Array.from({length:8},worker));const fd=fs.openSync(dest+'.assembling','w'),h=createHash('sha256');try{for(const j of jobs)for await(const b of fs.createReadStream(dest+'.range-'+j.start)){h.update(b);fs.writeSync(fd,b);}}finally{fs.closeSync(fd);}if(h.digest('hex')!==f.sha256)throw Error('SHA256 mismatch');fs.renameSync(dest+'.assembling',dest);fs.writeFileSync(dest+'.sha256',f.sha256+'\n');for(const j of jobs)fs.unlinkSync(dest+'.range-'+j.start);console.log('Verified',f.name);
+}
+fs.writeFileSync('models/qwen35-manifest.json',JSON.stringify({repo,revision,files,license:'Apache-2.0'},null,2));

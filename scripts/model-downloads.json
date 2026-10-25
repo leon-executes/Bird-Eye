@@ -1,0 +1,185 @@
+[
+  {
+    "id": "caprl",
+    "repo": "internlm/CapRL-Qwen3VL-4B-GGUF",
+    "revision": "922d08bb6257875336aa138616c74902f736099c",
+    "directory": "models",
+    "files": [
+      {
+        "name": "CapRL-Qwen3VL-4B-Q4_K_M.gguf",
+        "destination": "CapRL-Qwen3VL-4B-Q4_K_M.gguf",
+        "bytes": 2716069984,
+        "sha256": "8231e980145952fd29fc7878a2fbf2f2ddd7f759c438305f59a2dd278b406bda",
+        "git_sha1": "0c1429a359712150ef2fb0afeb364be610bde42c"
+      },
+      {
+        "name": "CapRL-Qwen3VL-4B-mmproj-f16.gguf",
+        "destination": "CapRL-Qwen3VL-4B-mmproj-f16.gguf",
+        "bytes": 836180672,
+        "sha256": "7b444bc22eb8062feb5c0abe48f201e65368239b5832a792a1616348d35fcf0d",
+        "git_sha1": "ba6c0fb7a0c5715ee904f129ed78aa15499ac9b6"
+      }
+    ]
+  },
+  {
+    "id": "terrasense",
+    "repo": "mradermacher/TerraSense-GGUF",
+    "revision": "6c51bd0ebd0f988417d96101aa9f5e035d38967d",
+    "directory": "models",
+    "files": [
+      {
+        "name": "TerraSense.Q4_K_M.gguf",
+        "destination": "TerraSense.Q4_K_M.gguf",
+        "bytes": 5027785536,
+        "sha256": "bd067fb2521e9d5c2282457dd6c24b9c34ce30818d1bdc747c7fd05197d7451a",
+        "git_sha1": "ff61ff3d7875c3238b479bf648bc03f63f8084bd"
+      },
+      {
+        "name": "TerraSense.mmproj-f16.gguf",
+        "destination": "TerraSense.mmproj-f16.gguf",
+        "bytes": 1159030112,
+        "sha256": "0a57f868a59089a8f12a610500d8fb4954f1f1d570b90b4c2a7cf65d4afc99b6",
+        "git_sha1": "0cdf88aa17ab72d2254ebdc35cf696557e36e3a7"
+      }
+    ]
+  },
+  {
+    "id": "minicpm47",
+    "repo": "openbmb/MiniCPM-V-4.7-1B-gguf",
+    "revision": "0ad5ef54b51a8cf42de80532d840b61b66519054",
+    "directory": "models",
+    "files": [
+      {
+        "name": "MiniCPM-V-4_7-1B-Q8_0.gguf",
+        "destination": "MiniCPM-V-4_7-1B-Q8_0.gguf",
+        "bytes": 1081517920,
+        "sha256": "32322779352e9c6e7b9748ecbf62c9b8a6570bb8630fa4dddb9d0394528ea7fa",
+        "git_sha1": "eb062cf3ef94e2ede3d51426fd021ebf530b57fb"
+      },
+      {
+        "name": "mmproj-model-f16-4x.gguf",
+        "destination": "MiniCPM47-mmproj-model-f16-4x.gguf",
+        "bytes": 901033888,
+        "sha256": "1e0ab439877e6896ded59ff24cdd242fdffb236394f6fc4a5b019cbd60bb5f4a",
+        "git_sha1": "e97aafbe5889d81780d9e0f9bee3d3cef34581c3"
+      }
+    ]
+  },
+  {
+    "id": "caprl-training-base",
+    "repo": "internlm/CapRL-Qwen3VL-4B",
+    "revision": "1db1c1dd241e2df95b59846a94cdee5300de9ef9",
+    "directory": "models/caprl-training-base",
+    "files": [
+      {
+        "name": "README.md",
+        "destination": "README.md",
+        "bytes": 8902,
+        "git_sha1": "e5dae1f83fcf80479f859c156b572f6c5e34af04"
+      },
+      {
+        "name": "added_tokens.json",
+        "destination": "added_tokens.json",
+        "bytes": 707,
+        "git_sha1": "b54f9135e44c1e81047e8d05cb027af8bc039eed"
+      },
+      {
+        "name": "chat_template.jinja",
+        "destination": "chat_template.jinja",
+        "bytes": 5292,
+        "git_sha1": "124386803f142761528f710e77ae483f5f8c4fc4"
+      },
+      {
+        "name": "config.json",
+        "destination": "config.json",
+        "bytes": 1570,
+        "git_sha1": "39d37057195be4d42f4e3f01a545bbb1107dd16a"
+      },
+      {
+        "name": "generation_config.json",
+        "destination": "generation_config.json",
+        "bytes": 213,
+        "git_sha1": "bdb4e0372b04220c80df250f2b3354d1c81c97cb"
+      },
+      {
+        "name": "merges.txt",
+        "destination": "merges.txt",
+        "bytes": 1671853,
+        "git_sha1": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7"
+      },
+      {
+        "name": "model-00001-of-00002.safetensors",
+        "destination": "model-00001-of-00002.safetensors",
+        "bytes": 4990497880,
+        "sha256": "6b80d81ddeb041094a74663add94bf7303c083d07741af41b300b90b62a4e4dd",
+        "git_sha1": "f0e073b8d39073070e495bfcc98c1813c47b0803"
+      },
+      {
+        "name": "model-00002-of-00002.safetensors",
+        "destination": "model-00002-of-00002.safetensors",
+        "bytes": 4663133960,
+        "sha256": "1af6265b48d2e7a0ac385b4f73c528ccdd2674efa4b33664aba828e6eca7e590",
+        "git_sha1": "f504bf6a3c934823fd512c268856956b83b74779"
+      },
+      {
+        "name": "model.safetensors.index.json",
+        "destination": "model.safetensors.index.json",
+        "bytes": 64836,
+        "git_sha1": "5185ad4158d213752a144bd6053b766e0262d5f2"
+      },
+      {
+        "name": "preprocessor_config.json",
+        "destination": "preprocessor_config.json",
+        "bytes": 390,
+        "git_sha1": "2ea84a437d448ff71b08df68fdd949d5cc4ebb64"
+      },
+      {
+        "name": "special_tokens_map.json",
+        "destination": "special_tokens_map.json",
+        "bytes": 613,
+        "git_sha1": "ac23c0aaa2434523c494330aeb79c58395378103"
+      },
+      {
+        "name": "tokenizer.json",
+        "destination": "tokenizer.json",
+        "bytes": 11422654,
+        "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "git_sha1": "cd71f61a15a522601badb3dc960d800d9cb3766c"
+      },
+      {
+        "name": "tokenizer_config.json",
+        "destination": "tokenizer_config.json",
+        "bytes": 5404,
+        "git_sha1": "1d4fba2de0e94e8f97e08927cfb7d084160c2880"
+      },
+      {
+        "name": "vocab.json",
+        "destination": "vocab.json",
+        "bytes": 2776833,
+        "git_sha1": "4783fe10ac3adce15ac8f358ef5462739852c569"
+      }
+    ]
+  },
+  {
+    "id": "minicpm47moe",
+    "repo": "openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+    "revision": "8ad0085a71c3fbff8c2aa2eadf31b3037ac55da7",
+    "directory": "models",
+    "files": [
+      {
+        "name": "MiniCPM-V-4_7-35B-A3B-IQ3_M.gguf",
+        "destination": "MiniCPM-V-4_7-35B-A3B-IQ3_M.gguf",
+        "bytes": 15440064448,
+        "sha256": "f5df9c5dc25b2bd75dc677d06a6e0eee51986684fddf65981682f329dcc298c5",
+        "git_sha1": "391d63fa864efb14152e61a83597aad7c7278e98"
+      },
+      {
+        "name": "mmproj-model-f16-4x.gguf",
+        "destination": "MiniCPM47-35B-mmproj-model-f16-4x.gguf",
+        "bytes": 910491648,
+        "sha256": "30f4daac0f61c2ca28d68b5f901c0501cb7a269a1357a9e380d2c376c6ed6518",
+        "git_sha1": "b3f9f8202dcff4999307f5dc985c5761810983b3"
+      }
+    ]
+  }
+]

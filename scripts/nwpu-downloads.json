@@ -1,0 +1,26 @@
+{
+  "repo": "caglarmert/NWPU-captions",
+  "revision": "80bbaf1ef145c7279b1e2de933689c8add174606",
+  "files": [
+    {
+      "name": "data/test-00000-of-00001.parquet",
+      "bytes": 77168762,
+      "sha256": "ddc9145fb8a93ed25f0d820886d8f6a0bdc07300d10a7d57d531cfcd00e5dad9"
+    },
+    {
+      "name": "data/train-00000-of-00002.parquet",
+      "bytes": 309042548,
+      "sha256": "564d8fed48000e425bb19550c8120a2c188aa443f8e5fc74b2bd22509d396457"
+    },
+    {
+      "name": "data/train-00001-of-00002.parquet",
+      "bytes": 309084296,
+      "sha256": "c1f598dcece611d2390bbeb148ba77628a92c4e87abdc0b132ba05e3219eb3c2"
+    },
+    {
+      "name": "data/validation-00000-of-00001.parquet",
+      "bytes": 76792464,
+      "sha256": "09f69a4f478b7d1dfe324f3d24a561714286da442e043274f7f56ddebbe3c6fa"
+    }
+  ]
+}
