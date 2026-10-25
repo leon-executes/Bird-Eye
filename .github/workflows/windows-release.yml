@@ -1,0 +1,26 @@
+name: Build Windows desktop
+on: workflow_dispatch
+jobs:
+  package:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm ci
+      - run: node scripts/setup-runtime.mjs
+      - run: node scripts/download-desktop.mjs
+      - run: node scripts/download-build-tool.mjs
+      - run: node scripts/render-icon.mjs
+      - run: npm test
+      - run: npm run verify
+      - run: npm run check:engine
+      - run: npm audit --omit=dev --audit-level=high
+      - run: node scripts/build-desktop.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: BirdEye-Windows-x64-and-source
+          path: dist/*
+          retention-days: 14
+
