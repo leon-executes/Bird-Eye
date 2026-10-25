@@ -5,7 +5,7 @@
 
 ![Bird Eye running on Windows with a real Landsat assessment](docs/preview-single-1.0.2.png)
 
-Bird Eye turns images into concise scene descriptions and inspectable assessments. It combines remote-sensing
+Bird Eye turns IR & RGB satellite images into succinct scene descriptions and inspectable assessments. Using an intelligent council of experts methodology, it combines remote-sensing
 caption specialists, general visual reasoning, narrowly scoped helpers and deterministic measurements.
 It preserves uncertainty and competing readings instead of treating agreement as proof.
 
