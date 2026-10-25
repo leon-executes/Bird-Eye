@@ -1,6 +1,6 @@
 <p align="center"><img src="artwork/bird-eye.svg" width="112" alt="Bird Eye onyx and ivory swept-wing hawk"></p>
 <h1 align="center">Bird Eye</h1>
-<p align="center"><strong>Scene interpretation. Evidence retained.</strong><br>Satellite, infrared and related imagery — local desktop analysis.</p>
+<p align="center"><strong>Scene interpretation. Evidence retained.</strong><br>Satellite, infrared, RGB and related imagery - local desktop analysis.</p>
 <p align="center">Windows x64 · One to four views per task · Single and bulk processing · Traceable model receipts</p>
 
 ![Bird Eye running on Windows with a real Landsat assessment](docs/preview-single-1.0.2.png)
