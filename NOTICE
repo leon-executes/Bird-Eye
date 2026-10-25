@@ -1,0 +1,37 @@
+Bird Eye
+Required Notice: Copyright 2026 Parham (Leon) Faraji (https://github.com/leon-executes)
+Original application code and original Bird Eye mark: PolyForm Noncommercial 1.0.0.
+Third-party code, runtimes, models and imagery retain their own terms.
+
+Earthrise photograph: NASA / Apollo 8, 24 December 1968.
+https://science.nasa.gov/resource/the-rising-earth-as-seen-by-apollo-8/
+Displayed as a cropped background. No agency affiliation or endorsement is implied.
+
+EuroSAT: Patrick Helber, Benjamin Bischke, Andreas Dengel, Damian Borth.
+EuroSAT: A Novel Dataset and Deep Learning Benchmark for Land Use and Land Cover Classification.
+IEEE JSTARS 12(7), 2217–2226 (2019). https://doi.org/10.1109/JSTARS.2019.2918242
+https://github.com/phelber/EuroSAT — MIT; copyright 2023 Patrick Helber.
+Thirty selected RGB patches, normalized to PNG from the cited mirror; original IDs in data/manifest.json.
+
+HIT-UAV: Jiashun Suo, Tianyi Wang, Xingzhou Zhang, Haiyang Chen, Wei Zhou, Weisong Shi.
+HIT-UAV: A high-altitude infrared thermal dataset for Unmanned Aerial Vehicle-based object detection.
+Scientific Data 10, 227 (2023). https://doi.org/10.1038/s41597-023-02066-6
+https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset
+CC BY 4.0. Eighteen selected test images converted to PNG; object references retained in the manifest.
+Image license is separate from the optional detector checkpoint license.
+
+Landsat Collection 2 Level-2 products: US Geological Survey.
+https://www.usgs.gov/landsat-missions/landsat-collection-2-surface-temperature
+Public-domain USGS data. Six geographic crops, rendered RGB and QA-masked surface-temperature display;
+source product IDs, dates, grids, scales, offsets and QA rules accompany each sample.
+
+Contains modified Copernicus Sentinel data (2024).
+Sentinel-2 L2A: four RGB/NIR scene pairs. Sentinel-1 RTC: four VV/VH scene pairs.
+Accessed through Microsoft Planetary Computer. Cropped, reprojected/resampled and display-normalized.
+https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice
+Product IDs and acquisition dates are retained in data/manifest.json and measurement sidecars.
+
+The source and public desktop packages exclude all model weights, personal imports, private reports,
+training corpora and API keys. Local-only packages are personal copies, not cleared public releases.
+See docs/THIRD_PARTY.md and docs/licenses/ for runtime, library and model details.
+

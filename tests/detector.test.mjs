@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import {detectorReady,detectorEligible,thermalDetections} from '../app/detector.mjs';
+test('removed detector cannot be reenabled by stale settings or weights',async()=>{assert.equal(detectorReady(process.cwd()),false);assert.equal(detectorEligible({modality:'TIR',sensor:'UAV thermal camera'}),false);await assert.rejects(thermalDetections(),/removed/);const council=fs.readFileSync(new URL('../app/council.mjs',import.meta.url),'utf8');assert(!council.includes('detectorOpinion('));});

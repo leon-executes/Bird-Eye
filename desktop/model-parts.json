@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "version": "1.0.2",
+  "base_url": "https://github.com/leon-executes/bird-eye/releases/download/v1.0.2/",
+  "codec": "zstd",
+  "level": 3,
+  "raw_part_limit": 1900000000,
+  "files": [
+    {
+      "name": "CapRL-Qwen3VL-4B-Q4_K_M.gguf",
+      "bytes": 2716069984,
+      "sha256": "8231e980145952fd29fc7878a2fbf2f2ddd7f759c438305f59a2dd278b406bda",
+      "parts": [
+        {
+          "name": "CapRL-Qwen3VL-4B-Q4_K_M.gguf.part01.zst",
+          "bytes": 1855043790,
+          "raw_bytes": 1900000000,
+          "sha256": "7f96e8588b0a53bbfc0f9e375793b3178be239e131622dce34c8d87304ed565d"
+        },
+        {
+          "name": "CapRL-Qwen3VL-4B-Q4_K_M.gguf.part02.zst",
+          "bytes": 801335768,
+          "raw_bytes": 816069984,
+          "sha256": "27cb3278040812232f282167aa3354ef9bd0a8f8011eed901749858ed59288cc"
+        }
+      ]
+    },
+    {
+      "name": "CapRL-Qwen3VL-4B-mmproj-f16.gguf",
+      "bytes": 836180672,
+      "sha256": "7b444bc22eb8062feb5c0abe48f201e65368239b5832a792a1616348d35fcf0d",
+      "parts": [
+        {
+          "name": "CapRL-Qwen3VL-4B-mmproj-f16.gguf.part01.zst",
+          "bytes": 640472554,
+          "raw_bytes": 836180672,
+          "sha256": "9212f881742b631f566dcfaf6f4d3db12a4e1c47f61e93d0387fd27461788379"
+        }
+      ]
+    },
+    {
+      "name": "Qwen3.5-9B-Q4_K_M.gguf",
+      "bytes": 5680522464,
+      "sha256": "03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8",
+      "parts": [
+        {
+          "name": "Qwen3.5-9B-Q4_K_M.gguf.part01.zst",
+          "bytes": 1874280346,
+          "raw_bytes": 1900000000,
+          "sha256": "fbeeb0775042e932109bf11d84f8f154532531d61828586cb750894bf4f2d324"
+        },
+        {
+          "name": "Qwen3.5-9B-Q4_K_M.gguf.part02.zst",
+          "bytes": 1868702771,
+          "raw_bytes": 1900000000,
+          "sha256": "e4a8016e9f3211655f27e988741fe39cc6ea8191e880229f4d1843ab4ae3659e"
+        },
+        {
+          "name": "Qwen3.5-9B-Q4_K_M.gguf.part03.zst",
+          "bytes": 1852814272,
+          "raw_bytes": 1880522464,
+          "sha256": "47db97fe14d7dc651236d8bbd1927a6795845ef0fd39fb75f497c5b64aef74cd"
+        }
+      ]
+    },
+    {
+      "name": "mmproj-Qwen3.5-9B-F16.gguf",
+      "bytes": 918166080,
+      "sha256": "f70dc3509053962b0d0d3ee8a7eacebf5d60aa560cad78254ae8698516ae029f",
+      "parts": [
+        {
+          "name": "mmproj-Qwen3.5-9B-F16.gguf.part01.zst",
+          "bytes": 703182098,
+          "raw_bytes": 918166080,
+          "sha256": "c72edec67a2e2a9df18b3d242ec00486b3964118f847996c09dc5938d654253d"
+        }
+      ]
+    },
+    {
+      "name": "EarthDial-4B-RGB-Q4_K_M.gguf",
+      "bytes": 2396646688,
+      "sha256": "380b740c230e1fef47f029604f2bfd146d86eef15e44276662f661a8b4cc8e4b",
+      "parts": [
+        {
+          "name": "EarthDial-4B-RGB-Q4_K_M.gguf.part01.zst",
+          "bytes": 1868409831,
+          "raw_bytes": 1900000000,
+          "sha256": "ec03f7c21f206e764714fda28b24e4d14541cae31bfeabc142ed82824a6fda00"
+        },
+        {
+          "name": "EarthDial-4B-RGB-Q4_K_M.gguf.part02.zst",
+          "bytes": 490258058,
+          "raw_bytes": 496646688,
+          "sha256": "9517c90f9c3530043e868101aae01ead2a1959ae597652552390e41bf062f8ea"
+        }
+      ]
+    },
+    {
+      "name": "mmproj-EarthDial-4B-RGB-F16.gguf",
+      "bytes": 654987936,
+      "sha256": "50abeb89ee5cb43c8462cfde5b73048c075131a08dfbc1c080c69520990d5a04",
+      "parts": [
+        {
+          "name": "mmproj-EarthDial-4B-RGB-F16.gguf.part01.zst",
+          "bytes": 502307736,
+          "raw_bytes": 654987936,
+          "sha256": "dc0d76993113721e8041a5d16b32e86fbd04608c5feba971ddc0610367d910ad"
+        }
+      ]
+    },
+    {
+      "name": "remoteclip-scene.onnx",
+      "bytes": 351614106,
+      "sha256": "2e9b124e3d20fe36784f8c6cd1672721ab0d9163482d685f91181febb76e4a4b",
+      "parts": [
+        {
+          "name": "remoteclip-scene.onnx.part01.zst",
+          "bytes": 325702917,
+          "raw_bytes": 351614106,
+          "sha256": "2560e48e25df6059a1d71429d8d3db399f3ecd11ec224a1251161d360088dae2"
+        }
+      ]
+    },
+    {
+      "name": "remoteclip-scene.json",
+      "bytes": 820334,
+      "sha256": "cf289f04da56c858a0b185debcce638368f788021a11d7e30719796aaa26be94",
+      "parts": [
+        {
+          "name": "remoteclip-scene.json.part01.zst",
+          "bytes": 354894,
+          "raw_bytes": 820334,
+          "sha256": "5ad65c6bd3d70c56a6525101bce3a9705602c94596687d8bc7f73c3bd06a25c4"
+        }
+      ]
+    }
+  ]
+}

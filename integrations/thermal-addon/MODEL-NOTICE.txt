@@ -1,0 +1,6 @@
+Optional personal model: KissTheHabit/yolov8n-hituav-thermal-finetune
+Revision a521855673acbd56aff6eebb628e47353a208a7f
+Model licence: AGPL-3.0, https://www.gnu.org/licenses/agpl-3.0.html
+Source: https://huggingface.co/KissTheHabit/yolov8n-hituav-thermal-finetune
+Exported locally to ONNX with fused inference layers. Not retrained.
+This checkpoint is excluded from public Bird Eye releases.

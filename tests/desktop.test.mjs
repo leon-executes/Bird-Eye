@@ -1,0 +1,9 @@
+// Bird Eye · Parham (Leon) Faraji · leon-executes
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import {createHash} from 'node:crypto';import {planBulk} from '../app/bulk-plan.mjs';
+const file=(name,relativePath,size=500)=>({name,relativePath,size});
+test('individual mode never merges equal names from separate folders',()=>{const p=planBulk([file('a.png','x/a.png'),file('a.png','y/a.png')]);assert.equal(p.tasks.length,2);assert(p.valid);});
+test('folder mode preserves nested folders and validates four-view ceiling',()=>{const files=[file('rgb.png','root/one/rgb.png'),file('ir.png','root/one/ir.png'),file('rgb.png','root/one/nested/rgb.png'),file('readme.txt','root/readme.txt')];const p=planBulk(files,'folders');assert.equal(p.tasks.length,2);assert.equal(p.tasks[0].files.length,2);assert.equal(p.ignored.length,1);assert(p.valid);});
+test('overfull groups reject the complete plan, without truncating images',()=>{const p=planBulk(Array.from({length:5},(_,i)=>file(i+'.png','sample/'+i+'.png')),'folders');assert.equal(p.images,5);assert.equal(p.tasks.length,1);assert.equal(p.valid,false);});
+test('oversized, empty, missing images and unsafe paths fail explicitly',()=>{assert(!planBulk([file('a.png','a.png',10000001)]).valid);assert(!planBulk([file('a.png','a.png',0)]).valid);assert(!planBulk([file('note.txt','note.txt')]).valid);assert.throws(()=>planBulk([file('a.png','../a.png')]));assert.throws(()=>planBulk(Array(1001).fill(file('a.png','a.png'))));});
+test('caption engine modules match original byte hashes',()=>{const root=new URL('../',import.meta.url),b=JSON.parse(fs.readFileSync(new URL('docs/engine-baseline.json',root)));for(const [name,sha] of Object.entries(b.files))assert.equal(createHash('sha256').update(fs.readFileSync(new URL('app/'+name,root))).digest('hex'),sha,name);});
+

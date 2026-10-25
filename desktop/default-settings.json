@@ -1,0 +1,108 @@
+{
+  "backend": "vulkan",
+  "releaseAfterRun": true,
+  "strictEvidence": true,
+  "lead": "qwen35",
+  "critic": "qwen35",
+  "satellite": "earthdial",
+  "rgbMaster": null,
+  "sceneWitness": true,
+  "thermalDetector": false,
+  "detectorFocus": false,
+  "secondary": "caprl",
+  "thermal": null,
+  "spectral": null,
+  "profiles": [
+    {
+      "id": "caprl",
+      "name": "CapRL 4B · trained caption specialist",
+      "kind": "gguf",
+      "model": "CapRL-Qwen3VL-4B-Q4_K_M",
+      "modelFile": "CapRL-Qwen3VL-4B-Q4_K_M.gguf",
+      "projectorFile": "CapRL-Qwen3VL-4B-mmproj-f16.gguf",
+      "checkpoint": "internlm/CapRL-Qwen3VL-4B-GGUF@922d08bb6257875336aa138616c74902f736099c",
+      "family": "Qwen",
+      "specialist": true,
+      "captionOnly": true,
+      "captionPrompt": "Describe the main scene, visible objects and their arrangement in two concise sentences. Do not infer activity, named locations or heat sources.",
+      "maxTokens": 600,
+      "contextSize": 4096,
+      "imageMinTokens": 256,
+      "imageMaxTokens": 1024,
+      "temperature": 0,
+      "modalities": [
+        "RGB"
+      ],
+      "trainedDomains": [
+        "General image captioning with reinforcement learning; not thermal-specific"
+      ],
+      "validatedDomains": []
+    },
+    {
+      "id": "qwen35",
+      "name": "Qwen3.5 9B · reasoning lead",
+      "kind": "gguf",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "modelFile": "Qwen3.5-9B-Q4_K_M.gguf",
+      "projectorFile": "mmproj-Qwen3.5-9B-F16.gguf",
+      "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+      "family": "Qwen",
+      "specialist": false,
+      "enableThinking": false,
+      "temperature": 0.7,
+      "sampling": {
+        "top_p": 0.8,
+        "top_k": 20,
+        "min_p": 0,
+        "presence_penalty": 1.5,
+        "repeat_penalty": 1,
+        "seed": 42
+      },
+      "contextSize": 12288,
+      "maxTokens": 4000,
+      "imageMinTokens": 1024,
+      "modalities": [
+        "RGB",
+        "TIR",
+        "NIR",
+        "SAR",
+        "MISC",
+        "UNKNOWN"
+      ],
+      "trainedDomains": [
+        "general multimodal understanding"
+      ],
+      "validatedDomains": []
+    },
+    {
+      "id": "earthdial",
+      "name": "EarthDial 4B RGB · satellite caption witness",
+      "kind": "gguf",
+      "model": "EarthDial-4B-RGB-Q4_K_M",
+      "modelFile": "EarthDial-4B-RGB-Q4_K_M.gguf",
+      "projectorFile": "mmproj-EarthDial-4B-RGB-F16.gguf",
+      "checkpoint": "akshaydudhane/EarthDial_4B_RGB@ae752c478051e573d30fc6b8478d733f32d7d651",
+      "family": "InternVL-Phi3",
+      "specialist": true,
+      "trainedDomains": [
+        "RGB satellite and aerial scene interpretation"
+      ],
+      "validatedDomains": [],
+      "captionOnly": true,
+      "captionPrompt": "This is an aerial or satellite image of Earth. Describe the main scene, visible objects and their arrangement in two concise sentences. Do not infer activity, named locations or heat sources.",
+      "maxTokens": 256,
+      "contextSize": 4096,
+      "imageMinTokens": 256,
+      "imageMaxTokens": 1024,
+      "temperature": 0,
+      "modalities": [
+        "RGB"
+      ]
+    }
+  ],
+  "externalDetector": {
+    "enabled": false,
+    "url": "http://127.0.0.1:41731/v1/detect",
+    "token": ""
+  }
+}

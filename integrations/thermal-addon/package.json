@@ -1,0 +1,12 @@
+{
+  "name": "bird-eye-thermal-addon",
+  "version": "1.0.2",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "Parham (Leon) Faraji / leon-executes",
+  "dependencies": {
+    "onnxruntime-node": "1.30.0",
+    "sharp": "0.34.5"
+  }
+}
