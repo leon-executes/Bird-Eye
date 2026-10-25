@@ -1,0 +1,1648 @@
+{
+  "provenance": {
+    "schema_version": 2,
+    "prompt_version": "2026-10-25.2-specialist-context",
+    "prompt_sha256": "5f1c69a5ffa8abadca62d974646370339dad0f88b5b0010a44d49eed0e04d140",
+    "backend": "vulkan",
+    "image_max_dimension": 768,
+    "image_encoding": "lossless PNG",
+    "temperature_prose": "blocked; see deterministic measurements"
+  },
+  "id": "d585737f-cdb3-4f4f-be93-ca8d8bffcef7",
+  "scene_id": "landsat-000",
+  "created": "2026-10-25T12:17:13.023Z",
+  "status": "complete",
+  "mode": "council",
+  "independent": true,
+  "diversity": {
+    "model_identities": 4,
+    "model_families": 3,
+    "note": "Different families reduce one source of correlation; independent factual corroboration is not established."
+  },
+  "claim_ledger": [
+    {
+      "id": "P1S",
+      "claim": "landsat-000-rgb: a dense city center / an industrial factory complex / a golf course",
+      "kind": "scene",
+      "confidence": "UNSCORED",
+      "evidence": [
+        "landsat-000-rgb"
+      ],
+      "pass": 1,
+      "role": "Satellite scene hypotheses",
+      "model": "RemoteCLIP ViT-B-32",
+      "identity": "remoteclip-scene.onnx@2e9b124e3d20fe36784f8c6cd1672721ab0d9163482d685f91181febb76e4a4b+vocabulary@46083d46988107aa904b83556ad1d475631da14868b7f7ae608dfa4cade81e0d",
+      "family": "RemoteCLIP",
+      "input_assets": [
+        "landsat-000-rgb"
+      ],
+      "scope": {
+        "trained_domains": [
+          "RGB remote-sensing image-text alignment"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "RGB"
+        ],
+        "specialist_claim": true,
+        "warning": "Ranks a fixed vocabulary, not a caption. Similarity is not probability; unknown classes, crop bias and errors remain possible."
+      }
+    },
+    {
+      "id": "P1F1",
+      "claim": "The leading scene hypothesis is a dense city center. Competing hypotheses include an industrial factory complex and a golf course.",
+      "confidence": "TENTATIVE",
+      "basis": "image-text-similarity",
+      "evidence": [
+        "landsat-000-rgb"
+      ],
+      "region": "Center square crop; 100% of image area.",
+      "alternatives": [
+        "an industrial factory complex",
+        "a golf course"
+      ],
+      "hypotheses": [
+        {
+          "label": "a dense city center",
+          "cosine": 0.3062
+        },
+        {
+          "label": "an industrial factory complex",
+          "cosine": 0.2971
+        },
+        {
+          "label": "a golf course",
+          "cosine": 0.2964
+        }
+      ],
+      "kind": "feature",
+      "pass": 1,
+      "role": "Satellite scene hypotheses",
+      "model": "RemoteCLIP ViT-B-32",
+      "identity": "remoteclip-scene.onnx@2e9b124e3d20fe36784f8c6cd1672721ab0d9163482d685f91181febb76e4a4b+vocabulary@46083d46988107aa904b83556ad1d475631da14868b7f7ae608dfa4cade81e0d",
+      "family": "RemoteCLIP",
+      "input_assets": [
+        "landsat-000-rgb"
+      ],
+      "scope": {
+        "trained_domains": [
+          "RGB remote-sensing image-text alignment"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "RGB"
+        ],
+        "specialist_claim": true,
+        "warning": "Ranks a fixed vocabulary, not a caption. Similarity is not probability; unknown classes, crop bias and errors remain possible."
+      }
+    },
+    {
+      "id": "P2S",
+      "claim": "An aerial or satellite image of Earth, showing a large city with many buildings and some green areas .",
+      "kind": "scene",
+      "confidence": "UNSCORED",
+      "evidence": [
+        "landsat-000-rgb"
+      ],
+      "pass": 2,
+      "role": "Satellite first opinion",
+      "model": "EarthDial-4B-RGB-Q4_K_M",
+      "identity": "EarthDial-4B-RGB-Q4_K_M.gguf",
+      "family": "InternVL-Phi3",
+      "input_assets": [
+        "landsat-000-rgb"
+      ],
+      "scope": {
+        "trained_domains": [
+          "RGB satellite and aerial scene interpretation"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "RGB"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": true,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      }
+    },
+    {
+      "id": "P3S",
+      "claim": "This satellite image shows a grid-like urban layout with a mix of light brown and beige residential and commercial blocks, interspersed with green patches likely representing parks or undeveloped land. Yellow markers are scattered across the scene, highlighting specific points within the urban grid, with a few concentrated in the upper right and lower left areas.",
+      "kind": "scene",
+      "confidence": "UNSCORED",
+      "evidence": [
+        "landsat-000-rgb"
+      ],
+      "pass": 3,
+      "role": "Independent satellite review",
+      "model": "CapRL-Qwen3VL-4B-Q4_K_M",
+      "identity": "CapRL-Qwen3VL-4B-Q4_K_M.gguf",
+      "family": "Qwen",
+      "input_assets": [
+        "landsat-000-rgb"
+      ],
+      "scope": {
+        "trained_domains": [
+          "General image captioning with reinforcement learning; not thermal-specific"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "RGB"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": true,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      }
+    },
+    {
+      "id": "P4S",
+      "claim": "Aerial view of a dense urban area characterized by a regular grid of streets and numerous rectangular structures, likely residential or industrial buildings. Green patches are scattered throughout the city blocks, interspersed with linear features that could be roads or utility corridors.",
+      "kind": "scene",
+      "confidence": "UNSCORED",
+      "evidence": [
+        "landsat-000-rgb"
+      ],
+      "pass": 4,
+      "role": "Independent satellite review",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "family": "Qwen",
+      "input_assets": [
+        "landsat-000-rgb"
+      ],
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "RGB"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      }
+    },
+    {
+      "id": "P4F1",
+      "claim": "Regular street grid pattern defining a planned urban layout",
+      "confidence": "CLEAR",
+      "basis": "visual-interpretation",
+      "evidence": [
+        "landsat-000-rgb"
+      ],
+      "region": "entire image",
+      "alternatives": [],
+      "kind": "feature",
+      "pass": 4,
+      "role": "Independent satellite review",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "family": "Qwen",
+      "input_assets": [
+        "landsat-000-rgb"
+      ],
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "RGB"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      }
+    },
+    {
+      "id": "P4F2",
+      "claim": "Rectangular structures consistent with buildings, showing high density in the central and southern portions",
+      "confidence": "CLEAR",
+      "basis": "visual-interpretation",
+      "evidence": [
+        "landsat-000-rgb"
+      ],
+      "region": "central to southern image",
+      "alternatives": [],
+      "kind": "feature",
+      "pass": 4,
+      "role": "Independent satellite review",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "family": "Qwen",
+      "input_assets": [
+        "landsat-000-rgb"
+      ],
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "RGB"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      }
+    },
+    {
+      "id": "P4F3",
+      "claim": "Green areas appear as irregular patches within the urban grid, possibly parks or agricultural fields",
+      "confidence": "LIKELY",
+      "basis": "visual-interpretation",
+      "evidence": [
+        "landsat-000-rgb"
+      ],
+      "region": "northern and western sections",
+      "alternatives": [
+        "parks",
+        "irrigated fields"
+      ],
+      "kind": "feature",
+      "pass": 4,
+      "role": "Independent satellite review",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "family": "Qwen",
+      "input_assets": [
+        "landsat-000-rgb"
+      ],
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "RGB"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      }
+    },
+    {
+      "id": "P4F4",
+      "claim": "Linear features cutting across the grid could be major roads or drainage channels, indicated by their length and uniformity",
+      "confidence": "TENTATIVE",
+      "basis": "visual-interpretation",
+      "evidence": [
+        "landsat-000-rgb"
+      ],
+      "region": "running horizontally and vertically through the image",
+      "alternatives": [],
+      "kind": "feature",
+      "pass": 4,
+      "role": "Independent satellite review",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "family": "Qwen",
+      "input_assets": [
+        "landsat-000-rgb"
+      ],
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "RGB"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      }
+    },
+    {
+      "id": "P5S",
+      "claim": "A thermal infrared view of a mixed terrain likely containing low vegetation and scattered structures or surface features showing distinct temperature variations.",
+      "kind": "scene",
+      "confidence": "UNSCORED",
+      "evidence": [
+        "landsat-000-tir"
+      ],
+      "pass": 5,
+      "role": "Thermal review",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "family": "Qwen",
+      "input_assets": [
+        "landsat-000-tir"
+      ],
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "TIR"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      }
+    },
+    {
+      "id": "P5F1",
+      "claim": "The scene shows a heterogeneous surface with irregular dark and bright patches, consistent with varying material emissivity or moisture levels.",
+      "confidence": "LIKELY",
+      "basis": "visual-interpretation",
+      "evidence": [
+        "landsat-000-tir"
+      ],
+      "region": "image-relative location",
+      "alternatives": [
+        "natural terrain with mixed vegetation",
+        "urban area with heat islands"
+      ],
+      "kind": "feature",
+      "pass": 5,
+      "role": "Thermal review",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "family": "Qwen",
+      "input_assets": [
+        "landsat-000-tir"
+      ],
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "TIR"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      }
+    },
+    {
+      "id": "P5F2",
+      "claim": "Dark areas may represent cooler surfaces (higher moisture, lower emissivity) while bright regions indicate warmer materials.",
+      "confidence": "TENTATIVE",
+      "basis": "visual-interpretation",
+      "evidence": [
+        "landsat-000-tir"
+      ],
+      "region": "image-relative location",
+      "alternatives": [
+        "artifacts from sensor noise or calibration error"
+      ],
+      "kind": "feature",
+      "pass": 5,
+      "role": "Thermal review",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "family": "Qwen",
+      "input_assets": [
+        "landsat-000-tir"
+      ],
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "TIR"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      }
+    },
+    {
+      "id": "P5F3",
+      "claim": "No clear linear structures such as roads or field boundaries are visible at this resolution.",
+      "confidence": "CLEAR",
+      "basis": "visual-interpretation",
+      "evidence": [
+        "landsat-000-tir"
+      ],
+      "region": "image-relative location",
+      "alternatives": [
+        "fine-scale infrastructure not resolved in TIR imagery"
+      ],
+      "kind": "feature",
+      "pass": 5,
+      "role": "Thermal review",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "family": "Qwen",
+      "input_assets": [
+        "landsat-000-tir"
+      ],
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "TIR"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      }
+    },
+    {
+      "id": "P5F4",
+      "claim": "The overall texture suggests a non-uniform landscape without dominant geometric patterns typical of urban grids or agricultural fields.",
+      "confidence": "CLEAR",
+      "basis": "visual-interpretation",
+      "evidence": [
+        "landsat-000-tir"
+      ],
+      "region": "image-relative location",
+      "alternatives": [
+        "natural terrain with scattered vegetation cover"
+      ],
+      "kind": "feature",
+      "pass": 5,
+      "role": "Thermal review",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "family": "Qwen",
+      "input_assets": [
+        "landsat-000-tir"
+      ],
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "TIR"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      }
+    },
+    {
+      "id": "P5F5",
+      "claim": "Thermal contrast is evident but cannot be attributed to specific causes like geothermal activity without further data.",
+      "confidence": "UNKNOWN",
+      "basis": "visual-interpretation",
+      "evidence": [
+        "landsat-000-tir"
+      ],
+      "region": "image-relative location",
+      "alternatives": [
+        "solar exposure differences, material properties, or sensor artifacts"
+      ],
+      "kind": "feature",
+      "pass": 5,
+      "role": "Thermal review",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "family": "Qwen",
+      "input_assets": [
+        "landsat-000-tir"
+      ],
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "TIR"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      }
+    }
+  ],
+  "adjudication": {
+    "status": "complete",
+    "caption_sources": [
+      "P4F1",
+      "P4F2",
+      "P4F3",
+      "P4F4",
+      "P5F1"
+    ],
+    "decisions": [
+      {
+        "claim_id": "P1S",
+        "verdict": "qualified",
+        "reason": "The scene is likely a dense city center, but the specific nature of the green patches and linear features requires further verification."
+      },
+      {
+        "claim_id": "P1F1",
+        "verdict": "qualified",
+        "reason": "The leading scene hypothesis is a dense city center. Competing hypotheses include an industrial factory complex and a golf course."
+      },
+      {
+        "claim_id": "P2S",
+        "verdict": "accepted",
+        "reason": "The scene is an aerial or satellite image of Earth, showing a large city with many buildings and some green areas."
+      },
+      {
+        "claim_id": "P3S",
+        "verdict": "accepted",
+        "reason": "The satellite image shows a grid-like urban layout with a mix of light brown and beige residential and commercial blocks, interspersed with green patches likely representing parks or undeveloped land. Yellow markers are scattered across the"
+      },
+      {
+        "claim_id": "P4S",
+        "verdict": "accepted",
+        "reason": "Aerial view of a dense urban area characterized by a regular grid of streets and numerous rectangular structures, likely residential or industrial buildings. Green patches are scattered throughout the city blocks, interspersed with linear"
+      },
+      {
+        "claim_id": "P4F1",
+        "verdict": "accepted",
+        "reason": "Regular street grid pattern defining a planned urban layout."
+      },
+      {
+        "claim_id": "P4F2",
+        "verdict": "accepted",
+        "reason": "Rectangular structures consistent with buildings, showing high density in the central and southern portions."
+      },
+      {
+        "claim_id": "P4F3",
+        "verdict": "accepted",
+        "reason": "Green areas appear as irregular patches within the urban grid, possibly parks or agricultural fields."
+      },
+      {
+        "claim_id": "P4F4",
+        "verdict": "qualified",
+        "reason": "Linear features cutting across the grid could be major roads or drainage channels, indicated by their length and uniformity."
+      },
+      {
+        "claim_id": "P5S",
+        "verdict": "accepted",
+        "reason": "A thermal infrared view of a mixed terrain likely containing low vegetation and scattered structures or surface features showing distinct temperature variations."
+      },
+      {
+        "claim_id": "P5F1",
+        "verdict": "accepted",
+        "reason": "The scene shows a heterogeneous surface with irregular dark and bright patches, consistent with varying material emissivity or moisture levels."
+      },
+      {
+        "claim_id": "P5F2",
+        "verdict": "qualified",
+        "reason": "Dark areas may represent cooler surfaces (higher moisture, lower emissivity) while bright regions indicate warmer materials."
+      },
+      {
+        "claim_id": "P5F3",
+        "verdict": "accepted",
+        "reason": "No clear linear structures such as roads or field boundaries are visible at this resolution."
+      },
+      {
+        "claim_id": "P5F4",
+        "verdict": "accepted",
+        "reason": "The overall texture suggests a non-uniform landscape without dominant geometric patterns typical of urban grids or agricultural fields."
+      },
+      {
+        "claim_id": "P5F5",
+        "verdict": "qualified",
+        "reason": "Thermal contrast is evident but cannot be attributed to specific causes like geothermal activity without further data."
+      }
+    ],
+    "errors": [],
+    "note": "Decision trace is model-authored evidence review, not independent factual verification. Caption entailment is not mechanically proven."
+  },
+  "assets": [
+    {
+      "id": "landsat-000-rgb",
+      "sha256": "448d5e5ec71650aca2873f96a1669051490405026599fd85e595167a75a3fecc",
+      "modality": "RGB",
+      "provenance": "observed"
+    },
+    {
+      "id": "landsat-000-tir",
+      "sha256": "19cd465d4435fbfc843770bfb7cef69e1be5ec94151b8eb949172d5d20811ee0",
+      "modality": "TIR",
+      "provenance": "observed"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "landsat-000-rgb",
+      "width": 256,
+      "height": 256,
+      "sha256": "448d5e5ec71650aca2873f96a1669051490405026599fd85e595167a75a3fecc",
+      "modality": "RGB",
+      "provenance": "observed",
+      "analysis_grid": [
+        256,
+        256
+      ],
+      "mean_display_intensity": 174.75,
+      "display_stddev": 27.81,
+      "entropy_bits": 6.449,
+      "black_fraction": 0,
+      "white_fraction": 0.0238,
+      "horizontal_gradient": 14.463,
+      "vertical_gradient": 14.61,
+      "radiometric": false,
+      "polarity": "unknown"
+    },
+    {
+      "id": "landsat-000-tir",
+      "width": 256,
+      "height": 256,
+      "sha256": "19cd465d4435fbfc843770bfb7cef69e1be5ec94151b8eb949172d5d20811ee0",
+      "modality": "TIR",
+      "provenance": "observed",
+      "analysis_grid": [
+        256,
+        256
+      ],
+      "mean_display_intensity": 174.16,
+      "display_stddev": 48.53,
+      "entropy_bits": 7.251,
+      "black_fraction": 0.0202,
+      "white_fraction": 0.0204,
+      "horizontal_gradient": 5.81,
+      "vertical_gradient": 6.25,
+      "radiometric": true,
+      "polarity": "white-hot",
+      "temperature_c": {
+        "count": 65536,
+        "min": 36.312366920000045,
+        "p05": 46.4604683,
+        "median": 51.05428718000002,
+        "p95": 53.49133544000006,
+        "max": 56.495775019999996,
+        "mean": 50.64478360001742
+      },
+      "valid_fraction": 1,
+      "temperature_product": "Landsat Collection 2 Level-2 ST_B10",
+      "grid_area_km2": 58.9824,
+      "effective_resolution_m": 100,
+      "qa_rule": "Exclude fill, dilated cloud, cirrus, cloud, cloud shadow, snow; exclude nonzero QA_RADSAT where available",
+      "uncertainty_k": {
+        "count": 65536,
+        "min": 1.6600000000000001,
+        "p05": 1.73,
+        "median": 1.83,
+        "p95": 1.99,
+        "max": 3.14,
+        "mean": 1.8470726013180523
+      }
+    }
+  ],
+  "derived_views": [],
+  "limits": [
+    "Display intensity is not temperature or reflectance. Quality metrics describe the rendered image; no semantic cloud mask is inferred.",
+    "Temperature spread is spatial variation, not uncertainty. 30 m output grid; native TIRS resolution approximately 100 m. Spatial spread is not temperature uncertainty.",
+    "No validated infrared captioning specialist connected. Any thermal detector provides narrow object proposals only; broader scene semantics remain provisional."
+  ],
+  "passes": [
+    {
+      "role": "Satellite scene hypotheses",
+      "model": "RemoteCLIP ViT-B-32",
+      "profile": "scene-witness",
+      "identity": "remoteclip-scene.onnx@2e9b124e3d20fe36784f8c6cd1672721ab0d9163482d685f91181febb76e4a4b+vocabulary@46083d46988107aa904b83556ad1d475631da14868b7f7ae608dfa4cade81e0d",
+      "family": "RemoteCLIP",
+      "independent_observation": true,
+      "input_assets": [
+        "landsat-000-rgb"
+      ],
+      "scope": {
+        "trained_domains": [
+          "RGB remote-sensing image-text alignment"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "RGB"
+        ],
+        "specialist_claim": true,
+        "warning": "Ranks a fixed vocabulary, not a caption. Similarity is not probability; unknown classes, crop bias and errors remain possible."
+      },
+      "status": "complete",
+      "opinion": {
+        "scene": "landsat-000-rgb: a dense city center / an industrial factory complex / a golf course",
+        "findings": [
+          {
+            "claim": "The leading scene hypothesis is a dense city center. Competing hypotheses include an industrial factory complex and a golf course.",
+            "confidence": "TENTATIVE",
+            "basis": "image-text-similarity",
+            "evidence": [
+              "landsat-000-rgb"
+            ],
+            "region": "Center square crop; 100% of image area.",
+            "alternatives": [
+              "an industrial factory complex",
+              "a golf course"
+            ],
+            "hypotheses": [
+              {
+                "label": "a dense city center",
+                "cosine": 0.3062
+              },
+              {
+                "label": "an industrial factory complex",
+                "cosine": 0.2971
+              },
+              {
+                "label": "a golf course",
+                "cosine": 0.2964
+              }
+            ]
+          }
+        ],
+        "limits": [
+          "Scene hypotheses require checking against the full original image.",
+          "A closed vocabulary cannot establish an open-world identity or absence."
+        ],
+        "warnings": [],
+        "next": "Compare competing scene labels against geometry and connectivity."
+      },
+      "scene_rankings": [
+        {
+          "asset_id": "landsat-000-rgb",
+          "ranking": [
+            {
+              "label": "a dense city center",
+              "cosine": 0.3062
+            },
+            {
+              "label": "an industrial factory complex",
+              "cosine": 0.2971
+            },
+            {
+              "label": "a golf course",
+              "cosine": 0.2964
+            },
+            {
+              "label": "herbaceous vegetation",
+              "cosine": 0.2863
+            },
+            {
+              "label": "an urban park",
+              "cosine": 0.2829
+            }
+          ],
+          "center_crop_fraction": 1,
+          "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+        }
+      ],
+      "seconds": 0.76
+    },
+    {
+      "role": "Satellite first opinion",
+      "model": "EarthDial-4B-RGB-Q4_K_M",
+      "profile": "earthdial",
+      "identity": "EarthDial-4B-RGB-Q4_K_M.gguf",
+      "checkpoint": "akshaydudhane/EarthDial_4B_RGB@ae752c478051e573d30fc6b8478d733f32d7d651",
+      "adapter": null,
+      "family": "InternVL-Phi3",
+      "independent_observation": true,
+      "scope": {
+        "trained_domains": [
+          "RGB satellite and aerial scene interpretation"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "RGB"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": true,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      },
+      "inference": {
+        "temperature": 0,
+        "sampling": {},
+        "thinking": null,
+        "image_min_tokens": 256,
+        "image_max_tokens": 1024,
+        "context": 4096,
+        "cpu_experts": false,
+        "gpu_layers": 99,
+        "projector_cpu": false
+      },
+      "adjudication": null,
+      "input_assets": [
+        "landsat-000-rgb"
+      ],
+      "status": "complete",
+      "opinion": {
+        "scene": "An aerial or satellite image of Earth, showing a large city with many buildings and some green areas .",
+        "findings": [],
+        "limits": [
+          "Specialist supplied a free-text scene hypothesis; it has not adjudicated other opinions."
+        ],
+        "next": "Cross-check the original image.",
+        "warnings": [],
+        "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+      },
+      "seconds": 5.23,
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 315,
+        "total_tokens": 337,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "role": "Independent satellite review",
+      "model": "CapRL-Qwen3VL-4B-Q4_K_M",
+      "profile": "caprl",
+      "identity": "CapRL-Qwen3VL-4B-Q4_K_M.gguf",
+      "checkpoint": "internlm/CapRL-Qwen3VL-4B-GGUF@922d08bb6257875336aa138616c74902f736099c",
+      "adapter": null,
+      "family": "Qwen",
+      "independent_observation": true,
+      "scope": {
+        "trained_domains": [
+          "General image captioning with reinforcement learning; not thermal-specific"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "RGB"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": true,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      },
+      "inference": {
+        "temperature": 0,
+        "sampling": {},
+        "thinking": null,
+        "image_min_tokens": 256,
+        "image_max_tokens": 1024,
+        "context": 4096,
+        "cpu_experts": false,
+        "gpu_layers": 99,
+        "projector_cpu": false
+      },
+      "adjudication": null,
+      "input_assets": [
+        "landsat-000-rgb"
+      ],
+      "status": "complete",
+      "opinion": {
+        "scene": "This satellite image shows a grid-like urban layout with a mix of light brown and beige residential and commercial blocks, interspersed with green patches likely representing parks or undeveloped land. Yellow markers are scattered across the scene, highlighting specific points within the urban grid, with a few concentrated in the upper right and lower left areas.",
+        "findings": [],
+        "limits": [
+          "Specialist supplied a free-text scene hypothesis; it has not adjudicated other opinions."
+        ],
+        "next": "Cross-check the original image.",
+        "warnings": [],
+        "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+      },
+      "seconds": 4.99,
+      "usage": {
+        "completion_tokens": 67,
+        "prompt_tokens": 297,
+        "total_tokens": 364,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "role": "Independent satellite review",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "profile": "qwen35",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+      "adapter": null,
+      "family": "Qwen",
+      "independent_observation": true,
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "RGB"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      },
+      "inference": {
+        "temperature": 0.7,
+        "sampling": {
+          "top_p": 0.8,
+          "top_k": 20,
+          "min_p": 0,
+          "presence_penalty": 1.5,
+          "repeat_penalty": 1,
+          "seed": 42
+        },
+        "thinking": false,
+        "image_min_tokens": 1024,
+        "image_max_tokens": 1024,
+        "context": 12288,
+        "cpu_experts": false,
+        "gpu_layers": 99,
+        "projector_cpu": false
+      },
+      "adjudication": null,
+      "input_assets": [
+        "landsat-000-rgb"
+      ],
+      "status": "complete",
+      "opinion": {
+        "scene": "Aerial view of a dense urban area characterized by a regular grid of streets and numerous rectangular structures, likely residential or industrial buildings. Green patches are scattered throughout the city blocks, interspersed with linear features that could be roads or utility corridors.",
+        "findings": [
+          {
+            "claim": "Regular street grid pattern defining a planned urban layout",
+            "confidence": "CLEAR",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "landsat-000-rgb"
+            ],
+            "region": "entire image",
+            "alternatives": []
+          },
+          {
+            "claim": "Rectangular structures consistent with buildings, showing high density in the central and southern portions",
+            "confidence": "CLEAR",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "landsat-000-rgb"
+            ],
+            "region": "central to southern image",
+            "alternatives": []
+          },
+          {
+            "claim": "Green areas appear as irregular patches within the urban grid, possibly parks or agricultural fields",
+            "confidence": "LIKELY",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "landsat-000-rgb"
+            ],
+            "region": "northern and western sections",
+            "alternatives": [
+              "parks",
+              "irrigated fields"
+            ]
+          },
+          {
+            "claim": "Linear features cutting across the grid could be major roads or drainage channels, indicated by their length and uniformity",
+            "confidence": "TENTATIVE",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "landsat-000-rgb"
+            ],
+            "region": "running horizontally and vertically through the image",
+            "alternatives": []
+          }
+        ],
+        "limits": [
+          "Exact building types or land-use categories cannot be determined from this resolution",
+          "Specific names of streets or landmarks are unavailable due to lack of textual labels"
+        ],
+        "next": "Obtain a higher-resolution image or use optical zoom features to verify specific land-use patterns",
+        "warnings": [],
+        "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+      },
+      "seconds": 16.71,
+      "usage": {
+        "completion_tokens": 333,
+        "prompt_tokens": 2273,
+        "total_tokens": 2606,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "role": "Thermal review",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "profile": "qwen35",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+      "adapter": null,
+      "family": "Qwen",
+      "independent_observation": true,
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "TIR"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      },
+      "inference": {
+        "temperature": 0.7,
+        "sampling": {
+          "top_p": 0.8,
+          "top_k": 20,
+          "min_p": 0,
+          "presence_penalty": 1.5,
+          "repeat_penalty": 1,
+          "seed": 42
+        },
+        "thinking": false,
+        "image_min_tokens": 1024,
+        "image_max_tokens": 1024,
+        "context": 12288,
+        "cpu_experts": false,
+        "gpu_layers": 99,
+        "projector_cpu": false
+      },
+      "adjudication": null,
+      "input_assets": [
+        "landsat-000-tir"
+      ],
+      "status": "complete",
+      "opinion": {
+        "scene": "A thermal infrared view of a mixed terrain likely containing low vegetation and scattered structures or surface features showing distinct temperature variations.",
+        "findings": [
+          {
+            "claim": "The scene shows a heterogeneous surface with irregular dark and bright patches, consistent with varying material emissivity or moisture levels.",
+            "confidence": "LIKELY",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "landsat-000-tir"
+            ],
+            "region": "image-relative location",
+            "alternatives": [
+              "natural terrain with mixed vegetation",
+              "urban area with heat islands"
+            ]
+          },
+          {
+            "claim": "Dark areas may represent cooler surfaces (higher moisture, lower emissivity) while bright regions indicate warmer materials.",
+            "confidence": "TENTATIVE",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "landsat-000-tir"
+            ],
+            "region": "image-relative location",
+            "alternatives": [
+              "artifacts from sensor noise or calibration error"
+            ]
+          },
+          {
+            "claim": "No clear linear structures such as roads or field boundaries are visible at this resolution.",
+            "confidence": "CLEAR",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "landsat-000-tir"
+            ],
+            "region": "image-relative location",
+            "alternatives": [
+              "fine-scale infrastructure not resolved in TIR imagery"
+            ]
+          },
+          {
+            "claim": "The overall texture suggests a non-uniform landscape without dominant geometric patterns typical of urban grids or agricultural fields.",
+            "confidence": "CLEAR",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "landsat-000-tir"
+            ],
+            "region": "image-relative location",
+            "alternatives": [
+              "natural terrain with scattered vegetation cover"
+            ]
+          },
+          {
+            "claim": "Thermal contrast is evident but cannot be attributed to specific causes like geothermal activity without further data.",
+            "confidence": "UNKNOWN",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "landsat-000-tir"
+            ],
+            "region": "image-relative location",
+            "alternatives": [
+              "solar exposure differences, material properties, or sensor artifacts"
+            ]
+          }
+        ],
+        "limits": [
+          "material uncertainty"
+        ],
+        "next": "verify with multispectral imagery for land cover classification",
+        "warnings": [],
+        "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+      },
+      "seconds": 13.14,
+      "usage": {
+        "completion_tokens": 375,
+        "prompt_tokens": 2629,
+        "total_tokens": 3004,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "role": "General critic",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "profile": "qwen35",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+      "adapter": null,
+      "family": "Qwen",
+      "independent_observation": false,
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "RGB",
+          "TIR"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      },
+      "inference": {
+        "temperature": 0.7,
+        "sampling": {
+          "top_p": 0.8,
+          "top_k": 20,
+          "min_p": 0,
+          "presence_penalty": 1.5,
+          "repeat_penalty": 1,
+          "seed": 42
+        },
+        "thinking": false,
+        "image_min_tokens": 1024,
+        "image_max_tokens": 1024,
+        "context": 12288,
+        "cpu_experts": false,
+        "gpu_layers": 99,
+        "projector_cpu": false
+      },
+      "adjudication": null,
+      "input_assets": [
+        "landsat-000-rgb",
+        "landsat-000-tir"
+      ],
+      "status": "complete",
+      "opinion": {
+        "scene": "A dense urban area with a regular street grid containing numerous rectangular buildings and scattered green patches, likely parks or undeveloped land.",
+        "findings": [
+          {
+            "claim": "A regular street grid pattern defining a planned urban layout",
+            "confidence": "CLEAR",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "landsat-000-rgb"
+            ],
+            "region": "entire image",
+            "alternatives": []
+          },
+          {
+            "claim": "Rectangular structures consistent with buildings, showing high density in the central and southern portions",
+            "confidence": "CLEAR",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "landsat-000-rgb"
+            ],
+            "region": "central to southern image",
+            "alternatives": []
+          },
+          {
+            "claim": "Green areas appear as irregular patches within the urban grid, possibly parks or agricultural fields",
+            "confidence": "LIKELY",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "landsat-000-rgb"
+            ],
+            "region": "northern and western sections",
+            "alternatives": [
+              "parks",
+              "irrigated fields"
+            ]
+          },
+          {
+            "claim": "Linear features cutting across the grid could be major roads or drainage channels, indicated by their length and uniformity",
+            "confidence": "TENTATIVE",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "landsat-000-rgb"
+            ],
+            "region": "running horizontally and vertically through the image",
+            "alternatives": []
+          }
+        ],
+        "limits": [
+          "material uncertainty"
+        ],
+        "next": "useful verification step",
+        "warnings": [],
+        "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+      },
+      "seconds": 13.6,
+      "usage": {
+        "completion_tokens": 272,
+        "prompt_tokens": 5470,
+        "total_tokens": 5742,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "role": "Satellite master opinion",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "profile": "qwen35",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+      "adapter": null,
+      "family": "Qwen",
+      "independent_observation": false,
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "RGB",
+          "TIR"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      },
+      "inference": {
+        "temperature": 0.7,
+        "sampling": {
+          "top_p": 0.8,
+          "top_k": 20,
+          "min_p": 0,
+          "presence_penalty": 1.5,
+          "repeat_penalty": 1,
+          "seed": 42
+        },
+        "thinking": false,
+        "image_min_tokens": 1024,
+        "image_max_tokens": 1024,
+        "context": 12288,
+        "cpu_experts": false,
+        "gpu_layers": 99,
+        "projector_cpu": false
+      },
+      "adjudication": {
+        "status": "complete",
+        "caption_sources": [
+          "P4F1",
+          "P4F2",
+          "P4F3",
+          "P4F4",
+          "P5F1"
+        ],
+        "decisions": [
+          {
+            "claim_id": "P1S",
+            "verdict": "qualified",
+            "reason": "The scene is likely a dense city center, but the specific nature of the green patches and linear features requires further verification."
+          },
+          {
+            "claim_id": "P1F1",
+            "verdict": "qualified",
+            "reason": "The leading scene hypothesis is a dense city center. Competing hypotheses include an industrial factory complex and a golf course."
+          },
+          {
+            "claim_id": "P2S",
+            "verdict": "accepted",
+            "reason": "The scene is an aerial or satellite image of Earth, showing a large city with many buildings and some green areas."
+          },
+          {
+            "claim_id": "P3S",
+            "verdict": "accepted",
+            "reason": "The satellite image shows a grid-like urban layout with a mix of light brown and beige residential and commercial blocks, interspersed with green patches likely representing parks or undeveloped land. Yellow markers are scattered across the"
+          },
+          {
+            "claim_id": "P4S",
+            "verdict": "accepted",
+            "reason": "Aerial view of a dense urban area characterized by a regular grid of streets and numerous rectangular structures, likely residential or industrial buildings. Green patches are scattered throughout the city blocks, interspersed with linear"
+          },
+          {
+            "claim_id": "P4F1",
+            "verdict": "accepted",
+            "reason": "Regular street grid pattern defining a planned urban layout."
+          },
+          {
+            "claim_id": "P4F2",
+            "verdict": "accepted",
+            "reason": "Rectangular structures consistent with buildings, showing high density in the central and southern portions."
+          },
+          {
+            "claim_id": "P4F3",
+            "verdict": "accepted",
+            "reason": "Green areas appear as irregular patches within the urban grid, possibly parks or agricultural fields."
+          },
+          {
+            "claim_id": "P4F4",
+            "verdict": "qualified",
+            "reason": "Linear features cutting across the grid could be major roads or drainage channels, indicated by their length and uniformity."
+          },
+          {
+            "claim_id": "P5S",
+            "verdict": "accepted",
+            "reason": "A thermal infrared view of a mixed terrain likely containing low vegetation and scattered structures or surface features showing distinct temperature variations."
+          },
+          {
+            "claim_id": "P5F1",
+            "verdict": "accepted",
+            "reason": "The scene shows a heterogeneous surface with irregular dark and bright patches, consistent with varying material emissivity or moisture levels."
+          },
+          {
+            "claim_id": "P5F2",
+            "verdict": "qualified",
+            "reason": "Dark areas may represent cooler surfaces (higher moisture, lower emissivity) while bright regions indicate warmer materials."
+          },
+          {
+            "claim_id": "P5F3",
+            "verdict": "accepted",
+            "reason": "No clear linear structures such as roads or field boundaries are visible at this resolution."
+          },
+          {
+            "claim_id": "P5F4",
+            "verdict": "accepted",
+            "reason": "The overall texture suggests a non-uniform landscape without dominant geometric patterns typical of urban grids or agricultural fields."
+          },
+          {
+            "claim_id": "P5F5",
+            "verdict": "qualified",
+            "reason": "Thermal contrast is evident but cannot be attributed to specific causes like geothermal activity without further data."
+          }
+        ],
+        "errors": [],
+        "note": "Decision trace is model-authored evidence review, not independent factual verification. Caption entailment is not mechanically proven."
+      },
+      "input_assets": [
+        "landsat-000-rgb",
+        "landsat-000-tir"
+      ],
+      "status": "complete",
+      "opinion": {
+        "scene": "A dense urban area with a regular street grid containing numerous rectangular buildings and scattered green patches, likely parks or undeveloped land.",
+        "findings": [
+          {
+            "claim": "A regular street grid pattern defining a planned urban layout",
+            "confidence": "CLEAR",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "landsat-000-rgb"
+            ],
+            "region": "entire image",
+            "alternatives": [],
+            "source_claims": [
+              "P4F1",
+              "P2S"
+            ]
+          },
+          {
+            "claim": "Rectangular structures consistent with buildings, showing high density in the central and southern portions",
+            "confidence": "CLEAR",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "landsat-000-rgb"
+            ],
+            "region": "central to southern image",
+            "alternatives": [],
+            "source_claims": [
+              "P4F2"
+            ]
+          },
+          {
+            "claim": "Green areas appear as irregular patches within the urban grid, possibly parks or agricultural fields",
+            "confidence": "LIKELY",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "landsat-000-rgb"
+            ],
+            "region": "northern and western sections",
+            "alternatives": [
+              "parks",
+              "irrigated fields"
+            ],
+            "source_claims": [
+              "P4F3"
+            ]
+          },
+          {
+            "claim": "Linear features cutting across the grid could be major roads or drainage channels, indicated by their length and uniformity",
+            "confidence": "TENTATIVE",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "landsat-000-rgb"
+            ],
+            "region": "running horizontally and vertically through the image",
+            "alternatives": [],
+            "source_claims": [
+              "P4F4"
+            ]
+          },
+          {
+            "claim": "The scene shows a heterogeneous surface with irregular dark and bright patches, consistent with varying material emissivity or moisture levels.",
+            "confidence": "LIKELY",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "landsat-000-tir"
+            ],
+            "region": "image-relative location",
+            "alternatives": [
+              "natural terrain with mixed vegetation",
+              "urban area with heat islands"
+            ],
+            "source_claims": [
+              "P5F1"
+            ]
+          }
+        ],
+        "limits": [
+          "material uncertainty"
+        ],
+        "next": "useful verification step",
+        "warnings": [],
+        "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+      },
+      "seconds": 36.04,
+      "usage": {
+        "completion_tokens": 1041,
+        "prompt_tokens": 5926,
+        "total_tokens": 6967,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ],
+  "final": {
+    "scene": "A dense urban area with a regular street grid containing numerous rectangular buildings and scattered green patches, likely parks or undeveloped land.",
+    "findings": [
+      {
+        "claim": "A regular street grid pattern defining a planned urban layout",
+        "confidence": "CLEAR",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "landsat-000-rgb"
+        ],
+        "region": "entire image",
+        "alternatives": [],
+        "source_claims": [
+          "P4F1",
+          "P2S"
+        ]
+      },
+      {
+        "claim": "Rectangular structures consistent with buildings, showing high density in the central and southern portions",
+        "confidence": "CLEAR",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "landsat-000-rgb"
+        ],
+        "region": "central to southern image",
+        "alternatives": [],
+        "source_claims": [
+          "P4F2"
+        ]
+      },
+      {
+        "claim": "Green areas appear as irregular patches within the urban grid, possibly parks or agricultural fields",
+        "confidence": "LIKELY",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "landsat-000-rgb"
+        ],
+        "region": "northern and western sections",
+        "alternatives": [
+          "parks",
+          "irrigated fields"
+        ],
+        "source_claims": [
+          "P4F3"
+        ]
+      },
+      {
+        "claim": "Linear features cutting across the grid could be major roads or drainage channels, indicated by their length and uniformity",
+        "confidence": "TENTATIVE",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "landsat-000-rgb"
+        ],
+        "region": "running horizontally and vertically through the image",
+        "alternatives": [],
+        "source_claims": [
+          "P4F4"
+        ]
+      },
+      {
+        "claim": "The scene shows a heterogeneous surface with irregular dark and bright patches, consistent with varying material emissivity or moisture levels.",
+        "confidence": "LIKELY",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "landsat-000-tir"
+        ],
+        "region": "image-relative location",
+        "alternatives": [
+          "natural terrain with mixed vegetation",
+          "urban area with heat islands"
+        ],
+        "source_claims": [
+          "P5F1"
+        ]
+      }
+    ],
+    "limits": [
+      "material uncertainty"
+    ],
+    "next": "useful verification step",
+    "warnings": [],
+    "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+  },
+  "seconds": 91.48,
+  "models_used": [
+    {
+      "model": "RemoteCLIP ViT-B-32",
+      "identity": "remoteclip-scene.onnx@2e9b124e3d20fe36784f8c6cd1672721ab0d9163482d685f91181febb76e4a4b+vocabulary@46083d46988107aa904b83556ad1d475631da14868b7f7ae608dfa4cade81e0d",
+      "checkpoint": null,
+      "adapter": null,
+      "family": "RemoteCLIP",
+      "roles": [
+        "Satellite scene hypotheses"
+      ],
+      "assets": [
+        "landsat-000-rgb"
+      ],
+      "completed": 1,
+      "failed": 0,
+      "seconds": 0.76
+    },
+    {
+      "model": "EarthDial-4B-RGB-Q4_K_M",
+      "identity": "EarthDial-4B-RGB-Q4_K_M.gguf",
+      "checkpoint": "akshaydudhane/EarthDial_4B_RGB@ae752c478051e573d30fc6b8478d733f32d7d651",
+      "adapter": null,
+      "family": "InternVL-Phi3",
+      "roles": [
+        "Satellite first opinion"
+      ],
+      "assets": [
+        "landsat-000-rgb"
+      ],
+      "completed": 1,
+      "failed": 0,
+      "seconds": 5.23
+    },
+    {
+      "model": "CapRL-Qwen3VL-4B-Q4_K_M",
+      "identity": "CapRL-Qwen3VL-4B-Q4_K_M.gguf",
+      "checkpoint": "internlm/CapRL-Qwen3VL-4B-GGUF@922d08bb6257875336aa138616c74902f736099c",
+      "adapter": null,
+      "family": "Qwen",
+      "roles": [
+        "Independent satellite review"
+      ],
+      "assets": [
+        "landsat-000-rgb"
+      ],
+      "completed": 1,
+      "failed": 0,
+      "seconds": 4.99
+    },
+    {
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+      "adapter": null,
+      "family": "Qwen",
+      "roles": [
+        "Independent satellite review",
+        "Thermal review",
+        "General critic",
+        "Satellite master opinion"
+      ],
+      "assets": [
+        "landsat-000-rgb",
+        "landsat-000-tir"
+      ],
+      "completed": 4,
+      "failed": 0,
+      "seconds": 79.49
+    }
+  ],
+  "evaluation": {
+    "reference_class": null,
+    "class_literal_mention": null,
+    "caption_token_f1": null,
+    "claim_count": 5,
+    "guardrail_warnings": 0,
+    "seconds": 91.48,
+    "metric_note": "Token F1 and literal class mention are diagnostics, not factual accuracy. Ground truth was withheld from all inference prompts.",
+    "human_review": {
+      "unsupported_claims": null,
+      "important_misses": null,
+      "spatial_errors": null,
+      "thermal_errors": null,
+      "usefulness_1_to_5": null
+    }
+  },
+  "example_record": {
+    "kind": "Previously recorded engine output",
+    "source": "Local prototype 0.3.0",
+    "note": "Bundled example, not a result from this installation. No manual caption edits."
+  }
+}

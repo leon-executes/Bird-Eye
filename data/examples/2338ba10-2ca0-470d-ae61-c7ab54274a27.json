@@ -1,0 +1,313 @@
+{
+  "provenance": {
+    "schema_version": 2,
+    "prompt_version": "2026-10-25.2-specialist-context",
+    "prompt_sha256": "5f1c69a5ffa8abadca62d974646370339dad0f88b5b0010a44d49eed0e04d140",
+    "backend": "vulkan",
+    "image_max_dimension": 768,
+    "image_encoding": "lossless PNG",
+    "temperature_prose": "blocked; see deterministic measurements"
+  },
+  "id": "2338ba10-2ca0-470d-ae61-c7ab54274a27",
+  "scene_id": "nasa-earthrise",
+  "created": "2026-10-25T13:39:45.418Z",
+  "status": "complete",
+  "mode": "single",
+  "independent": false,
+  "diversity": {
+    "model_identities": 1,
+    "model_families": 1,
+    "note": "Different families reduce one source of correlation; independent factual corroboration is not established."
+  },
+  "claim_ledger": [
+    {
+      "id": "P1S",
+      "claim": "A cratered lunar surface rises in the foreground against black space, with a spherical Earth visible above the horizon line.",
+      "kind": "scene",
+      "confidence": "UNSCORED",
+      "evidence": [
+        "nasa-earthrise"
+      ],
+      "pass": 1,
+      "role": "Satellite first opinion",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "family": "Qwen",
+      "input_assets": [
+        "nasa-earthrise"
+      ],
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "MISC"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      }
+    },
+    {
+      "id": "P1F1",
+      "claim": "cratered lunar terrain",
+      "confidence": "CLEAR",
+      "basis": "visual-interpretation",
+      "evidence": [
+        "nasa-earthrise"
+      ],
+      "region": "bottom foreground",
+      "alternatives": [],
+      "kind": "feature",
+      "pass": 1,
+      "role": "Satellite first opinion",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "family": "Qwen",
+      "input_assets": [
+        "nasa-earthrise"
+      ],
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "MISC"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      }
+    },
+    {
+      "id": "P1F2",
+      "claim": "spherical Earth with cloud cover",
+      "confidence": "CLEAR",
+      "basis": "visual-interpretation",
+      "evidence": [
+        "nasa-earthrise"
+      ],
+      "region": "center right background",
+      "alternatives": [],
+      "kind": "feature",
+      "pass": 1,
+      "role": "Satellite first opinion",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "family": "Qwen",
+      "input_assets": [
+        "nasa-earthrise"
+      ],
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "MISC"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      }
+    }
+  ],
+  "adjudication": null,
+  "assets": [
+    {
+      "id": "nasa-earthrise",
+      "sha256": "28abd6a32f8d3a0f848072e32c7a1c268e4fe21e68d81ce5b49e74586f1dea22",
+      "modality": "MISC",
+      "provenance": "observed"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "nasa-earthrise",
+      "width": 1280,
+      "height": 1280,
+      "sha256": "28abd6a32f8d3a0f848072e32c7a1c268e4fe21e68d81ce5b49e74586f1dea22",
+      "modality": "MISC",
+      "provenance": "observed",
+      "analysis_grid": [
+        1024,
+        1024
+      ],
+      "mean_display_intensity": 29.23,
+      "display_stddev": 56.31,
+      "entropy_bits": 2.299,
+      "black_fraction": 0.7724,
+      "white_fraction": 0,
+      "horizontal_gradient": 1.239,
+      "vertical_gradient": 1.69,
+      "radiometric": false,
+      "polarity": "unknown"
+    }
+  ],
+  "derived_views": [],
+  "limits": [
+    "Display intensity is not temperature or reflectance. Quality metrics describe the rendered image; no semantic cloud mask is inferred.",
+    "All roles used one model. This is a structured review, not an independent expert ensemble.",
+    "Captioning lead is a general VLM. Any scene-ranking specialist supplies limited hypotheses, not validated full captions."
+  ],
+  "passes": [
+    {
+      "role": "Satellite first opinion",
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "profile": "qwen35",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+      "adapter": null,
+      "family": "Qwen",
+      "independent_observation": true,
+      "scope": {
+        "trained_domains": [
+          "general multimodal understanding"
+        ],
+        "validated_domains": [],
+        "input_modalities": [
+          "MISC"
+        ],
+        "allowed_domains": null,
+        "specialist_claim": false,
+        "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+      },
+      "inference": {
+        "temperature": 0.7,
+        "sampling": {
+          "top_p": 0.8,
+          "top_k": 20,
+          "min_p": 0,
+          "presence_penalty": 1.5,
+          "repeat_penalty": 1,
+          "seed": 42
+        },
+        "thinking": false,
+        "image_min_tokens": 1024,
+        "image_max_tokens": 1024,
+        "context": 12288,
+        "cpu_experts": false,
+        "gpu_layers": 99,
+        "projector_cpu": false
+      },
+      "adjudication": null,
+      "input_assets": [
+        "nasa-earthrise"
+      ],
+      "status": "complete",
+      "opinion": {
+        "scene": "A cratered lunar surface rises in the foreground against black space, with a spherical Earth visible above the horizon line.",
+        "findings": [
+          {
+            "claim": "cratered lunar terrain",
+            "confidence": "CLEAR",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "nasa-earthrise"
+            ],
+            "region": "bottom foreground",
+            "alternatives": []
+          },
+          {
+            "claim": "spherical Earth with cloud cover",
+            "confidence": "CLEAR",
+            "basis": "visual-interpretation",
+            "evidence": [
+              "nasa-earthrise"
+            ],
+            "region": "center right background",
+            "alternatives": []
+          }
+        ],
+        "limits": [
+          "sensor modality and resolution unknown"
+        ],
+        "next": "verify source metadata for mission details",
+        "warnings": [],
+        "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+      },
+      "seconds": 15.16,
+      "usage": {
+        "completion_tokens": 124,
+        "prompt_tokens": 2226,
+        "total_tokens": 2350,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ],
+  "final": {
+    "scene": "A cratered lunar surface rises in the foreground against black space, with a spherical Earth visible above the horizon line.",
+    "findings": [
+      {
+        "claim": "cratered lunar terrain",
+        "confidence": "CLEAR",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "nasa-earthrise"
+        ],
+        "region": "bottom foreground",
+        "alternatives": []
+      },
+      {
+        "claim": "spherical Earth with cloud cover",
+        "confidence": "CLEAR",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "nasa-earthrise"
+        ],
+        "region": "center right background",
+        "alternatives": []
+      }
+    ],
+    "limits": [
+      "sensor modality and resolution unknown"
+    ],
+    "next": "verify source metadata for mission details",
+    "warnings": [],
+    "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+  },
+  "seconds": 15.22,
+  "models_used": [
+    {
+      "model": "Qwen3.5-9B-Q4_K_M",
+      "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+      "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+      "adapter": null,
+      "family": "Qwen",
+      "roles": [
+        "Satellite first opinion"
+      ],
+      "assets": [
+        "nasa-earthrise"
+      ],
+      "completed": 1,
+      "failed": 0,
+      "seconds": 15.16
+    }
+  ],
+  "evaluation": {
+    "reference_class": null,
+    "class_literal_mention": null,
+    "caption_token_f1": null,
+    "claim_count": 2,
+    "guardrail_warnings": 0,
+    "seconds": 15.22,
+    "metric_note": "Token F1 and literal class mention are diagnostics, not factual accuracy. Ground truth was withheld from all inference prompts.",
+    "human_review": {
+      "unsupported_claims": null,
+      "important_misses": null,
+      "spatial_errors": null,
+      "thermal_errors": null,
+      "usefulness_1_to_5": null
+    }
+  },
+  "example_record": {
+    "kind": "Recorded desktop verification output",
+    "source": "Bird Eye 1.0.0",
+    "note": "Actual local Qwen3.5 output on the public NASA photograph; no manual caption edit."
+  }
+}

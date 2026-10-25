@@ -1,0 +1,4543 @@
+{
+  "version": 1,
+  "created": "2026-10-24T20:26:24.573Z",
+  "purpose": "Cited engineering examples. Selected samples, not an independent accuracy benchmark.",
+  "scenes": [
+    {
+      "id": "landsat-000",
+      "title": "Phoenix · Landsat RGB + thermal",
+      "dataset": "Landsat C2",
+      "group": "LC09_L2SP_037037_20240912_02_T1-Phoenix",
+      "split": "engineering-holdout",
+      "assets": [
+        {
+          "id": "landsat-000-rgb",
+          "path": "landsat-000-rgb.png",
+          "modality": "RGB",
+          "sha256": "448d5e5ec71650aca2873f96a1669051490405026599fd85e595167a75a3fecc",
+          "width": 256,
+          "height": 256,
+          "provenance": "observed",
+          "radiometric": false,
+          "gsd_m": 30,
+          "acquired": "2024-09-12T18:03:50.350264Z",
+          "derived": true
+        },
+        {
+          "id": "landsat-000-tir",
+          "path": "landsat-000-tir.png",
+          "modality": "TIR",
+          "sha256": "19cd465d4435fbfc843770bfb7cef69e1be5ec94151b8eb949172d5d20811ee0",
+          "width": 256,
+          "height": 256,
+          "provenance": "observed",
+          "radiometric": true,
+          "gsd_m": 30,
+          "effective_resolution_m": 100,
+          "acquired": "2024-09-12T18:03:50.350264Z",
+          "polarity": "white-hot",
+          "radiometry_path": "landsat-000-radiometry.json",
+          "display_range_c": [
+            42.864711260000036,
+            54.297988160000045
+          ],
+          "derived": true
+        }
+      ],
+      "tags": [
+        "satellite",
+        "paired",
+        "radiometric",
+        "30m-grid"
+      ],
+      "alignment": "Same scene and common grid; independent registration accuracy not measured",
+      "source": {
+        "url": "https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2",
+        "item": "LC09_L2SP_037037_20240912_02_T1",
+        "center": [
+          -112.08,
+          33.45
+        ],
+        "date": "2024-09-12T18:03:50.350264Z"
+      },
+      "reference": {
+        "caption_status": "No human scene-caption ground truth; thermal statistics are deterministic product-derived values"
+      },
+      "license": "USGS Landsat data: public domain; preserve source attribution"
+    },
+    {
+      "id": "eurosat-000",
+      "title": "Sentinel-2 land cover 1",
+      "dataset": "EuroSAT",
+      "group": "Industrial_102",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-000",
+          "path": "eurosat-000.png",
+          "modality": "RGB",
+          "sha256": "9c8fa194cf1261f6e7beaf5c1206827c2bc536015c1e51840eda395ff134e2f5",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "Industrial"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 0,
+        "original_id": "Industrial_102"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-001",
+      "title": "Sentinel-2 land cover 2",
+      "dataset": "EuroSAT",
+      "group": "Highway_117",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-001",
+          "path": "eurosat-001.png",
+          "modality": "RGB",
+          "sha256": "1b76a70bcea4191dd939eac53d145af2de1f9ea314102cb1449de62ede6734bb",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "Highway"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 1,
+        "original_id": "Highway_117"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-002",
+      "title": "Sentinel-2 land cover 3",
+      "dataset": "EuroSAT",
+      "group": "Industrial_2024",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-002",
+          "path": "eurosat-002.png",
+          "modality": "RGB",
+          "sha256": "5e51f7848d67947e0f21e6da4c2252d8589d75775e9ae9346fd9716de0761270",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "Industrial"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 2,
+        "original_id": "Industrial_2024"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-003",
+      "title": "Sentinel-2 land cover 4",
+      "dataset": "EuroSAT",
+      "group": "Residential_1311",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-003",
+          "path": "eurosat-003.png",
+          "modality": "RGB",
+          "sha256": "8fcd19b546f0b751e98e129ce6c033144ace38669a22ab475da3351c41aadeba",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "Residential"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 3,
+        "original_id": "Residential_1311"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-004",
+      "title": "Sentinel-2 land cover 5",
+      "dataset": "EuroSAT",
+      "group": "HerbaceousVegetation_1607",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-004",
+          "path": "eurosat-004.png",
+          "modality": "RGB",
+          "sha256": "c79702c9729c4bcc02e3203fcb3a5e5c4268e85f816c457315e3197086aa8c57",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "HerbaceousVegetation"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 4,
+        "original_id": "HerbaceousVegetation_1607"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-005",
+      "title": "Sentinel-2 land cover 6",
+      "dataset": "EuroSAT",
+      "group": "Industrial_365",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-005",
+          "path": "eurosat-005.png",
+          "modality": "RGB",
+          "sha256": "d0c5681f7a538bb87998fa54e349802a3201c04e2b3fcb0a636c302d35fdcdea",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "Industrial"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 5,
+        "original_id": "Industrial_365"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-006",
+      "title": "Sentinel-2 land cover 7",
+      "dataset": "EuroSAT",
+      "group": "SeaLake_734",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-006",
+          "path": "eurosat-006.png",
+          "modality": "RGB",
+          "sha256": "eaf973a2c86693c9e38f7869e83b182f14210600466f10930f8011a3537d7b94",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "SeaLake"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 6,
+        "original_id": "SeaLake_734"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-007",
+      "title": "Sentinel-2 land cover 8",
+      "dataset": "EuroSAT",
+      "group": "SeaLake_367",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-007",
+          "path": "eurosat-007.png",
+          "modality": "RGB",
+          "sha256": "8d72d38298b3e450c69b36f35b9811b313f60222c47c9fff4f35db97be06e8cc",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "SeaLake"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 8,
+        "original_id": "SeaLake_367"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-008",
+      "title": "Sentinel-2 land cover 9",
+      "dataset": "EuroSAT",
+      "group": "AnnualCrop_1429",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-008",
+          "path": "eurosat-008.png",
+          "modality": "RGB",
+          "sha256": "459556e9bf4565c7dfe2b51bdd7cd0127ad104e720ba233bb32b8932523ab829",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "AnnualCrop"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 9,
+        "original_id": "AnnualCrop_1429"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-009",
+      "title": "Sentinel-2 land cover 10",
+      "dataset": "EuroSAT",
+      "group": "Highway_1758",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-009",
+          "path": "eurosat-009.png",
+          "modality": "RGB",
+          "sha256": "1a05344b0534cda20e705f4731a14e999b2f4b10468f38f43a173f70ee89743d",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "Highway"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 10,
+        "original_id": "Highway_1758"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-010",
+      "title": "Sentinel-2 land cover 11",
+      "dataset": "EuroSAT",
+      "group": "River_537",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-010",
+          "path": "eurosat-010.png",
+          "modality": "RGB",
+          "sha256": "3520ad0f189b1c5231570c7d6ee3a9aeb384f52b82a471561815de9d7aa66b64",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "River"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 11,
+        "original_id": "River_537"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-011",
+      "title": "Sentinel-2 land cover 12",
+      "dataset": "EuroSAT",
+      "group": "HerbaceousVegetation_1630",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-011",
+          "path": "eurosat-011.png",
+          "modality": "RGB",
+          "sha256": "250d97014d06ceb9df7d855a31e418488f11f0f0bac37213cb43c4f4bafbd4ad",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "HerbaceousVegetation"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 12,
+        "original_id": "HerbaceousVegetation_1630"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-012",
+      "title": "Sentinel-2 land cover 13",
+      "dataset": "EuroSAT",
+      "group": "SeaLake_2662",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-012",
+          "path": "eurosat-012.png",
+          "modality": "RGB",
+          "sha256": "458bb4d606ef8f9d8ae6a96e5c7f21f1e0b8960ddc61c340926b5143475106be",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "SeaLake"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 13,
+        "original_id": "SeaLake_2662"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-013",
+      "title": "Sentinel-2 land cover 14",
+      "dataset": "EuroSAT",
+      "group": "Forest_679",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-013",
+          "path": "eurosat-013.png",
+          "modality": "RGB",
+          "sha256": "adafb742d1f0ce43b3e22537c21d18ffaf9869b7a890b420666220ca61cf53ae",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "Forest"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 14,
+        "original_id": "Forest_679"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-014",
+      "title": "Sentinel-2 land cover 15",
+      "dataset": "EuroSAT",
+      "group": "Residential_931",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-014",
+          "path": "eurosat-014.png",
+          "modality": "RGB",
+          "sha256": "34ed9be7cf1f1726c02611189722bb2eb96bca3ae3342f09a8b0ef3d99d42bf5",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "Residential"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 15,
+        "original_id": "Residential_931"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-015",
+      "title": "Sentinel-2 land cover 16",
+      "dataset": "EuroSAT",
+      "group": "Pasture_1314",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-015",
+          "path": "eurosat-015.png",
+          "modality": "RGB",
+          "sha256": "14ba64df20a53a6ae6825c9de10bae405a85950e558f8f46060c70a90d3d2409",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "Pasture"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 16,
+        "original_id": "Pasture_1314"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-016",
+      "title": "Sentinel-2 land cover 17",
+      "dataset": "EuroSAT",
+      "group": "River_1004",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-016",
+          "path": "eurosat-016.png",
+          "modality": "RGB",
+          "sha256": "2095a87cd28685ac807c83dd258e6b3f4e78f60ed25361e0f537275d254ac92b",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "River"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 17,
+        "original_id": "River_1004"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-017",
+      "title": "Sentinel-2 land cover 18",
+      "dataset": "EuroSAT",
+      "group": "PermanentCrop_1417",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-017",
+          "path": "eurosat-017.png",
+          "modality": "RGB",
+          "sha256": "d2eafda1eb441c117edfb4655afe2c7ec3a5b4672b753cd7edc8ce888a79e0d0",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "PermanentCrop"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 19,
+        "original_id": "PermanentCrop_1417"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-018",
+      "title": "Sentinel-2 land cover 19",
+      "dataset": "EuroSAT",
+      "group": "Forest_1837",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-018",
+          "path": "eurosat-018.png",
+          "modality": "RGB",
+          "sha256": "b8b3a6056fac096c4c365e48ae67edffa49e8aaa1aa588d68ecd85f1d1a051f2",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "Forest"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 20,
+        "original_id": "Forest_1837"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-019",
+      "title": "Sentinel-2 land cover 20",
+      "dataset": "EuroSAT",
+      "group": "Residential_1169",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-019",
+          "path": "eurosat-019.png",
+          "modality": "RGB",
+          "sha256": "8c2c163d1b55bbc161f83e44dd027ac3d3d0c5e66b35be458a1f7499aefac2c5",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "Residential"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 21,
+        "original_id": "Residential_1169"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-020",
+      "title": "Sentinel-2 land cover 21",
+      "dataset": "EuroSAT",
+      "group": "PermanentCrop_1519",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-020",
+          "path": "eurosat-020.png",
+          "modality": "RGB",
+          "sha256": "1bc6e72a4b4bb3f2d55c993d90058513a6760e5985e6277c90bba5591eebbbac",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "PermanentCrop"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 23,
+        "original_id": "PermanentCrop_1519"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-021",
+      "title": "Sentinel-2 land cover 22",
+      "dataset": "EuroSAT",
+      "group": "Forest_830",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-021",
+          "path": "eurosat-021.png",
+          "modality": "RGB",
+          "sha256": "3073ba811e57324d89a4a1a03f8625301bbbf038fab2be822ca17ef520ae25ff",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "Forest"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 24,
+        "original_id": "Forest_830"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-022",
+      "title": "Sentinel-2 land cover 23",
+      "dataset": "EuroSAT",
+      "group": "Pasture_59",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-022",
+          "path": "eurosat-022.png",
+          "modality": "RGB",
+          "sha256": "62b07d631b2ef36b2eb2d69e85aecb329944c9d011f9adf6da185c3f99bb98e2",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "Pasture"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 28,
+        "original_id": "Pasture_59"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-023",
+      "title": "Sentinel-2 land cover 24",
+      "dataset": "EuroSAT",
+      "group": "HerbaceousVegetation_379",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-023",
+          "path": "eurosat-023.png",
+          "modality": "RGB",
+          "sha256": "8239642b49802e35b79e04ec233b13c570f571c243c5b64c011c812cf94f3e57",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "HerbaceousVegetation"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 30,
+        "original_id": "HerbaceousVegetation_379"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-024",
+      "title": "Sentinel-2 land cover 25",
+      "dataset": "EuroSAT",
+      "group": "River_774",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-024",
+          "path": "eurosat-024.png",
+          "modality": "RGB",
+          "sha256": "fa88ed8bf29f720494312f4d1d43812cd7ba527f83cc6b9b53948a99e4578833",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "River"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 31,
+        "original_id": "River_774"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-025",
+      "title": "Sentinel-2 land cover 26",
+      "dataset": "EuroSAT",
+      "group": "AnnualCrop_647",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-025",
+          "path": "eurosat-025.png",
+          "modality": "RGB",
+          "sha256": "29d27eb29c333f664061a6faebe1d6b7f01523ef13a22d5215789c8caf70bcca",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "AnnualCrop"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 34,
+        "original_id": "AnnualCrop_647"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-026",
+      "title": "Sentinel-2 land cover 27",
+      "dataset": "EuroSAT",
+      "group": "Pasture_930",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-026",
+          "path": "eurosat-026.png",
+          "modality": "RGB",
+          "sha256": "700ffa2f81ab10a37b9dfb6905ce90cfd82569029d5f4d2e372577873192bf1e",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "Pasture"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 38,
+        "original_id": "Pasture_930"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-027",
+      "title": "Sentinel-2 land cover 28",
+      "dataset": "EuroSAT",
+      "group": "Highway_934",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-027",
+          "path": "eurosat-027.png",
+          "modality": "RGB",
+          "sha256": "9906686652e7bce7a756e395620d9ff87248efdf49179bf620d4065005d1beff",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "Highway"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 40,
+        "original_id": "Highway_934"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-028",
+      "title": "Sentinel-2 land cover 29",
+      "dataset": "EuroSAT",
+      "group": "PermanentCrop_1790",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-028",
+          "path": "eurosat-028.png",
+          "modality": "RGB",
+          "sha256": "c8a568b44a1ecf8b4936c54e86ac0543d167a1a5dd066f8199614066bfaf99e6",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "PermanentCrop"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 43,
+        "original_id": "PermanentCrop_1790"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "eurosat-029",
+      "title": "Sentinel-2 land cover 30",
+      "dataset": "EuroSAT",
+      "group": "AnnualCrop_841",
+      "split": "test",
+      "assets": [
+        {
+          "id": "eurosat-029",
+          "path": "eurosat-029.png",
+          "modality": "RGB",
+          "sha256": "da653c2f0580f8780e4ec55e9636edd936566762649004b6d4f0cc24a2710d3d",
+          "width": 64,
+          "height": 64,
+          "provenance": "observed",
+          "radiometric": false
+        }
+      ],
+      "tags": [
+        "satellite",
+        "land-cover",
+        "64px"
+      ],
+      "reference": {
+        "class": "AnnualCrop"
+      },
+      "source": {
+        "url": "https://huggingface.co/datasets/timm/eurosat-rgb",
+        "revision": "b4e28552cd5f3932b6abc37eb20d3e84901ad728",
+        "row": 47,
+        "original_id": "AnnualCrop_841"
+      },
+      "license": "MIT (mirror; preserve original EuroSAT citation)"
+    },
+    {
+      "id": "hituav-000",
+      "title": "Aerial thermal scene 1",
+      "dataset": "HIT-UAV",
+      "group": "0_120_50_0_05408.jpg",
+      "split": "test",
+      "assets": [
+        {
+          "id": "hituav-000",
+          "path": "hituav-000.png",
+          "modality": "TIR",
+          "sha256": "b36b9570f1b03ea9ea002ead8ad603760b56ae739a87fce5754935b53b850022",
+          "width": 640,
+          "height": 512,
+          "provenance": "observed",
+          "radiometric": false,
+          "polarity": "unknown",
+          "sensor": "UAV thermal camera"
+        }
+      ],
+      "tags": [
+        "aerial",
+        "thermal",
+        "day"
+      ],
+      "reference": {
+        "objects": [
+          {
+            "category": "Car",
+            "bbox": [
+              164,
+              10,
+              41,
+              40
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              261,
+              66,
+              42,
+              40
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              198,
+              8,
+              39,
+              40
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              234,
+              0,
+              74,
+              73
+            ]
+          }
+        ]
+      },
+      "source": {
+        "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+        "revision": "669259659b21a2737ca9f5e4bc81892acbe6ecd8",
+        "original_id": "0_120_50_0_05408.jpg",
+        "altitude_m": 120,
+        "camera_angle_deg": 50
+      },
+      "license": "CC-BY-4.0 (current upstream repository; attribution retained)"
+    },
+    {
+      "id": "hituav-001",
+      "title": "Aerial thermal scene 2",
+      "dataset": "HIT-UAV",
+      "group": "1_90_30_0_01370.jpg",
+      "split": "test",
+      "assets": [
+        {
+          "id": "hituav-001",
+          "path": "hituav-001.png",
+          "modality": "TIR",
+          "sha256": "29d4ec9b659ce3f9393e6e1dc9e1be902e6cdcfd79a0afbc89e3ade99e04785a",
+          "width": 640,
+          "height": 512,
+          "provenance": "observed",
+          "radiometric": false,
+          "polarity": "unknown",
+          "sensor": "UAV thermal camera"
+        }
+      ],
+      "tags": [
+        "aerial",
+        "thermal",
+        "night"
+      ],
+      "reference": {
+        "objects": [
+          {
+            "category": "Person",
+            "bbox": [
+              218,
+              124,
+              9,
+              18
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              235,
+              129,
+              8,
+              15
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              242,
+              115,
+              6,
+              14
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              246,
+              119,
+              6,
+              13
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              255,
+              138,
+              7,
+              12
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              257,
+              123,
+              10,
+              18
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              287,
+              199,
+              9,
+              20
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              305,
+              203,
+              8,
+              13
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              300,
+              222,
+              9,
+              13
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              298,
+              205,
+              7,
+              12
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              220,
+              194,
+              9,
+              14
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              202,
+              218,
+              11,
+              16
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              468,
+              237,
+              10,
+              14
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              455,
+              239,
+              10,
+              15
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              196,
+              387,
+              9,
+              17
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              375,
+              498,
+              12,
+              13
+            ]
+          }
+        ]
+      },
+      "source": {
+        "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+        "revision": "669259659b21a2737ca9f5e4bc81892acbe6ecd8",
+        "original_id": "1_90_30_0_01370.jpg",
+        "altitude_m": 90,
+        "camera_angle_deg": 30
+      },
+      "license": "CC-BY-4.0 (current upstream repository; attribution retained)"
+    },
+    {
+      "id": "hituav-002",
+      "title": "Aerial thermal scene 3",
+      "dataset": "HIT-UAV",
+      "group": "0_80_70_0_07057.jpg",
+      "split": "test",
+      "assets": [
+        {
+          "id": "hituav-002",
+          "path": "hituav-002.png",
+          "modality": "TIR",
+          "sha256": "041f61c12454d67be53ba7922284be8b5776b1f255057b5231674bb4cbdc7319",
+          "width": 640,
+          "height": 512,
+          "provenance": "observed",
+          "radiometric": false,
+          "polarity": "unknown",
+          "sensor": "UAV thermal camera"
+        }
+      ],
+      "tags": [
+        "aerial",
+        "thermal",
+        "day"
+      ],
+      "reference": {
+        "objects": [
+          {
+            "category": "Car",
+            "bbox": [
+              281,
+              413,
+              119,
+              55
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              318,
+              169,
+              21,
+              44
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              342,
+              172,
+              17,
+              35
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              371,
+              175,
+              17,
+              33
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              396,
+              180,
+              24,
+              34
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              536,
+              184,
+              18,
+              30
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              482,
+              188,
+              31,
+              33
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              574,
+              226,
+              21,
+              30
+            ]
+          }
+        ]
+      },
+      "source": {
+        "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+        "revision": "669259659b21a2737ca9f5e4bc81892acbe6ecd8",
+        "original_id": "0_80_70_0_07057.jpg",
+        "altitude_m": 80,
+        "camera_angle_deg": 70
+      },
+      "license": "CC-BY-4.0 (current upstream repository; attribution retained)"
+    },
+    {
+      "id": "hituav-003",
+      "title": "Aerial thermal scene 4",
+      "dataset": "HIT-UAV",
+      "group": "1_130_50_0_03928.jpg",
+      "split": "test",
+      "assets": [
+        {
+          "id": "hituav-003",
+          "path": "hituav-003.png",
+          "modality": "TIR",
+          "sha256": "1f09f6b1eb3b6b9e7eb4d773990b4113056664c83fd55b05962b72f4513e3986",
+          "width": 640,
+          "height": 512,
+          "provenance": "observed",
+          "radiometric": false,
+          "polarity": "unknown",
+          "sensor": "UAV thermal camera"
+        }
+      ],
+      "tags": [
+        "aerial",
+        "thermal",
+        "night"
+      ],
+      "reference": {
+        "objects": [
+          {
+            "category": "Person",
+            "bbox": [
+              233,
+              73,
+              11,
+              15
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              285,
+              62,
+              8,
+              15
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              290,
+              71,
+              8,
+              15
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              255,
+              79,
+              9,
+              16
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              264,
+              91,
+              8,
+              17
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              250,
+              95,
+              7,
+              16
+            ]
+          }
+        ]
+      },
+      "source": {
+        "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+        "revision": "669259659b21a2737ca9f5e4bc81892acbe6ecd8",
+        "original_id": "1_130_50_0_03928.jpg",
+        "altitude_m": 130,
+        "camera_angle_deg": 50
+      },
+      "license": "CC-BY-4.0 (current upstream repository; attribution retained)"
+    },
+    {
+      "id": "hituav-004",
+      "title": "Aerial thermal scene 5",
+      "dataset": "HIT-UAV",
+      "group": "1_110_30_0_02542.jpg",
+      "split": "test",
+      "assets": [
+        {
+          "id": "hituav-004",
+          "path": "hituav-004.png",
+          "modality": "TIR",
+          "sha256": "619e106e312bfd1e48efbde8b026ae92ee6b9e99be790981ccc32527bb4b22f9",
+          "width": 640,
+          "height": 512,
+          "provenance": "observed",
+          "radiometric": false,
+          "polarity": "unknown",
+          "sensor": "UAV thermal camera"
+        }
+      ],
+      "tags": [
+        "aerial",
+        "thermal",
+        "night"
+      ],
+      "reference": {
+        "objects": [
+          {
+            "category": "Person",
+            "bbox": [
+              289,
+              114,
+              8,
+              16
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              304,
+              109,
+              9,
+              15
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              298,
+              121,
+              8,
+              13
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              322,
+              109,
+              8,
+              16
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              315,
+              119,
+              7,
+              13
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              344,
+              110,
+              9,
+              15
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              334,
+              128,
+              8,
+              10
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              311,
+              130,
+              7,
+              11
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              352,
+              119,
+              10,
+              13
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              348,
+              134,
+              7,
+              14
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              366,
+              129,
+              8,
+              14
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              336,
+              179,
+              10,
+              16
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              328,
+              170,
+              10,
+              16
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              353,
+              174,
+              7,
+              11
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              397,
+              188,
+              7,
+              18
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              574,
+              179,
+              8,
+              13
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              562,
+              178,
+              11,
+              10
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              159,
+              294,
+              8,
+              16
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              176,
+              313,
+              9,
+              17
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              280,
+              304,
+              9,
+              17
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              295,
+              294,
+              8,
+              15
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              305,
+              300,
+              7,
+              17
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              316,
+              309,
+              9,
+              16
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              322,
+              299,
+              14,
+              15
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              587,
+              382,
+              9,
+              16
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              577,
+              406,
+              10,
+              17
+            ]
+          }
+        ]
+      },
+      "source": {
+        "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+        "revision": "669259659b21a2737ca9f5e4bc81892acbe6ecd8",
+        "original_id": "1_110_30_0_02542.jpg",
+        "altitude_m": 110,
+        "camera_angle_deg": 30
+      },
+      "license": "CC-BY-4.0 (current upstream repository; attribution retained)"
+    },
+    {
+      "id": "hituav-005",
+      "title": "Aerial thermal scene 6",
+      "dataset": "HIT-UAV",
+      "group": "1_60_90_0_07553.jpg",
+      "split": "test",
+      "assets": [
+        {
+          "id": "hituav-005",
+          "path": "hituav-005.png",
+          "modality": "TIR",
+          "sha256": "625e43f144c5691b0ab6df1cddb4a7da60ffb8e5d063919542eafb6c82f2ea1b",
+          "width": 640,
+          "height": 512,
+          "provenance": "observed",
+          "radiometric": false,
+          "polarity": "unknown",
+          "sensor": "UAV thermal camera"
+        }
+      ],
+      "tags": [
+        "aerial",
+        "thermal",
+        "night"
+      ],
+      "reference": {
+        "objects": [
+          {
+            "category": "Bicycle",
+            "bbox": [
+              76,
+              0,
+              40,
+              44
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              93,
+              8,
+              50,
+              55
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              113,
+              15,
+              61,
+              68
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              137,
+              41,
+              44,
+              65
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              165,
+              38,
+              29,
+              58
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              262,
+              7,
+              61,
+              68
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              248,
+              0,
+              40,
+              52
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              176,
+              46,
+              46,
+              56
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              198,
+              48,
+              54,
+              67
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              226,
+              58,
+              59,
+              74
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              244,
+              83,
+              57,
+              69
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              264,
+              96,
+              64,
+              79
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              348,
+              3,
+              31,
+              44
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              363,
+              11,
+              45,
+              61
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              404,
+              36,
+              60,
+              64
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              483,
+              59,
+              60,
+              67
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              504,
+              69,
+              56,
+              65
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              523,
+              92,
+              48,
+              61
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              353,
+              84,
+              57,
+              64
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              389,
+              94,
+              66,
+              75
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              318,
+              149,
+              65,
+              75
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              352,
+              166,
+              53,
+              63
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              386,
+              178,
+              47,
+              58
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              417,
+              181,
+              37,
+              64
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              291,
+              216,
+              67,
+              57
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              354,
+              233,
+              60,
+              73
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              401,
+              259,
+              61,
+              73
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              300,
+              276,
+              38,
+              60
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              429,
+              347,
+              25,
+              63
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              473,
+              366,
+              38,
+              63
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              513,
+              413,
+              66,
+              69
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              588,
+              469,
+              37,
+              42
+            ]
+          }
+        ]
+      },
+      "source": {
+        "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+        "revision": "669259659b21a2737ca9f5e4bc81892acbe6ecd8",
+        "original_id": "1_60_90_0_07553.jpg",
+        "altitude_m": 60,
+        "camera_angle_deg": 90
+      },
+      "license": "CC-BY-4.0 (current upstream repository; attribution retained)"
+    },
+    {
+      "id": "hituav-006",
+      "title": "Aerial thermal scene 7",
+      "dataset": "HIT-UAV",
+      "group": "1_60_30_0_00007.jpg",
+      "split": "test",
+      "assets": [
+        {
+          "id": "hituav-006",
+          "path": "hituav-006.png",
+          "modality": "TIR",
+          "sha256": "724b9d83ef7d3eeb3c18d0e75628d8e1ff1015cc5553a604acbe9951e11bdf93",
+          "width": 640,
+          "height": 512,
+          "provenance": "observed",
+          "radiometric": false,
+          "polarity": "unknown",
+          "sensor": "UAV thermal camera"
+        }
+      ],
+      "tags": [
+        "aerial",
+        "thermal",
+        "night"
+      ],
+      "reference": {
+        "objects": [
+          {
+            "category": "Person",
+            "bbox": [
+              62,
+              83,
+              8,
+              14
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              164,
+              86,
+              10,
+              16
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              74,
+              131,
+              11,
+              17
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              213,
+              142,
+              10,
+              18
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              225,
+              154,
+              9,
+              20
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              226,
+              62,
+              8,
+              17
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              282,
+              176,
+              9,
+              18
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              291,
+              175,
+              9,
+              18
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              338,
+              475,
+              10,
+              24
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              437,
+              446,
+              9,
+              19
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              464,
+              451,
+              14,
+              24
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              461,
+              383,
+              9,
+              18
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              517,
+              400,
+              6,
+              21
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              523,
+              401,
+              7,
+              20
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              529,
+              399,
+              8,
+              21
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              361,
+              299,
+              8,
+              17
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              352,
+              297,
+              8,
+              19
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              421,
+              219,
+              10,
+              21
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              388,
+              208,
+              8,
+              16
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              391,
+              194,
+              9,
+              19
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              328,
+              204,
+              7,
+              15
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              593,
+              74,
+              10,
+              22
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              523,
+              13,
+              8,
+              19
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              430,
+              84,
+              13,
+              22
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              509,
+              12,
+              7,
+              17
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              502,
+              14,
+              6,
+              17
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              620,
+              0,
+              8,
+              7
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              494,
+              268,
+              13,
+              18
+            ]
+          },
+          {
+            "category": "DontCare",
+            "bbox": [
+              396,
+              37,
+              46,
+              44
+            ]
+          }
+        ]
+      },
+      "source": {
+        "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+        "revision": "669259659b21a2737ca9f5e4bc81892acbe6ecd8",
+        "original_id": "1_60_30_0_00007.jpg",
+        "altitude_m": 60,
+        "camera_angle_deg": 30
+      },
+      "license": "CC-BY-4.0 (current upstream repository; attribution retained)"
+    },
+    {
+      "id": "hituav-007",
+      "title": "Aerial thermal scene 8",
+      "dataset": "HIT-UAV",
+      "group": "1_130_70_0_10108.jpg",
+      "split": "test",
+      "assets": [
+        {
+          "id": "hituav-007",
+          "path": "hituav-007.png",
+          "modality": "TIR",
+          "sha256": "ea0896e14e5f45a8894ad984dcd9c5d97e9378c9b331b7818d294afa1716ed24",
+          "width": 640,
+          "height": 512,
+          "provenance": "observed",
+          "radiometric": false,
+          "polarity": "unknown",
+          "sensor": "UAV thermal camera"
+        }
+      ],
+      "tags": [
+        "aerial",
+        "thermal",
+        "night"
+      ],
+      "reference": {
+        "objects": [
+          {
+            "category": "Person",
+            "bbox": [
+              393,
+              8,
+              7,
+              15
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              414,
+              34,
+              10,
+              20
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              565,
+              83,
+              38,
+              67
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              466,
+              4,
+              8,
+              17
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              458,
+              2,
+              8,
+              16
+            ]
+          }
+        ]
+      },
+      "source": {
+        "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+        "revision": "669259659b21a2737ca9f5e4bc81892acbe6ecd8",
+        "original_id": "1_130_70_0_10108.jpg",
+        "altitude_m": 130,
+        "camera_angle_deg": 70
+      },
+      "license": "CC-BY-4.0 (current upstream repository; attribution retained)"
+    },
+    {
+      "id": "hituav-008",
+      "title": "Aerial thermal scene 9",
+      "dataset": "HIT-UAV",
+      "group": "1_60_70_0_04228.jpg",
+      "split": "test",
+      "assets": [
+        {
+          "id": "hituav-008",
+          "path": "hituav-008.png",
+          "modality": "TIR",
+          "sha256": "90a442cf3825d1e42223fd101aec738ddf7998b342fbbe450cc30377907d7fc5",
+          "width": 640,
+          "height": 512,
+          "provenance": "observed",
+          "radiometric": false,
+          "polarity": "unknown",
+          "sensor": "UAV thermal camera"
+        }
+      ],
+      "tags": [
+        "aerial",
+        "thermal",
+        "night"
+      ],
+      "reference": {
+        "objects": [
+          {
+            "category": "Car",
+            "bbox": [
+              0,
+              173,
+              26,
+              98
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              16,
+              153,
+              73,
+              111
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              72,
+              142,
+              63,
+              100
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              113,
+              130,
+              70,
+              103
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              169,
+              114,
+              64,
+              106
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              214,
+              97,
+              65,
+              104
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              294,
+              75,
+              66,
+              101
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              342,
+              58,
+              66,
+              101
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              387,
+              48,
+              63,
+              97
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              427,
+              35,
+              71,
+              104
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              470,
+              25,
+              72,
+              102
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              516,
+              7,
+              70,
+              99
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              566,
+              1,
+              68,
+              101
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              617,
+              0,
+              22,
+              69
+            ]
+          }
+        ]
+      },
+      "source": {
+        "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+        "revision": "669259659b21a2737ca9f5e4bc81892acbe6ecd8",
+        "original_id": "1_60_70_0_04228.jpg",
+        "altitude_m": 60,
+        "camera_angle_deg": 70
+      },
+      "license": "CC-BY-4.0 (current upstream repository; attribution retained)"
+    },
+    {
+      "id": "hituav-009",
+      "title": "Aerial thermal scene 10",
+      "dataset": "HIT-UAV",
+      "group": "0_70_30_0_01863.jpg",
+      "split": "test",
+      "assets": [
+        {
+          "id": "hituav-009",
+          "path": "hituav-009.png",
+          "modality": "TIR",
+          "sha256": "4b64ed693e18fea032979d062a2b7f828a56f7e52ad22625e0d75ac3e4aa9864",
+          "width": 640,
+          "height": 512,
+          "provenance": "observed",
+          "radiometric": false,
+          "polarity": "unknown",
+          "sensor": "UAV thermal camera"
+        }
+      ],
+      "tags": [
+        "aerial",
+        "thermal",
+        "day"
+      ],
+      "reference": {
+        "objects": [
+          {
+            "category": "Person",
+            "bbox": [
+              119,
+              165,
+              16,
+              20
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              145,
+              280,
+              13,
+              19
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              163,
+              277,
+              12,
+              19
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              202,
+              260,
+              12,
+              18
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              218,
+              262,
+              18,
+              23
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              232,
+              286,
+              9,
+              15
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              249,
+              282,
+              12,
+              25
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              262,
+              310,
+              11,
+              18
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              364,
+              220,
+              13,
+              19
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              372,
+              210,
+              12,
+              21
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              611,
+              88,
+              10,
+              13
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              360,
+              197,
+              10,
+              13
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              395,
+              233,
+              11,
+              15
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              384,
+              208,
+              8,
+              11
+            ]
+          }
+        ]
+      },
+      "source": {
+        "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+        "revision": "669259659b21a2737ca9f5e4bc81892acbe6ecd8",
+        "original_id": "0_70_30_0_01863.jpg",
+        "altitude_m": 70,
+        "camera_angle_deg": 30
+      },
+      "license": "CC-BY-4.0 (current upstream repository; attribution retained)"
+    },
+    {
+      "id": "hituav-010",
+      "title": "Aerial thermal scene 11",
+      "dataset": "HIT-UAV",
+      "group": "0_100_30_0_08100.jpg",
+      "split": "test",
+      "assets": [
+        {
+          "id": "hituav-010",
+          "path": "hituav-010.png",
+          "modality": "TIR",
+          "sha256": "02091e47f9ca3641469e1a58268e63c6b622070ca3fcc6950e07f6738680c46a",
+          "width": 640,
+          "height": 512,
+          "provenance": "observed",
+          "radiometric": false,
+          "polarity": "unknown",
+          "sensor": "UAV thermal camera"
+        }
+      ],
+      "tags": [
+        "aerial",
+        "thermal",
+        "day"
+      ],
+      "reference": {
+        "objects": [
+          {
+            "category": "Car",
+            "bbox": [
+              197,
+              442,
+              25,
+              40
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              226,
+              403,
+              21,
+              32
+            ]
+          }
+        ]
+      },
+      "source": {
+        "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+        "revision": "669259659b21a2737ca9f5e4bc81892acbe6ecd8",
+        "original_id": "0_100_30_0_08100.jpg",
+        "altitude_m": 100,
+        "camera_angle_deg": 30
+      },
+      "license": "CC-BY-4.0 (current upstream repository; attribution retained)"
+    },
+    {
+      "id": "hituav-011",
+      "title": "Aerial thermal scene 12",
+      "dataset": "HIT-UAV",
+      "group": "1_80_30_0_08591.jpg",
+      "split": "test",
+      "assets": [
+        {
+          "id": "hituav-011",
+          "path": "hituav-011.png",
+          "modality": "TIR",
+          "sha256": "d763f99ba9ac916c1c7fb691cfda198b69688722bc06c8e3d416cb5c10281d49",
+          "width": 640,
+          "height": 512,
+          "provenance": "observed",
+          "radiometric": false,
+          "polarity": "unknown",
+          "sensor": "UAV thermal camera"
+        }
+      ],
+      "tags": [
+        "aerial",
+        "thermal",
+        "night"
+      ],
+      "reference": {
+        "objects": [
+          {
+            "category": "Car",
+            "bbox": [
+              263,
+              477,
+              30,
+              33
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              275,
+              394,
+              31,
+              41
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              290,
+              82,
+              21,
+              31
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              290,
+              58,
+              19,
+              28
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              287,
+              32,
+              20,
+              29
+            ]
+          }
+        ]
+      },
+      "source": {
+        "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+        "revision": "669259659b21a2737ca9f5e4bc81892acbe6ecd8",
+        "original_id": "1_80_30_0_08591.jpg",
+        "altitude_m": 80,
+        "camera_angle_deg": 30
+      },
+      "license": "CC-BY-4.0 (current upstream repository; attribution retained)"
+    },
+    {
+      "id": "hituav-012",
+      "title": "Aerial thermal scene 13",
+      "dataset": "HIT-UAV",
+      "group": "1_100_70_0_06341.jpg",
+      "split": "test",
+      "assets": [
+        {
+          "id": "hituav-012",
+          "path": "hituav-012.png",
+          "modality": "TIR",
+          "sha256": "bc273a11c2c8ab9dab3909af06932d31d270ffd386ac19f8e451aed311cf9212",
+          "width": 640,
+          "height": 512,
+          "provenance": "observed",
+          "radiometric": false,
+          "polarity": "unknown",
+          "sensor": "UAV thermal camera"
+        }
+      ],
+      "tags": [
+        "aerial",
+        "thermal",
+        "night"
+      ],
+      "reference": {
+        "objects": [
+          {
+            "category": "Car",
+            "bbox": [
+              190,
+              307,
+              88,
+              72
+            ]
+          }
+        ]
+      },
+      "source": {
+        "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+        "revision": "669259659b21a2737ca9f5e4bc81892acbe6ecd8",
+        "original_id": "1_100_70_0_06341.jpg",
+        "altitude_m": 100,
+        "camera_angle_deg": 70
+      },
+      "license": "CC-BY-4.0 (current upstream repository; attribution retained)"
+    },
+    {
+      "id": "hituav-013",
+      "title": "Aerial thermal scene 14",
+      "dataset": "HIT-UAV",
+      "group": "1_60_80_0_07506.jpg",
+      "split": "test",
+      "assets": [
+        {
+          "id": "hituav-013",
+          "path": "hituav-013.png",
+          "modality": "TIR",
+          "sha256": "5bae9b4657e5ec6d8157254a7507d5b8b8c530492256852b20d4fd0dcd1b47c0",
+          "width": 640,
+          "height": 512,
+          "provenance": "observed",
+          "radiometric": false,
+          "polarity": "unknown",
+          "sensor": "UAV thermal camera"
+        }
+      ],
+      "tags": [
+        "aerial",
+        "thermal",
+        "night"
+      ],
+      "reference": {
+        "objects": [
+          {
+            "category": "Car",
+            "bbox": [
+              388,
+              415,
+              76,
+              95
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              269,
+              426,
+              65,
+              84
+            ]
+          },
+          {
+            "category": "Car",
+            "bbox": [
+              147,
+              429,
+              65,
+              81
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              558,
+              83,
+              50,
+              47
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              511,
+              86,
+              75,
+              60
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              453,
+              102,
+              67,
+              45
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              380,
+              105,
+              61,
+              30
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              314,
+              84,
+              59,
+              56
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              266,
+              93,
+              49,
+              67
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              133,
+              105,
+              41,
+              62
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              221,
+              35,
+              30,
+              67
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              169,
+              38,
+              36,
+              69
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              98,
+              52,
+              49,
+              63
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              30,
+              0,
+              22,
+              51
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              3,
+              0,
+              21,
+              44
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              95,
+              0,
+              34,
+              54
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              130,
+              0,
+              26,
+              48
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              162,
+              0,
+              20,
+              38
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              188,
+              0,
+              24,
+              29
+            ]
+          }
+        ]
+      },
+      "source": {
+        "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+        "revision": "669259659b21a2737ca9f5e4bc81892acbe6ecd8",
+        "original_id": "1_60_80_0_07506.jpg",
+        "altitude_m": 60,
+        "camera_angle_deg": 80
+      },
+      "license": "CC-BY-4.0 (current upstream repository; attribution retained)"
+    },
+    {
+      "id": "hituav-014",
+      "title": "Aerial thermal scene 15",
+      "dataset": "HIT-UAV",
+      "group": "1_130_40_0_03876.jpg",
+      "split": "test",
+      "assets": [
+        {
+          "id": "hituav-014",
+          "path": "hituav-014.png",
+          "modality": "TIR",
+          "sha256": "7ba2ce5726ea9220b989a195b2fc7f6f805423d4f0e3254bc05e5cde9edfa27b",
+          "width": 640,
+          "height": 512,
+          "provenance": "observed",
+          "radiometric": false,
+          "polarity": "unknown",
+          "sensor": "UAV thermal camera"
+        }
+      ],
+      "tags": [
+        "aerial",
+        "thermal",
+        "night"
+      ],
+      "reference": {
+        "objects": [
+          {
+            "category": "Person",
+            "bbox": [
+              167,
+              0,
+              6,
+              10
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              170,
+              10,
+              7,
+              13
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              205,
+              8,
+              9,
+              16
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              229,
+              156,
+              7,
+              13
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              260,
+              160,
+              8,
+              14
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              253,
+              177,
+              8,
+              14
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              243,
+              184,
+              9,
+              10
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              239,
+              171,
+              9,
+              13
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              320,
+              33,
+              15,
+              20
+            ]
+          }
+        ]
+      },
+      "source": {
+        "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+        "revision": "669259659b21a2737ca9f5e4bc81892acbe6ecd8",
+        "original_id": "1_130_40_0_03876.jpg",
+        "altitude_m": 130,
+        "camera_angle_deg": 40
+      },
+      "license": "CC-BY-4.0 (current upstream repository; attribution retained)"
+    },
+    {
+      "id": "hituav-015",
+      "title": "Aerial thermal scene 16",
+      "dataset": "HIT-UAV",
+      "group": "1_60_60_0_00438.jpg",
+      "split": "test",
+      "assets": [
+        {
+          "id": "hituav-015",
+          "path": "hituav-015.png",
+          "modality": "TIR",
+          "sha256": "2cc8ae5eaf28261d6198014a93acb13e7d2834e478b036d4e3b721d4577da021",
+          "width": 640,
+          "height": 512,
+          "provenance": "observed",
+          "radiometric": false,
+          "polarity": "unknown",
+          "sensor": "UAV thermal camera"
+        }
+      ],
+      "tags": [
+        "aerial",
+        "thermal",
+        "night"
+      ],
+      "reference": {
+        "objects": [
+          {
+            "category": "Person",
+            "bbox": [
+              276,
+              83,
+              13,
+              35
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              573,
+              85,
+              19,
+              30
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              172,
+              426,
+              13,
+              30
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              139,
+              450,
+              18,
+              27
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              285,
+              466,
+              20,
+              36
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              566,
+              363,
+              23,
+              32
+            ]
+          }
+        ]
+      },
+      "source": {
+        "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+        "revision": "669259659b21a2737ca9f5e4bc81892acbe6ecd8",
+        "original_id": "1_60_60_0_00438.jpg",
+        "altitude_m": 60,
+        "camera_angle_deg": 60
+      },
+      "license": "CC-BY-4.0 (current upstream repository; attribution retained)"
+    },
+    {
+      "id": "hituav-016",
+      "title": "Aerial thermal scene 17",
+      "dataset": "HIT-UAV",
+      "group": "1_70_90_0_01107.jpg",
+      "split": "test",
+      "assets": [
+        {
+          "id": "hituav-016",
+          "path": "hituav-016.png",
+          "modality": "TIR",
+          "sha256": "0b67393e9496112e019c4c520288e6ab8f32fbe4e4474c87ccf29c8b801fbc7e",
+          "width": 640,
+          "height": 512,
+          "provenance": "observed",
+          "radiometric": false,
+          "polarity": "unknown",
+          "sensor": "UAV thermal camera"
+        }
+      ],
+      "tags": [
+        "aerial",
+        "thermal",
+        "night"
+      ],
+      "reference": {
+        "objects": [
+          {
+            "category": "Person",
+            "bbox": [
+              554,
+              162,
+              19,
+              30
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              523,
+              182,
+              15,
+              19
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              536,
+              144,
+              16,
+              19
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              512,
+              129,
+              17,
+              28
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              485,
+              106,
+              33,
+              35
+            ]
+          },
+          {
+            "category": "Bicycle",
+            "bbox": [
+              148,
+              259,
+              31,
+              45
+            ]
+          }
+        ]
+      },
+      "source": {
+        "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+        "revision": "669259659b21a2737ca9f5e4bc81892acbe6ecd8",
+        "original_id": "1_70_90_0_01107.jpg",
+        "altitude_m": 70,
+        "camera_angle_deg": 90
+      },
+      "license": "CC-BY-4.0 (current upstream repository; attribution retained)"
+    },
+    {
+      "id": "hituav-017",
+      "title": "Aerial thermal scene 18",
+      "dataset": "HIT-UAV",
+      "group": "0_80_40_0_02139.jpg",
+      "split": "test",
+      "assets": [
+        {
+          "id": "hituav-017",
+          "path": "hituav-017.png",
+          "modality": "TIR",
+          "sha256": "488b915b839bd704274e96b9df85bef8bc3e67697180fad6d96613734779d508",
+          "width": 640,
+          "height": 512,
+          "provenance": "observed",
+          "radiometric": false,
+          "polarity": "unknown",
+          "sensor": "UAV thermal camera"
+        }
+      ],
+      "tags": [
+        "aerial",
+        "thermal",
+        "day"
+      ],
+      "reference": {
+        "objects": [
+          {
+            "category": "Person",
+            "bbox": [
+              64,
+              390,
+              15,
+              22
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              436,
+              324,
+              14,
+              22
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              457,
+              332,
+              11,
+              19
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              482,
+              340,
+              10,
+              28
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              501,
+              341,
+              13,
+              18
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              320,
+              438,
+              13,
+              22
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              338,
+              472,
+              10,
+              14
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              356,
+              491,
+              13,
+              17
+            ]
+          },
+          {
+            "category": "Person",
+            "bbox": [
+              348,
+              494,
+              12,
+              16
+            ]
+          }
+        ]
+      },
+      "source": {
+        "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+        "revision": "669259659b21a2737ca9f5e4bc81892acbe6ecd8",
+        "original_id": "0_80_40_0_02139.jpg",
+        "altitude_m": 80,
+        "camera_angle_deg": 40
+      },
+      "license": "CC-BY-4.0 (current upstream repository; attribution retained)"
+    },
+    {
+      "id": "landsat-001",
+      "title": "Imperial Valley · Landsat RGB + thermal",
+      "dataset": "Landsat C2",
+      "group": "LC09_L2SP_039037_20240926_02_T1-Imperial Valley",
+      "split": "engineering-holdout",
+      "assets": [
+        {
+          "id": "landsat-001-rgb",
+          "path": "landsat-001-rgb.png",
+          "modality": "RGB",
+          "sha256": "731cf8277dc3fbadf439740e0edeed7a5a181e1f2ba8a92abc890f26dd6f9240",
+          "width": 256,
+          "height": 256,
+          "provenance": "observed",
+          "radiometric": false,
+          "gsd_m": 30,
+          "acquired": "2024-09-26T18:16:12.749936Z",
+          "derived": true
+        },
+        {
+          "id": "landsat-001-tir",
+          "path": "landsat-001-tir.png",
+          "modality": "TIR",
+          "sha256": "ffbb1265ae02869cbcfe02ea7e8a14e67edba16119421c309a9a58c1e5d4dcf4",
+          "width": 256,
+          "height": 256,
+          "provenance": "observed",
+          "radiometric": true,
+          "gsd_m": 30,
+          "effective_resolution_m": 100,
+          "acquired": "2024-09-26T18:16:12.749936Z",
+          "polarity": "white-hot",
+          "radiometry_path": "landsat-001-radiometry.json",
+          "display_range_c": [
+            36.514030100000014,
+            56.01383420000002
+          ],
+          "derived": true
+        }
+      ],
+      "tags": [
+        "satellite",
+        "paired",
+        "radiometric",
+        "30m-grid"
+      ],
+      "alignment": "Same scene and common grid; independent registration accuracy not measured",
+      "source": {
+        "url": "https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2",
+        "item": "LC09_L2SP_039037_20240926_02_T1",
+        "center": [
+          -115.55,
+          32.95
+        ],
+        "date": "2024-09-26T18:16:12.749936Z"
+      },
+      "reference": {
+        "caption_status": "No human scene-caption ground truth; thermal statistics are deterministic product-derived values"
+      },
+      "license": "USGS Landsat data: public domain; preserve source attribution"
+    },
+    {
+      "id": "landsat-002",
+      "title": "Salton Sea · Landsat RGB + thermal",
+      "dataset": "Landsat C2",
+      "group": "LC09_L2SP_039037_20240926_02_T1-Salton Sea",
+      "split": "engineering-holdout",
+      "assets": [
+        {
+          "id": "landsat-002-rgb",
+          "path": "landsat-002-rgb.png",
+          "modality": "RGB",
+          "sha256": "6e4e3d949503775e388b8b52c689a1bdd275ce6ae68043eed17c2bfb2a9ea59d",
+          "width": 256,
+          "height": 256,
+          "provenance": "observed",
+          "radiometric": false,
+          "gsd_m": 30,
+          "acquired": "2024-09-26T18:16:12.749936Z",
+          "derived": true
+        },
+        {
+          "id": "landsat-002-tir",
+          "path": "landsat-002-tir.png",
+          "modality": "TIR",
+          "sha256": "5d0499c28c54e98ec65a388c1568492f6826cef0f3dc66fe073b2e5a977c0b16",
+          "width": 256,
+          "height": 256,
+          "provenance": "observed",
+          "radiometric": true,
+          "gsd_m": 30,
+          "effective_resolution_m": 100,
+          "acquired": "2024-09-26T18:16:12.749936Z",
+          "polarity": "white-hot",
+          "radiometry_path": "landsat-002-radiometry.json",
+          "display_range_c": [
+            27.955308020000018,
+            35.17416625999999
+          ],
+          "derived": true
+        }
+      ],
+      "tags": [
+        "satellite",
+        "paired",
+        "radiometric",
+        "30m-grid"
+      ],
+      "alignment": "Same scene and common grid; independent registration accuracy not measured",
+      "source": {
+        "url": "https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2",
+        "item": "LC09_L2SP_039037_20240926_02_T1",
+        "center": [
+          -115.83,
+          33.3
+        ],
+        "date": "2024-09-26T18:16:12.749936Z"
+      },
+      "reference": {
+        "caption_status": "No human scene-caption ground truth; thermal statistics are deterministic product-derived values"
+      },
+      "license": "USGS Landsat data: public domain; preserve source attribution"
+    },
+    {
+      "id": "landsat-003",
+      "title": "Yellowstone · Landsat RGB + thermal",
+      "dataset": "Landsat C2",
+      "group": "LC08_L2SP_038029_20240927_02_T1-Yellowstone",
+      "split": "engineering-holdout",
+      "assets": [
+        {
+          "id": "landsat-003-rgb",
+          "path": "landsat-003-rgb.png",
+          "modality": "RGB",
+          "sha256": "e763f065f370287795c8f7af8119a75b214f8f5cff890b08b4f505959ab4d037",
+          "width": 256,
+          "height": 256,
+          "provenance": "observed",
+          "radiometric": false,
+          "gsd_m": 30,
+          "acquired": "2024-09-27T18:06:50.359947Z",
+          "derived": true
+        },
+        {
+          "id": "landsat-003-tir",
+          "path": "landsat-003-tir.png",
+          "modality": "TIR",
+          "sha256": "e2d245f76f4275bc889b988db48ca4e05dd5332a8f53b1f5da177490be43408f",
+          "width": 256,
+          "height": 256,
+          "provenance": "observed",
+          "radiometric": true,
+          "gsd_m": 30,
+          "effective_resolution_m": 100,
+          "acquired": "2024-09-27T18:06:50.359947Z",
+          "polarity": "white-hot",
+          "radiometry_path": "landsat-003-radiometry.json",
+          "display_range_c": [
+            18.131918540000015,
+            29.008058180000035
+          ],
+          "derived": true
+        }
+      ],
+      "tags": [
+        "satellite",
+        "paired",
+        "radiometric",
+        "30m-grid"
+      ],
+      "alignment": "Same scene and common grid; independent registration accuracy not measured",
+      "source": {
+        "url": "https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2",
+        "item": "LC08_L2SP_038029_20240927_02_T1",
+        "center": [
+          -110.83,
+          44.46
+        ],
+        "date": "2024-09-27T18:06:50.359947Z"
+      },
+      "reference": {
+        "caption_status": "No human scene-caption ground truth; thermal statistics are deterministic product-derived values"
+      },
+      "license": "USGS Landsat data: public domain; preserve source attribution"
+    },
+    {
+      "id": "landsat-004",
+      "title": "Rotterdam · Landsat RGB + thermal",
+      "dataset": "Landsat C2",
+      "group": "LC09_L2SP_198024_20240920_02_T1-Rotterdam",
+      "split": "engineering-holdout",
+      "assets": [
+        {
+          "id": "landsat-004-rgb",
+          "path": "landsat-004-rgb.png",
+          "modality": "RGB",
+          "sha256": "588b853ff8e4b1158a633c82fab5bf9e267b5aa7a46c115ec80b0356779ae613",
+          "width": 256,
+          "height": 256,
+          "provenance": "observed",
+          "radiometric": false,
+          "gsd_m": 30,
+          "acquired": "2024-09-20T10:33:38.993963Z",
+          "derived": true
+        },
+        {
+          "id": "landsat-004-tir",
+          "path": "landsat-004-tir.png",
+          "modality": "TIR",
+          "sha256": "c284f7e7f40243d94f8e79699bda2340985bda808a40d3d506d3b0f0080277eb",
+          "width": 256,
+          "height": 256,
+          "provenance": "observed",
+          "radiometric": true,
+          "gsd_m": 30,
+          "effective_resolution_m": 100,
+          "acquired": "2024-09-20T10:33:38.993963Z",
+          "polarity": "white-hot",
+          "radiometry_path": "landsat-004-radiometry.json",
+          "display_range_c": [
+            19.020603740000013,
+            28.645748060000017
+          ],
+          "derived": true
+        }
+      ],
+      "tags": [
+        "satellite",
+        "paired",
+        "radiometric",
+        "30m-grid"
+      ],
+      "alignment": "Same scene and common grid; independent registration accuracy not measured",
+      "source": {
+        "url": "https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2",
+        "item": "LC09_L2SP_198024_20240920_02_T1",
+        "center": [
+          4.25,
+          51.94
+        ],
+        "date": "2024-09-20T10:33:38.993963Z"
+      },
+      "reference": {
+        "caption_status": "No human scene-caption ground truth; thermal statistics are deterministic product-derived values"
+      },
+      "license": "USGS Landsat data: public domain; preserve source attribution"
+    },
+    {
+      "id": "landsat-005",
+      "title": "Amazon · Landsat RGB + thermal",
+      "dataset": "Landsat C2",
+      "group": "LC08_L2SP_231062_20240818_02_T1-Amazon",
+      "split": "engineering-holdout",
+      "assets": [
+        {
+          "id": "landsat-005-rgb",
+          "path": "landsat-005-rgb.png",
+          "modality": "RGB",
+          "sha256": "184f72753d349d4b04b344ba9a4cfca2e4e68b758d97af285ff39f026dc33e79",
+          "width": 256,
+          "height": 256,
+          "provenance": "observed",
+          "radiometric": false,
+          "gsd_m": 30,
+          "acquired": "2024-08-18T14:12:40.018950Z",
+          "derived": true
+        },
+        {
+          "id": "landsat-005-tir",
+          "path": "landsat-005-tir.png",
+          "modality": "TIR",
+          "sha256": "6119daa5fb89022c95f521447de60aa7d202e992d68c843fda8ad3730f63c058",
+          "width": 256,
+          "height": 256,
+          "provenance": "observed",
+          "radiometric": true,
+          "gsd_m": 30,
+          "effective_resolution_m": 100,
+          "acquired": "2024-08-18T14:12:40.018950Z",
+          "polarity": "white-hot",
+          "radiometry_path": "landsat-005-radiometry.json",
+          "display_range_c": [
+            31.78349042000002,
+            47.38333369999998
+          ],
+          "derived": true
+        }
+      ],
+      "tags": [
+        "satellite",
+        "paired",
+        "radiometric",
+        "30m-grid"
+      ],
+      "alignment": "Same scene and common grid; independent registration accuracy not measured",
+      "source": {
+        "url": "https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2",
+        "item": "LC08_L2SP_231062_20240818_02_T1",
+        "center": [
+          -60.04,
+          -3.1
+        ],
+        "date": "2024-08-18T14:12:40.018950Z"
+      },
+      "reference": {
+        "caption_status": "No human scene-caption ground truth; thermal statistics are deterministic product-derived values"
+      },
+      "license": "USGS Landsat data: public domain; preserve source attribution"
+    },
+    {
+      "id": "s1-000",
+      "title": "Rotterdam · Sentinel-1 SAR",
+      "dataset": "Sentinel-1 SAR",
+      "group": "S1A_IW_GRDH_1SDV_20240629T055037_20240629T055102_054534_06A308_rtc-Rotterdam",
+      "split": "engineering-holdout",
+      "assets": [
+        {
+          "id": "s1-000-vv",
+          "path": "s1-000-vv.png",
+          "width": 256,
+          "height": 256,
+          "modality": "SAR",
+          "provenance": "observed",
+          "radiometric": false,
+          "sha256": "9edf73e77d9cde70cab009c91658ee82d841f66371adec1011e4f66edf832284",
+          "gsd_m": 10,
+          "effective_resolution_m": 22,
+          "acquired": "2024-06-29T05:50:50.101450Z",
+          "polarization": "VV",
+          "rendering": "Gamma0 power to dB; fixed -30 to +5 dB grayscale. Not temperature.",
+          "measurements_path": "s1-000-vv-backscatter.json"
+        },
+        {
+          "id": "s1-000-vh",
+          "path": "s1-000-vh.png",
+          "width": 256,
+          "height": 256,
+          "modality": "SAR",
+          "provenance": "observed",
+          "radiometric": false,
+          "sha256": "04b1ce95271a5c6daa9f36ad9b3573d0433c5a3d1bb83fd8ee0731e16fb6cd94",
+          "gsd_m": 10,
+          "effective_resolution_m": 22,
+          "acquired": "2024-06-29T05:50:50.101450Z",
+          "polarization": "VH",
+          "rendering": "Gamma0 power to dB; fixed -30 to +5 dB grayscale. Not temperature.",
+          "measurements_path": "s1-000-vh-backscatter.json"
+        }
+      ],
+      "alignment": "Same acquisition and common grid; registration accuracy not independently measured",
+      "source": {
+        "url": "https://planetarycomputer.microsoft.com/dataset/sentinel-1-rtc",
+        "item": "S1A_IW_GRDH_1SDV_20240629T055037_20240629T055102_054534_06A308_rtc",
+        "center": [
+          4.25,
+          51.94
+        ]
+      },
+      "tags": [
+        "satellite",
+        "radar"
+      ],
+      "reference": {
+        "caption_status": "No human caption ground truth; modality stress test"
+      },
+      "license": "Contains modified Copernicus Sentinel data (2024). Preserve Copernicus attribution and source terms."
+    },
+    {
+      "id": "s1-001",
+      "title": "Imperial Valley · Sentinel-1 SAR",
+      "dataset": "Sentinel-1 SAR",
+      "group": "S1A_IW_GRDH_1SDV_20240626T134456_20240626T134521_054495_06A1B9_rtc-Imperial Valley",
+      "split": "engineering-holdout",
+      "assets": [
+        {
+          "id": "s1-001-vv",
+          "path": "s1-001-vv.png",
+          "width": 256,
+          "height": 256,
+          "modality": "SAR",
+          "provenance": "observed",
+          "radiometric": false,
+          "sha256": "7e6828dafc7240b0bae4a386a5fdb865e0ddaa8b8041de6507469b8a0e469c20",
+          "gsd_m": 10,
+          "effective_resolution_m": 22,
+          "acquired": "2024-06-26T13:45:08.573372Z",
+          "polarization": "VV",
+          "rendering": "Gamma0 power to dB; fixed -30 to +5 dB grayscale. Not temperature.",
+          "measurements_path": "s1-001-vv-backscatter.json"
+        },
+        {
+          "id": "s1-001-vh",
+          "path": "s1-001-vh.png",
+          "width": 256,
+          "height": 256,
+          "modality": "SAR",
+          "provenance": "observed",
+          "radiometric": false,
+          "sha256": "7ed93ce238045e185189b30c76b6cfb58783f06baefa15fbd8bb4b3ddfcfb2d8",
+          "gsd_m": 10,
+          "effective_resolution_m": 22,
+          "acquired": "2024-06-26T13:45:08.573372Z",
+          "polarization": "VH",
+          "rendering": "Gamma0 power to dB; fixed -30 to +5 dB grayscale. Not temperature.",
+          "measurements_path": "s1-001-vh-backscatter.json"
+        }
+      ],
+      "alignment": "Same acquisition and common grid; registration accuracy not independently measured",
+      "source": {
+        "url": "https://planetarycomputer.microsoft.com/dataset/sentinel-1-rtc",
+        "item": "S1A_IW_GRDH_1SDV_20240626T134456_20240626T134521_054495_06A1B9_rtc",
+        "center": [
+          -115.55,
+          32.95
+        ]
+      },
+      "tags": [
+        "satellite",
+        "radar"
+      ],
+      "reference": {
+        "caption_status": "No human caption ground truth; modality stress test"
+      },
+      "license": "Contains modified Copernicus Sentinel data (2024). Preserve Copernicus attribution and source terms."
+    },
+    {
+      "id": "s1-002",
+      "title": "Amazon · Sentinel-1 SAR",
+      "dataset": "Sentinel-1 SAR",
+      "group": "S1A_IW_GRDH_1SDV_20240603T093935_20240603T094000_054157_069609_rtc-Amazon",
+      "split": "engineering-holdout",
+      "assets": [
+        {
+          "id": "s1-002-vv",
+          "path": "s1-002-vv.png",
+          "width": 256,
+          "height": 256,
+          "modality": "SAR",
+          "provenance": "observed",
+          "radiometric": false,
+          "sha256": "b4a935bbd8e0659a6b99b8a500e41fdb8a2d6ff003872ca383d9277727967b1c",
+          "gsd_m": 10,
+          "effective_resolution_m": 22,
+          "acquired": "2024-06-03T09:39:48.385358Z",
+          "polarization": "VV",
+          "rendering": "Gamma0 power to dB; fixed -30 to +5 dB grayscale. Not temperature.",
+          "measurements_path": "s1-002-vv-backscatter.json"
+        },
+        {
+          "id": "s1-002-vh",
+          "path": "s1-002-vh.png",
+          "width": 256,
+          "height": 256,
+          "modality": "SAR",
+          "provenance": "observed",
+          "radiometric": false,
+          "sha256": "e14bf2ebb36d971266a1c3d5292fde58817ff5a608e05654c18b57017a95ae7e",
+          "gsd_m": 10,
+          "effective_resolution_m": 22,
+          "acquired": "2024-06-03T09:39:48.385358Z",
+          "polarization": "VH",
+          "rendering": "Gamma0 power to dB; fixed -30 to +5 dB grayscale. Not temperature.",
+          "measurements_path": "s1-002-vh-backscatter.json"
+        }
+      ],
+      "alignment": "Same acquisition and common grid; registration accuracy not independently measured",
+      "source": {
+        "url": "https://planetarycomputer.microsoft.com/dataset/sentinel-1-rtc",
+        "item": "S1A_IW_GRDH_1SDV_20240603T093935_20240603T094000_054157_069609_rtc",
+        "center": [
+          -60.04,
+          -3.1
+        ]
+      },
+      "tags": [
+        "satellite",
+        "radar"
+      ],
+      "reference": {
+        "caption_status": "No human caption ground truth; modality stress test"
+      },
+      "license": "Contains modified Copernicus Sentinel data (2024). Preserve Copernicus attribution and source terms."
+    },
+    {
+      "id": "s1-003",
+      "title": "Yellowstone · Sentinel-1 SAR",
+      "dataset": "Sentinel-1 SAR",
+      "group": "S1A_IW_GRDH_1SDV_20240621T133327_20240621T133352_054422_069F36_rtc-Yellowstone",
+      "split": "engineering-holdout",
+      "assets": [
+        {
+          "id": "s1-003-vv",
+          "path": "s1-003-vv.png",
+          "width": 256,
+          "height": 256,
+          "modality": "SAR",
+          "provenance": "observed",
+          "radiometric": false,
+          "sha256": "3e2c9c82fc7eba14a98f5d8e24f77c6b3cdec5fc2be5b6a3860de8c434a018e5",
+          "gsd_m": 10,
+          "effective_resolution_m": 22,
+          "acquired": "2024-06-21T13:33:40.007892Z",
+          "polarization": "VV",
+          "rendering": "Gamma0 power to dB; fixed -30 to +5 dB grayscale. Not temperature.",
+          "measurements_path": "s1-003-vv-backscatter.json"
+        },
+        {
+          "id": "s1-003-vh",
+          "path": "s1-003-vh.png",
+          "width": 256,
+          "height": 256,
+          "modality": "SAR",
+          "provenance": "observed",
+          "radiometric": false,
+          "sha256": "9a5831e63c22ea64f75da7e983e86d2481edd3c1cb7409284ff0cae476b41d91",
+          "gsd_m": 10,
+          "effective_resolution_m": 22,
+          "acquired": "2024-06-21T13:33:40.007892Z",
+          "polarization": "VH",
+          "rendering": "Gamma0 power to dB; fixed -30 to +5 dB grayscale. Not temperature.",
+          "measurements_path": "s1-003-vh-backscatter.json"
+        }
+      ],
+      "alignment": "Same acquisition and common grid; registration accuracy not independently measured",
+      "source": {
+        "url": "https://planetarycomputer.microsoft.com/dataset/sentinel-1-rtc",
+        "item": "S1A_IW_GRDH_1SDV_20240621T133327_20240621T133352_054422_069F36_rtc",
+        "center": [
+          -110.83,
+          44.46
+        ]
+      },
+      "tags": [
+        "satellite",
+        "radar"
+      ],
+      "reference": {
+        "caption_status": "No human caption ground truth; modality stress test"
+      },
+      "license": "Contains modified Copernicus Sentinel data (2024). Preserve Copernicus attribution and source terms."
+    },
+    {
+      "id": "s2-000",
+      "title": "Rotterdam · Sentinel-2 NIR",
+      "dataset": "Sentinel-2 NIR",
+      "group": "S2B_MSIL2A_20240623T104619_R051_T31UET_20240623T140225-Rotterdam",
+      "split": "engineering-holdout",
+      "assets": [
+        {
+          "id": "s2-000-rgb",
+          "path": "s2-000-rgb.png",
+          "width": 256,
+          "height": 256,
+          "modality": "RGB",
+          "provenance": "observed",
+          "radiometric": false,
+          "sha256": "3eb91e1721bed61e90eea08e6c97174480763fd596aad8b020a9bc8ccdba5042",
+          "gsd_m": 10,
+          "acquired": "2024-06-23T10:46:19.024000Z",
+          "rendering": "Official Sentinel-2 TCI"
+        },
+        {
+          "id": "s2-000-nir",
+          "path": "s2-000-nir.png",
+          "width": 256,
+          "height": 256,
+          "modality": "NIR",
+          "provenance": "observed",
+          "radiometric": false,
+          "sha256": "6ee885c1b90b9785a83f3e5367b9ab8dc05147277e66d2fa2879d1c4763c90f1",
+          "gsd_m": 10,
+          "acquired": "2024-06-23T10:46:19.024000Z",
+          "band": "B08",
+          "wavelength_um": 0.842,
+          "rendering": "B08 DN, per-crop 2–98 percentile grayscale stretch. Reflected sunlight, not emitted heat. No reflectance or NDVI claims.",
+          "display_range_dn": [
+            1325,
+            8020
+          ]
+        }
+      ],
+      "alignment": "Same acquisition and common grid; registration accuracy not independently measured",
+      "source": {
+        "url": "https://planetarycomputer.microsoft.com/dataset/sentinel-2-l2a",
+        "item": "S2B_MSIL2A_20240623T104619_R051_T31UET_20240623T140225",
+        "center": [
+          4.25,
+          51.94
+        ]
+      },
+      "tags": [
+        "satellite",
+        "near-infrared"
+      ],
+      "reference": {
+        "caption_status": "No human caption ground truth; modality stress test"
+      },
+      "license": "Contains modified Copernicus Sentinel data (2024). Preserve Copernicus attribution and source terms."
+    },
+    {
+      "id": "s2-001",
+      "title": "Imperial Valley · Sentinel-2 NIR",
+      "dataset": "Sentinel-2 NIR",
+      "group": "S2A_MSIL2A_20240603T181921_R127_T11SPS_20240604T022711-Imperial Valley",
+      "split": "engineering-holdout",
+      "assets": [
+        {
+          "id": "s2-001-rgb",
+          "path": "s2-001-rgb.png",
+          "width": 256,
+          "height": 256,
+          "modality": "RGB",
+          "provenance": "observed",
+          "radiometric": false,
+          "sha256": "0be35f580b78a4e74aa747c576321b06b4f1ef2fc81767795e7ee53acb0d3802",
+          "gsd_m": 10,
+          "acquired": "2024-06-03T18:19:21.024000Z",
+          "rendering": "Official Sentinel-2 TCI"
+        },
+        {
+          "id": "s2-001-nir",
+          "path": "s2-001-nir.png",
+          "width": 256,
+          "height": 256,
+          "modality": "NIR",
+          "provenance": "observed",
+          "radiometric": false,
+          "sha256": "518e7b36b2311a2548cc0fdd5511a4d6f186a2d8e87f77ca9f220477e1e9a9a2",
+          "gsd_m": 10,
+          "acquired": "2024-06-03T18:19:21.024000Z",
+          "band": "B08",
+          "wavelength_um": 0.842,
+          "rendering": "B08 DN, per-crop 2–98 percentile grayscale stretch. Reflected sunlight, not emitted heat. No reflectance or NDVI claims.",
+          "display_range_dn": [
+            3132,
+            6596
+          ]
+        }
+      ],
+      "alignment": "Same acquisition and common grid; registration accuracy not independently measured",
+      "source": {
+        "url": "https://planetarycomputer.microsoft.com/dataset/sentinel-2-l2a",
+        "item": "S2A_MSIL2A_20240603T181921_R127_T11SPS_20240604T022711",
+        "center": [
+          -115.55,
+          32.95
+        ]
+      },
+      "tags": [
+        "satellite",
+        "near-infrared"
+      ],
+      "reference": {
+        "caption_status": "No human caption ground truth; modality stress test"
+      },
+      "license": "Contains modified Copernicus Sentinel data (2024). Preserve Copernicus attribution and source terms."
+    },
+    {
+      "id": "s2-002",
+      "title": "Amazon · Sentinel-2 NIR",
+      "dataset": "Sentinel-2 NIR",
+      "group": "S2B_MSIL2A_20240630T141719_R010_T20MRB_20240701T195849-Amazon",
+      "split": "engineering-holdout",
+      "assets": [
+        {
+          "id": "s2-002-rgb",
+          "path": "s2-002-rgb.png",
+          "width": 256,
+          "height": 256,
+          "modality": "RGB",
+          "provenance": "observed",
+          "radiometric": false,
+          "sha256": "4c98f80dcd32e0ea1b24f2fc984ce68caf62fa02b8da79957a565fe480464e7f",
+          "gsd_m": 10,
+          "acquired": "2024-06-30T14:17:19.024000Z",
+          "rendering": "Official Sentinel-2 TCI"
+        },
+        {
+          "id": "s2-002-nir",
+          "path": "s2-002-nir.png",
+          "width": 256,
+          "height": 256,
+          "modality": "NIR",
+          "provenance": "observed",
+          "radiometric": false,
+          "sha256": "7c0e690eec4d88e14a69fef3b280db3db0ed1cd6a1fbfdd9723a5eccaebb1e6c",
+          "gsd_m": 10,
+          "acquired": "2024-06-30T14:17:19.024000Z",
+          "band": "B08",
+          "wavelength_um": 0.842,
+          "rendering": "B08 DN, per-crop 2–98 percentile grayscale stretch. Reflected sunlight, not emitted heat. No reflectance or NDVI claims.",
+          "display_range_dn": [
+            1241,
+            5704
+          ]
+        }
+      ],
+      "alignment": "Same acquisition and common grid; registration accuracy not independently measured",
+      "source": {
+        "url": "https://planetarycomputer.microsoft.com/dataset/sentinel-2-l2a",
+        "item": "S2B_MSIL2A_20240630T141719_R010_T20MRB_20240701T195849",
+        "center": [
+          -60.04,
+          -3.1
+        ]
+      },
+      "tags": [
+        "satellite",
+        "near-infrared"
+      ],
+      "reference": {
+        "caption_status": "No human caption ground truth; modality stress test"
+      },
+      "license": "Contains modified Copernicus Sentinel data (2024). Preserve Copernicus attribution and source terms."
+    },
+    {
+      "id": "s2-003",
+      "title": "Yellowstone · Sentinel-2 NIR",
+      "dataset": "Sentinel-2 NIR",
+      "group": "S2A_MSIL2A_20240613T181921_R127_T12TWQ_20240614T021423-Yellowstone",
+      "split": "engineering-holdout",
+      "assets": [
+        {
+          "id": "s2-003-rgb",
+          "path": "s2-003-rgb.png",
+          "width": 256,
+          "height": 256,
+          "modality": "RGB",
+          "provenance": "observed",
+          "radiometric": false,
+          "sha256": "a9dd9fc11f6e57b2a2329432b6dcb237c09b48baa9f0081e9eec367946344e39",
+          "gsd_m": 10,
+          "acquired": "2024-06-13T18:19:21.024000Z",
+          "rendering": "Official Sentinel-2 TCI"
+        },
+        {
+          "id": "s2-003-nir",
+          "path": "s2-003-nir.png",
+          "width": 256,
+          "height": 256,
+          "modality": "NIR",
+          "provenance": "observed",
+          "radiometric": false,
+          "sha256": "171d96fe808efe5db3802d958663733dc4a3efd4d64881b418505d501efefe7c",
+          "gsd_m": 10,
+          "acquired": "2024-06-13T18:19:21.024000Z",
+          "band": "B08",
+          "wavelength_um": 0.842,
+          "rendering": "B08 DN, per-crop 2–98 percentile grayscale stretch. Reflected sunlight, not emitted heat. No reflectance or NDVI claims.",
+          "display_range_dn": [
+            2280,
+            4700
+          ]
+        }
+      ],
+      "alignment": "Same acquisition and common grid; registration accuracy not independently measured",
+      "source": {
+        "url": "https://planetarycomputer.microsoft.com/dataset/sentinel-2-l2a",
+        "item": "S2A_MSIL2A_20240613T181921_R127_T12TWQ_20240614T021423",
+        "center": [
+          -110.83,
+          44.46
+        ]
+      },
+      "tags": [
+        "satellite",
+        "near-infrared"
+      ],
+      "reference": {
+        "caption_status": "No human caption ground truth; modality stress test"
+      },
+      "license": "Contains modified Copernicus Sentinel data (2024). Preserve Copernicus attribution and source terms."
+    },
+    {
+      "id": "nasa-earthrise",
+      "title": "Earthrise · Apollo 8 photograph",
+      "dataset": "NASA Earthrise",
+      "group": "AS08-14-2383",
+      "split": "illustrative",
+      "assets": [
+        {
+          "id": "nasa-earthrise",
+          "path": "nasa-earthrise.jpg",
+          "modality": "MISC",
+          "domain": "unknown",
+          "width": 1280,
+          "height": 1280,
+          "provenance": "observed",
+          "radiometric": false,
+          "sha256": "28abd6a32f8d3a0f848072e32c7a1c268e4fe21e68d81ce5b49e74586f1dea22"
+        }
+      ],
+      "tags": [
+        "space-photography",
+        "misc"
+      ],
+      "source": {
+        "url": "https://science.nasa.gov/resource/the-rising-earth-as-seen-by-apollo-8/",
+        "original_id": "Apollo 8 Earthrise",
+        "date": "1968-12-24"
+      },
+      "license": "NASA / Apollo 8; US Government image; retain credit",
+      "reference": {
+        "caption_status": "Official source describes Earth above the lunar horizon; illustrative example, not an independent benchmark"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "EuroSAT",
+      "url": "https://github.com/phelber/EuroSAT",
+      "mirror": "timm/eurosat-rgb",
+      "license": "MIT",
+      "selection": "First 3 examples per class encountered in first 400 test rows",
+      "role": "10 land-cover classes; class labels, no human captions"
+    },
+    {
+      "name": "Landsat C2",
+      "url": "https://www.usgs.gov/landsat-missions/landsat-collection-2-surface-temperature",
+      "license": "Public domain USGS Landsat imagery",
+      "selection": "Six named environmental contexts; lowest scene cloud fraction among first 30 returned 2024 May–September items",
+      "role": "Registered RGB and real surface-temperature products with QA; no geothermal-cause labels"
+    },
+    {
+      "name": "HIT-UAV",
+      "url": "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset",
+      "license": "CC-BY-4.0 current upstream",
+      "selection": "One per day/night, altitude and angle group, capped at 18 test images",
+      "role": "Real aerial thermal imagery; object boxes. Not satellite scale, not calibrated temperature."
+    },
+    {
+      "name": "Sentinel-2 NIR",
+      "url": "https://planetarycomputer.microsoft.com/dataset/sentinel-2-l2a",
+      "license": "Copernicus Sentinel terms; retain modified-data attribution",
+      "selection": "Four geographic contexts in June 2024; first suitable SAR item / lowest cloud metadata among first 30 optical items",
+      "role": "Same-acquisition RGB and NIR; no temperature information"
+    },
+    {
+      "name": "Sentinel-1 SAR",
+      "url": "https://planetarycomputer.microsoft.com/dataset/sentinel-1-rtc",
+      "license": "Copernicus Sentinel terms; retain modified-data attribution",
+      "selection": "Four geographic contexts in June 2024; first suitable SAR item / lowest cloud metadata among first 30 optical items",
+      "role": "Actual radar VV/VH; no thermal or semantic truth labels"
+    },
+    {
+      "name": "NASA Earthrise",
+      "url": "https://science.nasa.gov/resource/the-rising-earth-as-seen-by-apollo-8/",
+      "license": "NASA / Apollo 8, public US Government image; retain credit",
+      "selection": "One historic space photograph, December 1968",
+      "role": "Miscellaneous optical scene interpretation; no thermal measurement"
+    }
+  ],
+  "errors": [],
+  "download_history": [
+    {
+      "stage": "HIT-UAV",
+      "error": "The \"path\" argument must be of type string. Received undefined"
+    },
+    {
+      "stage": "Landsat Yellowstone",
+      "error": "429 https://planetarycomputer.microsoft.com/api/sas/v1/sign?href=https%3A%2F%2Flandsateuwest.blob.core.windows.net%2Flandsat-c2%2Flevel-2%2Fstandard%2Foli-tirs%2F2024%2F038%2F029%2FLC08_L2SP_038029_20240927_20241005_02_T1%2FLC08_L2SP_038029_20240927_20241005_02_T1_SR_B3.TIF"
+    },
+    {
+      "stage": "Landsat Rotterdam",
+      "error": "429 https://planetarycomputer.microsoft.com/api/sas/v1/sign?href=https%3A%2F%2Flandsateuwest.blob.core.windows.net%2Flandsat-c2%2Flevel-2%2Fstandard%2Foli-tirs%2F2024%2F198%2F024%2FLC09_L2SP_198024_20240920_20240923_02_T1%2FLC09_L2SP_198024_20240920_20240923_02_T1_SR_B4.TIF"
+    },
+    {
+      "stage": "Landsat Amazon",
+      "error": "429 https://planetarycomputer.microsoft.com/api/sas/v1/sign?href=https%3A%2F%2Flandsateuwest.blob.core.windows.net%2Flandsat-c2%2Flevel-2%2Fstandard%2Foli-tirs%2F2024%2F231%2F062%2FLC08_L2SP_231062_20240818_20240823_02_T1%2FLC08_L2SP_231062_20240818_20240823_02_T1_SR_B4.TIF"
+    }
+  ]
+}
