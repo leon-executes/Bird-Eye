@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-25",
+  "version": "1.0.2",
+  "status": "Public preview release candidate; not commercially validated",
+  "tests": {
+    "regression": {
+      "passed": 55,
+      "failed": 0
+    },
+    "samples": {
+      "scenes": 63,
+      "panels": 77,
+      "errors": 0
+    },
+    "fresh_source_http": [
+      {
+        "name": "health",
+        "status": 200
+      },
+      {
+        "name": "cross origin denied",
+        "status": 403
+      },
+      {
+        "name": "mutation without token denied",
+        "status": 403
+      },
+      {
+        "name": "private settings excluded",
+        "status": 404
+      },
+      {
+        "name": "asset traversal denied",
+        "status": 400
+      },
+      {
+        "name": "artwork traversal denied",
+        "status": 400
+      },
+      {
+        "name": "invalid bulk task rejected before enqueue",
+        "status": 400
+      },
+      {
+        "name": "bulk limit enforced",
+        "status": 400
+      },
+      {
+        "name": "empty bulk rejected",
+        "status": 400
+      },
+      {
+        "name": "oversized related group rejected",
+        "status": 400
+      },
+      {
+        "name": "all 77 public panels served with image MIME",
+        "status": "pass"
+      }
+    ],
+    "dependency_advisories": {
+      "source": "npm bulk advisory registry",
+      "patched": {
+        "sharp": "0.35.5",
+        "ajv": "8.18.0"
+      },
+      "remaining": {}
+    },
+    "source_audit": {
+      "source_files": 348,
+      "private_paths": [],
+      "credential_pattern_matches": [],
+      "missing_local_doc_links": [],
+      "public_assets": 16,
+      "largest_public_asset": {
+        "name": "Qwen3.5-9B-Q4_K_M.gguf.part01.zst",
+        "bytes": 1874280346
+      },
+      "oversized_assets": []
+    },
+    "ui": "Prior native-window and renderer checks retained in evaluation-1.0.2/ui-smoke.json"
+  },
+  "distribution": {
+    "commit": "Contents of BirdEye-1.0.2-Source.zip",
+    "release_assets": "All files in dist/github",
+    "exclude": "dist/personal; models, imports, local settings and live reports",
+    "published": false
+  },
+  "limits": [
+    "No fresh caption-accuracy benchmark in this validation pass. Prior evaluation limitations still apply.",
+    "Clean Windows VM, broad GPU matrix and long batch endurance not validated by this pass.",
+    "Windows executables are unsigned.",
+    "GitHub Actions were inspected and strengthened but not run on GitHub.",
+    "Original app is PolyForm Noncommercial; this is not a commercial-use licence."
+  ],
+  "archive_evidence": "dist/RELEASE-1.0.2-VERIFICATION.json and dist/SHA256SUMS-1.0.2.txt"
+}

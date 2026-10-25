@@ -1,0 +1,245 @@
+{
+  "sampling": "Four 8 MiB blocks at 0%, 25%, 50%, 75% per file. Sample results do not guarantee full-file ratios.",
+  "rows": [
+    {
+      "file": "EarthDial-4B-RGB-Q4_K_M.gguf",
+      "method": "gzip-1",
+      "input_bytes": 33554432,
+      "bytes": 32632318,
+      "ratio": 0.9725188612937927,
+      "encode_seconds": 0.5897994999999999,
+      "decode_seconds": 0.1231685,
+      "sha256_verified": true
+    },
+    {
+      "file": "EarthDial-4B-RGB-Q4_K_M.gguf",
+      "method": "gzip-6",
+      "input_bytes": 33554432,
+      "bytes": 32595203,
+      "ratio": 0.9714127480983734,
+      "encode_seconds": 0.5902832,
+      "decode_seconds": 0.10896629999999982,
+      "sha256_verified": true
+    },
+    {
+      "file": "EarthDial-4B-RGB-Q4_K_M.gguf",
+      "method": "zstd-3",
+      "input_bytes": 33554432,
+      "bytes": 32626246,
+      "ratio": 0.9723379015922546,
+      "encode_seconds": 0.07889879999999994,
+      "decode_seconds": 0.05269619999999986,
+      "sha256_verified": true
+    },
+    {
+      "file": "EarthDial-4B-RGB-Q4_K_M.gguf",
+      "method": "zstd-9",
+      "input_bytes": 33554432,
+      "bytes": 32605355,
+      "ratio": 0.9717153012752533,
+      "encode_seconds": 0.10542129999999997,
+      "decode_seconds": 0.05597450000000003,
+      "sha256_verified": true
+    },
+    {
+      "file": "EarthDial-4B-RGB-Q4_K_M.gguf",
+      "method": "brotli-4",
+      "input_bytes": 33554432,
+      "bytes": 32576147,
+      "ratio": 0.9708448350429535,
+      "encode_seconds": 0.1856627000000001,
+      "decode_seconds": 0.09303639999999996,
+      "sha256_verified": true
+    },
+    {
+      "file": "Qwen3.5-9B-Q4_K_M.gguf",
+      "method": "gzip-1",
+      "input_bytes": 33554432,
+      "bytes": 27498710,
+      "ratio": 0.819525420665741,
+      "encode_seconds": 0.48750369999999976,
+      "decode_seconds": 0.12264069999999992,
+      "sha256_verified": true
+    },
+    {
+      "file": "Qwen3.5-9B-Q4_K_M.gguf",
+      "method": "gzip-6",
+      "input_bytes": 33554432,
+      "bytes": 27136606,
+      "ratio": 0.8087338805198669,
+      "encode_seconds": 0.6105951000000001,
+      "decode_seconds": 0.10389269999999988,
+      "sha256_verified": true
+    },
+    {
+      "file": "Qwen3.5-9B-Q4_K_M.gguf",
+      "method": "zstd-3",
+      "input_bytes": 33554432,
+      "bytes": 27128749,
+      "ratio": 0.8084997236728668,
+      "encode_seconds": 0.08419900000000007,
+      "decode_seconds": 0.056840500000000245,
+      "sha256_verified": true
+    },
+    {
+      "file": "Qwen3.5-9B-Q4_K_M.gguf",
+      "method": "zstd-9",
+      "input_bytes": 33554432,
+      "bytes": 26920589,
+      "ratio": 0.8022960722446442,
+      "encode_seconds": 0.2103996000000002,
+      "decode_seconds": 0.05863879999999972,
+      "sha256_verified": true
+    },
+    {
+      "file": "Qwen3.5-9B-Q4_K_M.gguf",
+      "method": "brotli-4",
+      "input_bytes": 33554432,
+      "bytes": 27021374,
+      "ratio": 0.805299699306488,
+      "encode_seconds": 0.25331690000000023,
+      "decode_seconds": 0.11131560000000082,
+      "sha256_verified": true
+    },
+    {
+      "file": "mmproj-EarthDial-4B-RGB-F16.gguf",
+      "method": "gzip-1",
+      "input_bytes": 33554432,
+      "bytes": 24781312,
+      "ratio": 0.7385406494140625,
+      "encode_seconds": 0.4958173000000006,
+      "decode_seconds": 0.11784340000000065,
+      "sha256_verified": true
+    },
+    {
+      "file": "mmproj-EarthDial-4B-RGB-F16.gguf",
+      "method": "gzip-6",
+      "input_bytes": 33554432,
+      "bytes": 24490422,
+      "ratio": 0.7298714518547058,
+      "encode_seconds": 0.6006302999999998,
+      "decode_seconds": 0.1174317000000001,
+      "sha256_verified": true
+    },
+    {
+      "file": "mmproj-EarthDial-4B-RGB-F16.gguf",
+      "method": "zstd-3",
+      "input_bytes": 33554432,
+      "bytes": 24590818,
+      "ratio": 0.7328634858131409,
+      "encode_seconds": 0.07476230000000032,
+      "decode_seconds": 0.06690159999999923,
+      "sha256_verified": true
+    },
+    {
+      "file": "mmproj-EarthDial-4B-RGB-F16.gguf",
+      "method": "zstd-9",
+      "input_bytes": 33554432,
+      "bytes": 24377149,
+      "ratio": 0.7264956533908844,
+      "encode_seconds": 0.45851260000000005,
+      "decode_seconds": 0.07575749999999971,
+      "sha256_verified": true
+    },
+    {
+      "file": "mmproj-EarthDial-4B-RGB-F16.gguf",
+      "method": "brotli-4",
+      "input_bytes": 33554432,
+      "bytes": 24281703,
+      "ratio": 0.7236511409282684,
+      "encode_seconds": 0.2935478999999996,
+      "decode_seconds": 0.12028800000000046,
+      "sha256_verified": true
+    },
+    {
+      "file": "remoteclip-scene.onnx",
+      "method": "gzip-1",
+      "input_bytes": 33554432,
+      "bytes": 30975360,
+      "ratio": 0.9231376647949219,
+      "encode_seconds": 0.5723817000000008,
+      "decode_seconds": 0.11114959999999974,
+      "sha256_verified": true
+    },
+    {
+      "file": "remoteclip-scene.onnx",
+      "method": "gzip-6",
+      "input_bytes": 33554432,
+      "bytes": 30965707,
+      "ratio": 0.9228499829769135,
+      "encode_seconds": 0.6104229000000004,
+      "decode_seconds": 0.10895210000000043,
+      "sha256_verified": true
+    },
+    {
+      "file": "remoteclip-scene.onnx",
+      "method": "zstd-3",
+      "input_bytes": 33554432,
+      "bytes": 30945482,
+      "ratio": 0.9222472310066223,
+      "encode_seconds": 0.06970989999999984,
+      "decode_seconds": 0.06078690000000097,
+      "sha256_verified": true
+    },
+    {
+      "file": "remoteclip-scene.onnx",
+      "method": "zstd-9",
+      "input_bytes": 33554432,
+      "bytes": 30943363,
+      "ratio": 0.9221840798854828,
+      "encode_seconds": 0.08673539999999957,
+      "decode_seconds": 0.058513699999999516,
+      "sha256_verified": true
+    },
+    {
+      "file": "remoteclip-scene.onnx",
+      "method": "brotli-4",
+      "input_bytes": 33554432,
+      "bytes": 30917461,
+      "ratio": 0.9214121401309967,
+      "encode_seconds": 0.19847459999999956,
+      "decode_seconds": 0.19982510000000003,
+      "sha256_verified": true
+    },
+    {
+      "file": "EarthDial-4B-RGB-Q4_K_M.gguf",
+      "method": "xz-6",
+      "input_bytes": 33554432,
+      "bytes": 32540252,
+      "ratio": 0.9697750806808472,
+      "encode_seconds": 12.15894599998137,
+      "decode_seconds": 0.5237205000012182,
+      "sha256_verified": true
+    },
+    {
+      "file": "mmproj-EarthDial-4B-RGB-F16.gguf",
+      "method": "xz-6",
+      "input_bytes": 33554432,
+      "bytes": 22552156,
+      "ratio": 0.6721066236495972,
+      "encode_seconds": 17.672175899962895,
+      "decode_seconds": 1.0049577999743633,
+      "sha256_verified": true
+    },
+    {
+      "file": "Qwen3.5-9B-Q4_K_M.gguf",
+      "method": "xz-6",
+      "input_bytes": 33554432,
+      "bytes": 26628416,
+      "ratio": 0.7935886383056641,
+      "encode_seconds": 12.81674809998367,
+      "decode_seconds": 1.0182711000088602,
+      "sha256_verified": true
+    },
+    {
+      "file": "remoteclip-scene.onnx",
+      "method": "xz-6",
+      "input_bytes": 33554432,
+      "bytes": 30809596,
+      "ratio": 0.918197512626648,
+      "encode_seconds": 12.841522000031546,
+      "decode_seconds": 1.782234399986919,
+      "sha256_verified": true
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "note": "Post-hoc sensitivity diagnostic; thresholds not validated on held-out data.",
+  "results": [
+    {
+      "threshold": 0.05,
+      "tp": 180,
+      "fp": 2839,
+      "fn": 30,
+      "precision": 0.059622391520370986,
+      "recall": 0.8571428571428571
+    },
+    {
+      "threshold": 0.1,
+      "tp": 174,
+      "fp": 930,
+      "fn": 36,
+      "precision": 0.15760869565217392,
+      "recall": 0.8285714285714286
+    },
+    {
+      "threshold": 0.15,
+      "tp": 121,
+      "fp": 278,
+      "fn": 89,
+      "precision": 0.3032581453634085,
+      "recall": 0.5761904761904761
+    },
+    {
+      "threshold": 0.2,
+      "tp": 73,
+      "fp": 70,
+      "fn": 137,
+      "precision": 0.5104895104895105,
+      "recall": 0.3476190476190476
+    },
+    {
+      "threshold": 0.25,
+      "tp": 50,
+      "fp": 12,
+      "fn": 160,
+      "precision": 0.8064516129032258,
+      "recall": 0.23809523809523808
+    },
+    {
+      "threshold": 0.35,
+      "tp": 18,
+      "fp": 0,
+      "fn": 192,
+      "precision": 1,
+      "recall": 0.08571428571428572
+    },
+    {
+      "threshold": 0.5,
+      "tp": 1,
+      "fp": 0,
+      "fn": 209,
+      "precision": 1,
+      "recall": 0.004761904761904762
+    }
+  ]
+}

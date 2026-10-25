@@ -1,0 +1,3 @@
+eurosat-000 [('a harbor with docks and ships', 0.2747874855995178), ('a flooded settlement', 0.26222413778305054), ('floating sea ice and ice floes', 0.2549305558204651)]
+eurosat-003 [('basketball courts', 0.3069198727607727), ('a construction site', 0.2942512631416321), ('dense forest', 0.286748468875885)]
+eurosat-013 [('floating sea ice and ice floes', 0.21988141536712646), ('open sea or ocean', 0.21735325455665588), ('a coral reef in shallow coastal water', 0.2141055166721344)]

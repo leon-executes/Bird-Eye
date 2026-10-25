@@ -1,0 +1,19 @@
+{
+  "zoom": "490%",
+  "status": {
+    "profiles": 1,
+    "roles": 6,
+    "gateway": true,
+    "settings": 3
+  },
+  "errors": [],
+  "bulkState": {
+    "dialogOpen": false,
+    "dialogDisplay": "none",
+    "bulkActive": true
+  },
+  "fonts": {
+    "manrope": true,
+    "sourceSans": true
+  }
+}

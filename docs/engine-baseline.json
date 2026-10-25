@@ -1,0 +1,16 @@
+{
+  "source": "Bird Eye 1.0.2 optional external evidence gateway",
+  "scope": "User-authorized external provider protocol and mandatory object contribution review; inference weights unchanged.",
+  "files": {
+    "council.mjs": "64581d2830f46b7a2ce826e76812cdb84efe6d50e0274ef9d93ac3a200a445d3",
+    "engine.mjs": "db0af9cc11265a6512b3998173295dca217ac5d5aadd0cde23447f5ca4968854",
+    "core.mjs": "b0724dda2cdf356196e6bd1b9ff6cef63fb4ff7ad7812d23b7a1bc616d596570",
+    "adjudication.mjs": "0a68d26f62f3795fdbf7fb0655a447435c453ff239756777b14bb35ceccbe615",
+    "profiles.mjs": "7639588107f3ed29800ca415d5edfc46eb116ba81ba29a7e3bde76ec3f29757d",
+    "detector.mjs": "b057c9c36dbcfed7c439d5c76da80d1446303f2df7e78693e346499c31b95a54",
+    "scene-witness.mjs": "07f201dd16555ca3896d7735196642e251d0a5e9ff94227c424e2fb0d8b4a9f5",
+    "model-receipt.mjs": "b587eb2d9d07d50bb57b31711d33bf199e10cb12718bc9ed2c225694b303555b",
+    "resource-lock.mjs": "efb296bf4731fd445b17e7658e7da2c265299969c69762135be4c267f212c766",
+    "detector-gateway.mjs": "da953ad7b7723a967230f64aac909108905abb90e559c726737b85a0534e4781"
+  }
+}

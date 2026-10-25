@@ -1,0 +1,15 @@
+{
+  "source": "Satellite Council 0.3.0",
+  "scope": "Inference, prompts, routing, adjudication and measurement logic preserved byte for byte.",
+  "files": {
+    "council.mjs": "2f453456cc0f8e80014cae2f0db5a33a10630ee96bec863ce86e490623bd270b",
+    "engine.mjs": "db0af9cc11265a6512b3998173295dca217ac5d5aadd0cde23447f5ca4968854",
+    "core.mjs": "b0724dda2cdf356196e6bd1b9ff6cef63fb4ff7ad7812d23b7a1bc616d596570",
+    "adjudication.mjs": "ecace15d19262e918c8219a14e8192db03673fdeeaacbf76be9d224fcf2c5c55",
+    "profiles.mjs": "01917a0f1fcc5be1af5dd041a63aba141f8a2a600619b1449bd2e53148d5e276",
+    "detector.mjs": "d2eb76aeb07161bcd89b8fabb4d6b3af0a6fa0e343418809c89b5431dc4a42b4",
+    "scene-witness.mjs": "07f201dd16555ca3896d7735196642e251d0a5e9ff94227c424e2fb0d8b4a9f5",
+    "model-receipt.mjs": "ed24c5719d64af88097535046b2ff30305488eb2ee6fcc5c19ec4c85844c428a",
+    "resource-lock.mjs": "efb296bf4731fd445b17e7658e7da2c265299969c69762135be4c267f212c766"
+  }
+}

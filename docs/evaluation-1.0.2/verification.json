@@ -1,0 +1,16 @@
+{
+  "version": "1.0.2",
+  "checks": [
+    "native window opened",
+    "warm palette inspected",
+    "normal and maximized layouts inspected",
+    "per-image expand control opened RGB image",
+    "Fit view shows 320% at normal window size",
+    "55 regression tests pass",
+    "63 scenes / 77 panels integrity verified",
+    "12 transport parts restored with original model digests"
+  ],
+  "limitations": [
+    "Six-person caption remains semantically weak; detector proposals and master decision remain visible."
+  ]
+}

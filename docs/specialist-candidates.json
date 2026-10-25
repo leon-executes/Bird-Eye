@@ -1,0 +1,138 @@
+{
+  "checked": "2026-10-25",
+  "candidates": [
+    {
+      "id": "CapRL-Qwen3VL-4B",
+      "scope": "General dense captioning, RL-trained",
+      "source": "https://huggingface.co/internlm/CapRL-Qwen3VL-4B",
+      "status": "Official GGUF tested on 123 cases; two 2,048-image domain pilots completed; neither adapter promoted",
+      "reason": "Strong small RGB caption candidate. Initial adaptation lowered validation loss but learned wrong thermal counts and regressed on ground-camera imagery; no adapter activated."
+    },
+    {
+      "id": "TerraSense",
+      "scope": "Remote-sensing RGB captioning/detection/VQA/change",
+      "source": "https://github.com/TerraSense-CASM/TerraSense",
+      "status": "Installed third-party Q4_K_M; 123 raw caption tests and 7 RGB structured tests completed; not promoted",
+      "reason": "The tested artifact misidentifies some sea ice, shrubland and circular fields. Author training claims are not independently established; native-checkpoint parity is untested."
+    },
+    {
+      "id": "MiniCPM-V-4.7-1B",
+      "scope": "Efficient general vision",
+      "source": "https://github.com/OpenBMB/MiniCPM-V",
+      "status": "Official Q8 plus 4x projector installed; 123 matched cases completed; not promoted",
+      "reason": "Very fast on the laptop, but more scene recognition failures than CapRL in this diagnostic."
+    },
+    {
+      "id": "Falcon-Single-Instruction-Large",
+      "scope": "14 remote-sensing tasks; Florence architecture, 0.7B",
+      "source": "https://github.com/TianHuiLab/Falcon",
+      "status": "Author checkpoint returned access-restricted HTTP response; no weights installed",
+      "reason": "Promising size but unavailable without repository access"
+    },
+    {
+      "id": "DescribeEarth",
+      "scope": "Detailed region description with polygon/box, custom fusion",
+      "source": "https://github.com/earth-insights/DescribeEarth",
+      "status": "Reviewed; not installed",
+      "reason": "Useful regional expert; generic GGUF would omit specialized fusion/focal pipeline. Avoid pretending parity"
+    },
+    {
+      "id": "ZoomEarth-3B",
+      "scope": "Active zoom/crop reasoning on ultra-high-resolution RGB",
+      "source": "https://github.com/earth-insights/ZoomEarth",
+      "status": "Reviewed; not installed",
+      "reason": "Requires faithful tool loop; does not add detail to native 200-pixel crops"
+    },
+    {
+      "id": "EagleVision-1B/2B/4B/7B",
+      "scope": "Object detection and attributes",
+      "source": "https://github.com/XiangTodayEatsWhat/EagleVision",
+      "status": "Reviewed; not installed",
+      "reason": "Linux mmcv/mmdet/flash-attention dependencies; separate object tool rather than caption master"
+    },
+    {
+      "id": "IRGPT",
+      "scope": "Real thermal captioning and task understanding",
+      "source": "https://github.com/WheatCao/ICCV2025-IRGPT",
+      "status": "Public Drive weight folder lists config/code but no model shards or tokenizer model; early IR-TD data is downloadable",
+      "reason": "No fabricated working deployment; acquire data and train an available capable captioner"
+    },
+    {
+      "id": "Thermo-VL",
+      "scope": "Aligned RGB+thermal Molmo fusion",
+      "source": "https://github.com/thusharakart/Thermo-VL",
+      "status": "Repository has docs, LICENSE, gitignore; no runnable model code/checkpoint located",
+      "reason": "Paper candidate, not deployable council member"
+    },
+    {
+      "id": "EximiusLabs/fusion-embedding-2-ember",
+      "scope": "Thermal-text embedding retrieval",
+      "source": "https://huggingface.co/EximiusLabs/fusion-embedding-2-ember",
+      "status": "Reviewed; not installed",
+      "reason": "Embedding adapter, not caption generator; source-based license filtering is heuristic"
+    },
+    {
+      "id": "Merttemur06 thermal fine-tunes / Mitura thermal-vlm-distilled",
+      "scope": "Claimed thermal adaptation",
+      "source": "https://huggingface.co/Mitura/thermal-vlm-distilled",
+      "status": "Inspected repository metadata",
+      "reason": "Missing substantive training/evaluation provenance; name alone insufficient"
+    },
+    {
+      "id": "MonoIR-RS / TherA",
+      "scope": "Synthetic infrared-style images / RGB-to-TIR generation",
+      "source": "https://github.com/donkeymouse/TherA",
+      "status": "Excluded as real thermal evidence",
+      "reason": "Synthetic appearance cannot establish real heat or replace measured thermal evaluation"
+    },
+    {
+      "id": "GeoChat-7B",
+      "scope": "Grounded RGB remote-sensing conversation and captioning",
+      "source": "https://github.com/mbzuai-oryx/GeoChat",
+      "status": "Reviewed; not installed",
+      "reason": "Reputable CVPR 2024 LLaVA/Vicuna specialist with 318K generated instructions. No measured local superiority. Newer branding did not make the tested TerraSense artifact reliable."
+    },
+    {
+      "id": "SkySenseGPT / FIT-RS",
+      "scope": "Fine-grained RGB objects and relations",
+      "source": "https://github.com/Luo-Z13/SkySenseGPT",
+      "status": "Reviewed; not installed",
+      "reason": "Useful structured relationship supervision and comparison candidate. FIT-RS contains 1.8M instruction samples under CC-BY-NC-4.0; these are not 1.8M independent human-authored scene captions."
+    },
+    {
+      "id": "MiniCPM-V-4.7-35B-A3B",
+      "scope": "Large general visual challenger with sparse active experts",
+      "source": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
+      "status": "Official IQ3_M installed; 12 raw hard cases, 7 completed standalone councils, 8 connected councils and 6 compact-review cases completed; not promoted",
+      "reason": "CPU expert offload runs on 32 GiB RAM, but the larger reviewer still loses forest, harbor and thermal-object semantics. It does not earn default memory/latency cost."
+    },
+    {
+      "id": "FusionRS RC4",
+      "scope": "RGB / infrared-style remote sensing embedding and VLM resources",
+      "source": "https://github.com/frozy129/FusionRS",
+      "status": "Reviewed; not installed",
+      "reason": "Public release distinguishes synthetic infrared-style caption data from real HIT-UAV annotation-derived VQA. Released CLIP is an embedding model, not independent real-thermal caption proof."
+    },
+    {
+      "id": "EarthDial 4B RGB",
+      "scope": "Trained remote-sensing RGB caption witness",
+      "source": "https://github.com/hiyamdebary/EarthDial",
+      "status": "Native 12-image check, matched 69-image Q4 and Q8 RGB comparisons, and 11 final-writer trials completed; selected first RGB witness",
+      "reason": "Useful short scene nouns. Q8 did not demonstrate enough improvement to replace Q4. Neither precision is a validated sole adjudicator or infrared expert."
+    },
+    {
+      "id": "GeoVLM-R1",
+      "scope": "Remote-sensing reasoning",
+      "source": "https://mustansarfiaz.github.io/GeoVLM-R1/",
+      "status": "Reviewed; public page says checkpoints will be released; not installed",
+      "reason": "Unavailable weights cannot serve as a working council member."
+    },
+    {
+      "id": "GeoVista / GeoEyes",
+      "scope": "Tool-assisted zoom reasoning for very high resolution RGB",
+      "source": "https://github.com/ryan6073/GeoVista",
+      "status": "Reviewed; not installed",
+      "reason": "Requires a faithful multi-turn crop/tool loop; active zoom cannot reconstruct native detail missing from a small contact-sheet crop. No local quality claim."
+    }
+  ]
+}

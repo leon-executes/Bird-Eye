@@ -1,0 +1,817 @@
+{
+  "results": [
+    {
+      "asset_id": "eurosat-000",
+      "ranking": [
+        {
+          "label": "a harbor with docks and ships",
+          "cosine": 0.2797
+        },
+        {
+          "label": "a flooded settlement",
+          "cosine": 0.2636
+        },
+        {
+          "label": "floating sea ice and ice floes",
+          "cosine": 0.2616
+        },
+        {
+          "label": "an industrial port and shipping channels",
+          "cosine": 0.2584
+        },
+        {
+          "label": "a bridge across water",
+          "cosine": 0.2544
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-001",
+      "ranking": [
+        {
+          "label": "a bridge across water",
+          "cosine": 0.278
+        },
+        {
+          "label": "a flooded settlement",
+          "cosine": 0.2423
+        },
+        {
+          "label": "dense forest",
+          "cosine": 0.2356
+        },
+        {
+          "label": "a traffic roundabout",
+          "cosine": 0.2346
+        },
+        {
+          "label": "herbaceous vegetation",
+          "cosine": 0.2334
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-002",
+      "ranking": [
+        {
+          "label": "a residential neighborhood",
+          "cosine": 0.2787
+        },
+        {
+          "label": "a flooded settlement",
+          "cosine": 0.2744
+        },
+        {
+          "label": "dense forest",
+          "cosine": 0.2725
+        },
+        {
+          "label": "a construction site",
+          "cosine": 0.2724
+        },
+        {
+          "label": "a muddy tidal flat",
+          "cosine": 0.2714
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-003",
+      "ranking": [
+        {
+          "label": "basketball courts",
+          "cosine": 0.3054
+        },
+        {
+          "label": "a construction site",
+          "cosine": 0.294
+        },
+        {
+          "label": "a soccer or football field",
+          "cosine": 0.2864
+        },
+        {
+          "label": "dense forest",
+          "cosine": 0.2862
+        },
+        {
+          "label": "a residential neighborhood",
+          "cosine": 0.2804
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-004",
+      "ranking": [
+        {
+          "label": "a rocky coastline",
+          "cosine": 0.2615
+        },
+        {
+          "label": "a sandy beach",
+          "cosine": 0.2587
+        },
+        {
+          "label": "a muddy tidal flat",
+          "cosine": 0.2558
+        },
+        {
+          "label": "floating sea ice and ice floes",
+          "cosine": 0.2536
+        },
+        {
+          "label": "a bare rocky island",
+          "cosine": 0.2505
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-005",
+      "ranking": [
+        {
+          "label": "large circular storage tanks",
+          "cosine": 0.335
+        },
+        {
+          "label": "large warehouses",
+          "cosine": 0.3277
+        },
+        {
+          "label": "a lake or water reservoir",
+          "cosine": 0.2729
+        },
+        {
+          "label": "an oil refinery and storage facilities",
+          "cosine": 0.2671
+        },
+        {
+          "label": "a thermal power station with cooling towers",
+          "cosine": 0.2587
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-006",
+      "ranking": [
+        {
+          "label": "open sea or ocean",
+          "cosine": 0.2185
+        },
+        {
+          "label": "floating sea ice and ice floes",
+          "cosine": 0.2161
+        },
+        {
+          "label": "a sandy beach",
+          "cosine": 0.2131
+        },
+        {
+          "label": "a coral reef in shallow coastal water",
+          "cosine": 0.2047
+        },
+        {
+          "label": "a cargo ship alongside a container terminal",
+          "cosine": 0.2027
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-007",
+      "ranking": [
+        {
+          "label": "floating sea ice and ice floes",
+          "cosine": 0.2168
+        },
+        {
+          "label": "a cargo ship alongside a container terminal",
+          "cosine": 0.2067
+        },
+        {
+          "label": "a coral reef in shallow coastal water",
+          "cosine": 0.2009
+        },
+        {
+          "label": "a sandy beach",
+          "cosine": 0.1995
+        },
+        {
+          "label": "open sea or ocean",
+          "cosine": 0.1959
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-008",
+      "ranking": [
+        {
+          "label": "a muddy tidal flat",
+          "cosine": 0.2704
+        },
+        {
+          "label": "a sandy beach",
+          "cosine": 0.2684
+        },
+        {
+          "label": "a wetland with reeds and open water",
+          "cosine": 0.2554
+        },
+        {
+          "label": "aquaculture ponds",
+          "cosine": 0.253
+        },
+        {
+          "label": "a flooded settlement",
+          "cosine": 0.2508
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-009",
+      "ranking": [
+        {
+          "label": "a road junction",
+          "cosine": 0.2924
+        },
+        {
+          "label": "a construction site",
+          "cosine": 0.28
+        },
+        {
+          "label": "a muddy tidal flat",
+          "cosine": 0.2717
+        },
+        {
+          "label": "a bridge across water",
+          "cosine": 0.269
+        },
+        {
+          "label": "herbaceous vegetation",
+          "cosine": 0.2673
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-010",
+      "ranking": [
+        {
+          "label": "floating sea ice and ice floes",
+          "cosine": 0.2551
+        },
+        {
+          "label": "a flooded settlement",
+          "cosine": 0.2545
+        },
+        {
+          "label": "a cargo ship alongside a container terminal",
+          "cosine": 0.2516
+        },
+        {
+          "label": "a harbor with docks and ships",
+          "cosine": 0.2497
+        },
+        {
+          "label": "a sandy beach",
+          "cosine": 0.2496
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-011",
+      "ranking": [
+        {
+          "label": "dense forest",
+          "cosine": 0.2627
+        },
+        {
+          "label": "a muddy tidal flat",
+          "cosine": 0.2481
+        },
+        {
+          "label": "herbaceous vegetation",
+          "cosine": 0.2416
+        },
+        {
+          "label": "terrain with regular image scanline artifacts",
+          "cosine": 0.2379
+        },
+        {
+          "label": "a rocky coastline",
+          "cosine": 0.2357
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-012",
+      "ranking": [
+        {
+          "label": "a sandy beach",
+          "cosine": 0.2705
+        },
+        {
+          "label": "floating sea ice and ice floes",
+          "cosine": 0.265
+        },
+        {
+          "label": "a coral reef in shallow coastal water",
+          "cosine": 0.2636
+        },
+        {
+          "label": "a muddy tidal flat",
+          "cosine": 0.2556
+        },
+        {
+          "label": "herbaceous vegetation",
+          "cosine": 0.2544
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-013",
+      "ranking": [
+        {
+          "label": "floating sea ice and ice floes",
+          "cosine": 0.2194
+        },
+        {
+          "label": "open sea or ocean",
+          "cosine": 0.2161
+        },
+        {
+          "label": "herbaceous vegetation",
+          "cosine": 0.2121
+        },
+        {
+          "label": "a coral reef in shallow coastal water",
+          "cosine": 0.212
+        },
+        {
+          "label": "a cargo ship alongside a container terminal",
+          "cosine": 0.2091
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-014",
+      "ranking": [
+        {
+          "label": "a construction site",
+          "cosine": 0.2771
+        },
+        {
+          "label": "a muddy tidal flat",
+          "cosine": 0.277
+        },
+        {
+          "label": "a bridge across water",
+          "cosine": 0.2761
+        },
+        {
+          "label": "a flooded settlement",
+          "cosine": 0.2739
+        },
+        {
+          "label": "dense forest",
+          "cosine": 0.2738
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-015",
+      "ranking": [
+        {
+          "label": "herbaceous vegetation",
+          "cosine": 0.2801
+        },
+        {
+          "label": "dense forest",
+          "cosine": 0.2778
+        },
+        {
+          "label": "a construction site",
+          "cosine": 0.267
+        },
+        {
+          "label": "a desert sand dune field",
+          "cosine": 0.2644
+        },
+        {
+          "label": "terrain with regular image scanline artifacts",
+          "cosine": 0.2628
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-016",
+      "ranking": [
+        {
+          "label": "a peninsula on a coastline",
+          "cosine": 0.2597
+        },
+        {
+          "label": "a sandy beach",
+          "cosine": 0.2592
+        },
+        {
+          "label": "a harbor with docks and ships",
+          "cosine": 0.2572
+        },
+        {
+          "label": "a rocky coastline",
+          "cosine": 0.2569
+        },
+        {
+          "label": "open sea or ocean",
+          "cosine": 0.2562
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-017",
+      "ranking": [
+        {
+          "label": "a construction site",
+          "cosine": 0.2681
+        },
+        {
+          "label": "terrain with regular image scanline artifacts",
+          "cosine": 0.267
+        },
+        {
+          "label": "dense forest",
+          "cosine": 0.2588
+        },
+        {
+          "label": "herbaceous vegetation",
+          "cosine": 0.2587
+        },
+        {
+          "label": "a solar panel farm",
+          "cosine": 0.2532
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-018",
+      "ranking": [
+        {
+          "label": "a cargo ship alongside a container terminal",
+          "cosine": 0.2253
+        },
+        {
+          "label": "floating sea ice and ice floes",
+          "cosine": 0.219
+        },
+        {
+          "label": "open sea or ocean",
+          "cosine": 0.2154
+        },
+        {
+          "label": "a sandy beach",
+          "cosine": 0.2153
+        },
+        {
+          "label": "a coral reef in shallow coastal water",
+          "cosine": 0.2113
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-019",
+      "ranking": [
+        {
+          "label": "a construction site",
+          "cosine": 0.2946
+        },
+        {
+          "label": "basketball courts",
+          "cosine": 0.2936
+        },
+        {
+          "label": "a soccer or football field",
+          "cosine": 0.2915
+        },
+        {
+          "label": "dense forest",
+          "cosine": 0.2821
+        },
+        {
+          "label": "a sports stadium",
+          "cosine": 0.2751
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-020",
+      "ranking": [
+        {
+          "label": "agricultural fields",
+          "cosine": 0.3031
+        },
+        {
+          "label": "a solar panel farm",
+          "cosine": 0.2986
+        },
+        {
+          "label": "a muddy tidal flat",
+          "cosine": 0.2889
+        },
+        {
+          "label": "aquaculture ponds",
+          "cosine": 0.2827
+        },
+        {
+          "label": "dry terraced agricultural fields",
+          "cosine": 0.2821
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-021",
+      "ranking": [
+        {
+          "label": "a cargo ship alongside a container terminal",
+          "cosine": 0.2368
+        },
+        {
+          "label": "a coral reef in shallow coastal water",
+          "cosine": 0.224
+        },
+        {
+          "label": "herbaceous vegetation",
+          "cosine": 0.2179
+        },
+        {
+          "label": "floating sea ice and ice floes",
+          "cosine": 0.2147
+        },
+        {
+          "label": "a flooded settlement",
+          "cosine": 0.2109
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-022",
+      "ranking": [
+        {
+          "label": "herbaceous vegetation",
+          "cosine": 0.283
+        },
+        {
+          "label": "dense forest",
+          "cosine": 0.2813
+        },
+        {
+          "label": "a muddy tidal flat",
+          "cosine": 0.273
+        },
+        {
+          "label": "a flooded settlement",
+          "cosine": 0.2708
+        },
+        {
+          "label": "a solar panel farm",
+          "cosine": 0.2656
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-023",
+      "ranking": [
+        {
+          "label": "bare rocky arid terrain",
+          "cosine": 0.3186
+        },
+        {
+          "label": "a muddy tidal flat",
+          "cosine": 0.303
+        },
+        {
+          "label": "a sandy beach",
+          "cosine": 0.302
+        },
+        {
+          "label": "a desert sand dune field",
+          "cosine": 0.2994
+        },
+        {
+          "label": "a construction site",
+          "cosine": 0.2899
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-024",
+      "ranking": [
+        {
+          "label": "a sandy beach",
+          "cosine": 0.2625
+        },
+        {
+          "label": "a muddy tidal flat",
+          "cosine": 0.2591
+        },
+        {
+          "label": "a bridge across water",
+          "cosine": 0.2531
+        },
+        {
+          "label": "a construction site",
+          "cosine": 0.2475
+        },
+        {
+          "label": "terrain with regular image scanline artifacts",
+          "cosine": 0.246
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-025",
+      "ranking": [
+        {
+          "label": "a muddy tidal flat",
+          "cosine": 0.2635
+        },
+        {
+          "label": "a sandy beach",
+          "cosine": 0.2632
+        },
+        {
+          "label": "herbaceous vegetation",
+          "cosine": 0.2611
+        },
+        {
+          "label": "dense forest",
+          "cosine": 0.2588
+        },
+        {
+          "label": "a desert sand dune field",
+          "cosine": 0.2574
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-026",
+      "ranking": [
+        {
+          "label": "herbaceous vegetation",
+          "cosine": 0.2688
+        },
+        {
+          "label": "dense forest",
+          "cosine": 0.2629
+        },
+        {
+          "label": "terrain with regular image scanline artifacts",
+          "cosine": 0.2606
+        },
+        {
+          "label": "a construction site",
+          "cosine": 0.2548
+        },
+        {
+          "label": "a flooded settlement",
+          "cosine": 0.2543
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-027",
+      "ranking": [
+        {
+          "label": "a bridge across water",
+          "cosine": 0.2781
+        },
+        {
+          "label": "a road junction",
+          "cosine": 0.2513
+        },
+        {
+          "label": "a traffic roundabout",
+          "cosine": 0.2429
+        },
+        {
+          "label": "dense forest",
+          "cosine": 0.2413
+        },
+        {
+          "label": "a residential neighborhood",
+          "cosine": 0.2399
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-028",
+      "ranking": [
+        {
+          "label": "agricultural fields",
+          "cosine": 0.2984
+        },
+        {
+          "label": "herbaceous vegetation",
+          "cosine": 0.288
+        },
+        {
+          "label": "a solar panel farm",
+          "cosine": 0.2879
+        },
+        {
+          "label": "aquaculture ponds",
+          "cosine": 0.285
+        },
+        {
+          "label": "a wetland with reeds and open water",
+          "cosine": 0.2816
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    },
+    {
+      "asset_id": "eurosat-029",
+      "ranking": [
+        {
+          "label": "a sandy beach",
+          "cosine": 0.2655
+        },
+        {
+          "label": "dense forest",
+          "cosine": 0.2532
+        },
+        {
+          "label": "a muddy tidal flat",
+          "cosine": 0.2505
+        },
+        {
+          "label": "tennis courts",
+          "cosine": 0.2502
+        },
+        {
+          "label": "a desert sand dune field",
+          "cosine": 0.2494
+        }
+      ],
+      "center_crop_fraction": 1,
+      "note": "Cosine similarities depend on this fixed vocabulary; they are not probabilities. Center crop may omit peripheral content."
+    }
+  ],
+  "sha256": "2e9b124e3d20fe36784f8c6cd1672721ab0d9163482d685f91181febb76e4a4b",
+  "vocabulary_sha256": "46083d46988107aa904b83556ad1d475631da14868b7f7ae608dfa4cade81e0d",
+  "seconds": 2.455
+}

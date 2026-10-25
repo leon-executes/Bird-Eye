@@ -1,0 +1,45 @@
+{
+  "design": "swept-wing-hawk-unified-chrome-20261025",
+  "reference_region": "Phone display only. User refinements: reduced saturation, flat surfaces and stronger brightness separation.",
+  "text_pairs": [
+    {
+      "role": "Body",
+      "foreground": "#edf4f7",
+      "background": "#041322",
+      "contrast": 16.84
+    },
+    {
+      "role": "Caption",
+      "foreground": "#f2f7f9",
+      "background": "#193b50",
+      "contrast": 10.91
+    },
+    {
+      "role": "Card copy",
+      "foreground": "#bfd1dd",
+      "background": "#17394e",
+      "contrast": 7.73
+    },
+    {
+      "role": "Primary action",
+      "foreground": "#241f19",
+      "background": "#dfc6a6",
+      "contrast": 9.93
+    },
+    {
+      "role": "Metadata",
+      "foreground": "#bbd1df",
+      "background": "#0b2133",
+      "contrast": 10.39
+    }
+  ],
+  "native_chrome": {
+    "title_bar": "#153347",
+    "header": "#153347",
+    "verified": [
+      "Native minimize, maximize and close controls visible",
+      "Maximized layout inspected",
+      "File menu popup opened and dismissed"
+    ]
+  }
+}

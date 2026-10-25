@@ -1,0 +1,3545 @@
+[
+  {
+    "provenance": {
+      "schema_version": 2,
+      "prompt_version": "2026-10-25.3-external-object-review",
+      "prompt_sha256": "8cf36538e0175287399fc4841ceda003028828519feeb3fd0f6a71ca67af52bf",
+      "backend": "vulkan",
+      "image_max_dimension": 768,
+      "image_encoding": "lossless PNG",
+      "temperature_prose": "blocked; see deterministic measurements"
+    },
+    "id": "05b9ea00-f759-4b06-a15f-db6257408fa2",
+    "scene_id": "hituav-003",
+    "created": "2026-10-25T19:06:38.001Z",
+    "status": "complete",
+    "mode": "council",
+    "independent": true,
+    "diversity": {
+      "model_identities": 2,
+      "model_families": 2,
+      "note": "Different families reduce one source of correlation; independent factual corroboration is not established."
+    },
+    "claim_ledger": [
+      {
+        "id": "P1S",
+        "claim": "A thermal infrared view shows a large rectangular dark water reservoir bordered by lighter-toned concrete embankments and flat terrain containing scattered small bright objects.",
+        "kind": "scene",
+        "confidence": "UNSCORED",
+        "evidence": [
+          "hituav-003"
+        ],
+        "pass": 1,
+        "role": "Satellite first opinion",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-003"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P1F1",
+        "claim": "rectangular water reservoir defined by sharp geometric boundaries",
+        "confidence": "CLEAR",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-003"
+        ],
+        "region": "lower half of image",
+        "alternatives": [],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 1,
+        "role": "Satellite first opinion",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-003"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P1F2",
+        "claim": "lighter-toned embankment or paved area bordering the dark water body",
+        "confidence": "CLEAR",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-003"
+        ],
+        "region": "middle horizontal band",
+        "alternatives": [],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 1,
+        "role": "Satellite first opinion",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-003"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P1F3",
+        "claim": "scattered small bright objects on terrain adjacent to water feature",
+        "confidence": "TENTATIVE",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-003"
+        ],
+        "region": "upper section of image",
+        "alternatives": [
+          "small structures",
+          "debris piles"
+        ],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 1,
+        "role": "Satellite first opinion",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-003"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P1F4",
+        "claim": "uniform thermal tone across surrounding land with no distinct vegetation patterns visible",
+        "confidence": "LIKELY",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-003"
+        ],
+        "region": "upper background area",
+        "alternatives": [
+          "agricultural fields",
+          "paved surfaces"
+        ],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 1,
+        "role": "Satellite first opinion",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-003"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P1F5",
+        "claim": "thermal contrast between dark water and brighter adjacent materials indicates temperature difference",
+        "confidence": "CLEAR",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-003"
+        ],
+        "region": "throughout scene",
+        "alternatives": [],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 1,
+        "role": "Satellite first opinion",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-003"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P2F1",
+        "claim": "External detector proposes 6 person instance(s) in hituav-003. Candidate count, not a verified count.",
+        "confidence": "TENTATIVE",
+        "basis": "model-detection",
+        "evidence": [
+          "hituav-003"
+        ],
+        "region": "x 234–297, y 62–112 native pixels",
+        "alternatives": [
+          "False detections or missed objects"
+        ],
+        "object_class": "person",
+        "proposal_count": 6,
+        "detection_ids": [
+          "hituav-003-D1",
+          "hituav-003-D2",
+          "hituav-003-D3",
+          "hituav-003-D4",
+          "hituav-003-D5",
+          "hituav-003-D6"
+        ],
+        "boxes": [
+          [
+            263.97,
+            91.62,
+            272.57,
+            107.15
+          ],
+          [
+            248.99,
+            95.08,
+            257.36,
+            111.59
+          ],
+          [
+            254.96,
+            79.63,
+            263.12,
+            94.83
+          ],
+          [
+            233.6,
+            74.15,
+            243.34,
+            89.87
+          ],
+          [
+            289.27,
+            71.94,
+            297.45,
+            86.79
+          ],
+          [
+            285.34,
+            62.16,
+            292.46,
+            74.95
+          ]
+        ],
+        "kind": "feature",
+        "external_object": true,
+        "pass": 2,
+        "role": "External object evidence",
+        "model": "YOLOv8n HIT-UAV thermal",
+        "identity": "YOLOv8n HIT-UAV thermal@41fb0506cd78d75715f7ff0206337d9a9daa74062a11359318da79b887be1759",
+        "family": "external-detector",
+        "input_assets": [
+          "hituav-003"
+        ],
+        "scope": {
+          "trained_domains": [
+            "Provider-declared aerial thermal detection; not independently verified"
+          ],
+          "input_modalities": [
+            "TIR"
+          ],
+          "specialist_claim": true
+        }
+      },
+      {
+        "id": "P5S",
+        "claim": "Scene summary withheld because it asserts unsupported heat ordering or emissivity. Review the retained object and landform findings.",
+        "kind": "scene",
+        "confidence": "UNSCORED",
+        "evidence": [
+          "hituav-003"
+        ],
+        "pass": 5,
+        "role": "Thermal review",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-003"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P5F1",
+        "claim": "Rectangular dark feature identified as an excavation or open pit based on its sharp geometric boundaries and contrast against surrounding surfaces.",
+        "confidence": "LIKELY",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-003"
+        ],
+        "region": "lower-left to center foreground",
+        "alternatives": [
+          "sunken roadway cut",
+          "large storage basin"
+        ],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 5,
+        "role": "Thermal review",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-003"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P5F2",
+        "claim": "Linear paved surface running horizontally across the mid-section, separated from the pit by a distinct edge or curb.",
+        "confidence": "CLEAR",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-003"
+        ],
+        "region": "horizontal band in middle of image",
+        "alternatives": [
+          "concrete apron",
+          "industrial floor"
+        ],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 5,
+        "role": "Thermal review",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-003"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P5F3",
+        "claim": "Several small bright spots in the upper section may indicate localized thermal anomalies, vehicles, or equipment.",
+        "confidence": "TENTATIVE",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-003"
+        ],
+        "region": "upper third of image",
+        "alternatives": [
+          "solar reflections on pavement",
+          "small structures"
+        ],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 5,
+        "role": "Thermal review",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-003"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P5F4",
+        "claim": "The overall scene suggests an industrial or construction-related setting due to the presence of a large void and paved areas.",
+        "confidence": "LIKELY",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-003"
+        ],
+        "region": "entire frame context",
+        "alternatives": [
+          "urban drainage facility",
+          "quarry site"
+        ],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 5,
+        "role": "Thermal review",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-003"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P5F5",
+        "claim": "Material composition remains uncertain; surfaces could be concrete, asphalt, or compacted earth based on thermal response patterns.",
+        "confidence": "TENTATIVE",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-003"
+        ],
+        "region": "all paved and excavated areas",
+        "alternatives": [
+          "soil-filled trench",
+          "water-retention basin"
+        ],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 5,
+        "role": "Thermal review",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-003"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      }
+    ],
+    "adjudication": {
+      "status": "complete",
+      "caption_sources": [
+        "P1S",
+        "P5F1",
+        "P5F2",
+        "P1F1",
+        "P1F2",
+        "P5F4",
+        "P1F3",
+        "P5F3"
+      ],
+      "decisions": [
+        {
+          "claim_id": "P1S",
+          "verdict": "accepted",
+          "reason": "The scene description is accurate, capturing the main features of the image."
+        },
+        {
+          "claim_id": "P1F1",
+          "verdict": "accepted",
+          "reason": "The claim about the rectangular water reservoir is supported by the visual evidence."
+        },
+        {
+          "claim_id": "P1F2",
+          "verdict": "accepted",
+          "reason": "The claim about the lighter-toned embankment or paved area is supported by the visual evidence."
+        },
+        {
+          "claim_id": "P1F3",
+          "verdict": "qualified",
+          "reason": "The claim about scattered small bright objects is tentative, as their specific nature is unresolved."
+        },
+        {
+          "claim_id": "P1F4",
+          "verdict": "accepted",
+          "reason": "The claim about uniform thermal tone across surrounding land is supported by the visual evidence."
+        },
+        {
+          "claim_id": "P1F5",
+          "verdict": "rejected",
+          "reason": "The claim about thermal contrast between dark water and brighter adjacent materials is not explicitly stated in the image description."
+        },
+        {
+          "claim_id": "P2F1",
+          "verdict": "qualified",
+          "reason": "The claim about external detector proposing 6 person instances is tentative, as their specific nature is unresolved."
+        },
+        {
+          "claim_id": "P5S",
+          "verdict": "accepted",
+          "reason": "The scene summary is withheld because it asserts unsupported heat ordering or emissivity."
+        },
+        {
+          "claim_id": "P5F1",
+          "verdict": "accepted",
+          "reason": "The claim about the rectangular dark feature identified as an excavation or open pit is supported by the visual evidence."
+        },
+        {
+          "claim_id": "P5F2",
+          "verdict": "accepted",
+          "reason": "The claim about linear paved surface running horizontally across the mid-section is supported by the visual evidence."
+        },
+        {
+          "claim_id": "P5F3",
+          "verdict": "qualified",
+          "reason": "The claim about several small bright spots in the upper section may indicate localized thermal anomalies, vehicles, or equipment is tentative, as their specific nature is unresolved."
+        },
+        {
+          "claim_id": "P5F4",
+          "verdict": "accepted",
+          "reason": "The claim about the overall scene suggesting an industrial or construction-related setting is supported by the visual evidence."
+        },
+        {
+          "claim_id": "P5F5",
+          "verdict": "qualified",
+          "reason": "The claim about material composition remains uncertain; surfaces could be concrete, asphalt, or compacted earth based on thermal response patterns is tentative, as their specific nature is unresolved."
+        }
+      ],
+      "errors": [],
+      "note": "Decision trace is model-authored evidence review, not independent factual verification. Caption entailment is not mechanically proven."
+    },
+    "assets": [
+      {
+        "id": "hituav-003",
+        "sha256": "1f09f6b1eb3b6b9e7eb4d773990b4113056664c83fd55b05962b72f4513e3986",
+        "modality": "TIR",
+        "provenance": "observed"
+      }
+    ],
+    "measurements": [
+      {
+        "id": "hituav-003",
+        "width": 640,
+        "height": 512,
+        "sha256": "1f09f6b1eb3b6b9e7eb4d773990b4113056664c83fd55b05962b72f4513e3986",
+        "modality": "TIR",
+        "provenance": "observed",
+        "analysis_grid": [
+          640,
+          512
+        ],
+        "mean_display_intensity": 119.91,
+        "display_stddev": 40.33,
+        "entropy_bits": 6.829,
+        "black_fraction": 0,
+        "white_fraction": 0,
+        "horizontal_gradient": 1.908,
+        "vertical_gradient": 2.185,
+        "radiometric": false,
+        "polarity": "unknown"
+      }
+    ],
+    "derived_views": [
+      {
+        "asset_id": "hituav-003",
+        "native_crop": {
+          "left": 213,
+          "top": 42,
+          "width": 105,
+          "height": 90
+        },
+        "shown_detection_ids": [
+          "hituav-003-D1",
+          "hituav-003-D2",
+          "hituav-003-D3",
+          "hituav-003-D4",
+          "hituav-003-D5",
+          "hituav-003-D6"
+        ],
+        "note": "DERIVED INSPECTION SHEET for hituav-003. Upper half: crop at {\"left\":213,\"top\":42,\"width\":105,\"height\":90}. Lower tiles: up to eight individual candidate crops in detector order. Labels are added indexes, not source objects. Enlarged original pixels; no new resolution or independent confirmation. Inspect human silhouettes or vehicle structure rather than judging only the surrounding terrain."
+      }
+    ],
+    "limits": [
+      "Display intensity is not temperature or reflectance. Quality metrics describe the rendered image; no semantic cloud mask is inferred.",
+      "No radiometric calibration; temperatures and hot/cold ordering are unavailable unless polarity is verified.",
+      "Independent satellite review skipped: configured model does not support these modalities.",
+      "Captioning lead is a general VLM. Any scene-ranking specialist supplies limited hypotheses, not validated full captions.",
+      "No validated infrared captioning specialist connected. Small aerial objects may be missed and broader thermal scene semantics remain provisional."
+    ],
+    "passes": [
+      {
+        "role": "Satellite first opinion",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "profile": "qwen35",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+        "adapter": null,
+        "family": "Qwen",
+        "independent_observation": true,
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        },
+        "inference": {
+          "temperature": 0.7,
+          "sampling": {
+            "top_p": 0.8,
+            "top_k": 20,
+            "min_p": 0,
+            "presence_penalty": 1.5,
+            "repeat_penalty": 1,
+            "seed": 42
+          },
+          "thinking": false,
+          "image_min_tokens": 1024,
+          "image_max_tokens": 1024,
+          "context": 12288,
+          "cpu_experts": false,
+          "gpu_layers": 99,
+          "projector_cpu": false
+        },
+        "adjudication": null,
+        "input_assets": [
+          "hituav-003"
+        ],
+        "status": "complete",
+        "opinion": {
+          "scene": "A thermal infrared view shows a large rectangular dark water reservoir bordered by lighter-toned concrete embankments and flat terrain containing scattered small bright objects.",
+          "findings": [
+            {
+              "claim": "rectangular water reservoir defined by sharp geometric boundaries",
+              "confidence": "CLEAR",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "lower half of image",
+              "alternatives": []
+            },
+            {
+              "claim": "lighter-toned embankment or paved area bordering the dark water body",
+              "confidence": "CLEAR",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "middle horizontal band",
+              "alternatives": []
+            },
+            {
+              "claim": "scattered small bright objects on terrain adjacent to water feature",
+              "confidence": "TENTATIVE",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "upper section of image",
+              "alternatives": [
+                "small structures",
+                "debris piles"
+              ]
+            },
+            {
+              "claim": "uniform thermal tone across surrounding land with no distinct vegetation patterns visible",
+              "confidence": "LIKELY",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "upper background area",
+              "alternatives": [
+                "agricultural fields",
+                "paved surfaces"
+              ]
+            },
+            {
+              "claim": "thermal contrast between dark water and brighter adjacent materials indicates temperature difference",
+              "confidence": "CLEAR",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "throughout scene",
+              "alternatives": []
+            }
+          ],
+          "limits": [
+            "material composition of bright objects uncertain due to coarse resolution and unknown sensor calibration"
+          ],
+          "next": "verify object types via higher-resolution RGB imagery or multispectral data",
+          "warnings": [],
+          "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+        },
+        "seconds": 33.64,
+        "usage": {
+          "completion_tokens": 325,
+          "prompt_tokens": 2251,
+          "total_tokens": 2576,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      },
+      {
+        "role": "External object evidence",
+        "model": "YOLOv8n HIT-UAV thermal",
+        "identity": "YOLOv8n HIT-UAV thermal@41fb0506cd78d75715f7ff0206337d9a9daa74062a11359318da79b887be1759",
+        "checkpoint": "41fb0506cd78d75715f7ff0206337d9a9daa74062a11359318da79b887be1759",
+        "license": "AGPL-3.0",
+        "family": "external-detector",
+        "external": true,
+        "independent_observation": true,
+        "structured_objects": true,
+        "input_assets": [
+          "hituav-003"
+        ],
+        "scope": {
+          "trained_domains": [
+            "Provider-declared aerial thermal detection; not independently verified"
+          ],
+          "input_modalities": [
+            "TIR"
+          ],
+          "specialist_claim": true
+        },
+        "status": "complete",
+        "opinion": {
+          "scene": "External object candidates require explicit visual adjudication.",
+          "findings": [
+            {
+              "claim": "External detector proposes 6 person instance(s) in hituav-003. Candidate count, not a verified count.",
+              "confidence": "TENTATIVE",
+              "basis": "model-detection",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "x 234–297, y 62–112 native pixels",
+              "alternatives": [
+                "False detections or missed objects"
+              ],
+              "object_class": "person",
+              "proposal_count": 6,
+              "detection_ids": [
+                "hituav-003-D1",
+                "hituav-003-D2",
+                "hituav-003-D3",
+                "hituav-003-D4",
+                "hituav-003-D5",
+                "hituav-003-D6"
+              ],
+              "boxes": [
+                [
+                  263.97,
+                  91.62,
+                  272.57,
+                  107.15
+                ],
+                [
+                  248.99,
+                  95.08,
+                  257.36,
+                  111.59
+                ],
+                [
+                  254.96,
+                  79.63,
+                  263.12,
+                  94.83
+                ],
+                [
+                  233.6,
+                  74.15,
+                  243.34,
+                  89.87
+                ],
+                [
+                  289.27,
+                  71.94,
+                  297.45,
+                  86.79
+                ],
+                [
+                  285.34,
+                  62.16,
+                  292.46,
+                  74.95
+                ]
+              ]
+            }
+          ],
+          "limits": [
+            "External proposals are uncalibrated hypotheses, not verified objects."
+          ],
+          "warnings": [],
+          "next": "Review object morphology, location and scale."
+        },
+        "detections": [
+          {
+            "asset_id": "hituav-003",
+            "image_sha256": "1f09f6b1eb3b6b9e7eb4d773990b4113056664c83fd55b05962b72f4513e3986",
+            "width": 640,
+            "height": 512,
+            "proposals": [
+              {
+                "id": "hituav-003-D1",
+                "category": "person",
+                "score": 0.7621,
+                "bbox_xyxy": [
+                  263.97,
+                  91.62,
+                  272.57,
+                  107.15
+                ]
+              },
+              {
+                "id": "hituav-003-D2",
+                "category": "person",
+                "score": 0.7542,
+                "bbox_xyxy": [
+                  248.99,
+                  95.08,
+                  257.36,
+                  111.59
+                ]
+              },
+              {
+                "id": "hituav-003-D3",
+                "category": "person",
+                "score": 0.7531,
+                "bbox_xyxy": [
+                  254.96,
+                  79.63,
+                  263.12,
+                  94.83
+                ]
+              },
+              {
+                "id": "hituav-003-D4",
+                "category": "person",
+                "score": 0.7188,
+                "bbox_xyxy": [
+                  233.6,
+                  74.15,
+                  243.34,
+                  89.87
+                ]
+              },
+              {
+                "id": "hituav-003-D5",
+                "category": "person",
+                "score": 0.6897,
+                "bbox_xyxy": [
+                  289.27,
+                  71.94,
+                  297.45,
+                  86.79
+                ]
+              },
+              {
+                "id": "hituav-003-D6",
+                "category": "person",
+                "score": 0.6832,
+                "bbox_xyxy": [
+                  285.34,
+                  62.16,
+                  292.46,
+                  74.95
+                ]
+              }
+            ]
+          }
+        ],
+        "seconds": 0.19
+      },
+      {
+        "role": "Object morphology review",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "profile": "qwen35",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+        "adapter": null,
+        "family": "Qwen",
+        "independent_observation": false,
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        },
+        "inference": {
+          "temperature": 0.7,
+          "sampling": {
+            "top_p": 0.8,
+            "top_k": 20,
+            "min_p": 0,
+            "presence_penalty": 1.5,
+            "repeat_penalty": 1,
+            "seed": 42
+          },
+          "thinking": false,
+          "image_min_tokens": 1024,
+          "image_max_tokens": 1024,
+          "context": 12288,
+          "cpu_experts": false,
+          "gpu_layers": 99,
+          "projector_cpu": false
+        },
+        "adjudication": null,
+        "input_assets": [
+          "hituav-003"
+        ],
+        "status": "complete",
+        "opinion": {
+          "scene": "The scene is a thermal infrared view of flat terrain featuring scattered bright objects and a dark water body in the lower section.",
+          "findings": [
+            {
+              "claim": "Multiple elongated, upright thermal signatures are consistent with human silhouettes.",
+              "confidence": "LIKELY",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "upper half of image",
+              "alternatives": []
+            },
+            {
+              "claim": "The total count of 6 proposed candidates is supported by the number of distinct shapes in the crops.",
+              "confidence": "TENTATIVE",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "upper section",
+              "alternatives": []
+            }
+          ],
+          "limits": [
+            "material uncertainty"
+          ],
+          "next": "verify candidate boxes against original image",
+          "warnings": [
+            "Numerical model claim capped at TENTATIVE; use the separate tool-derived measurement panel."
+          ],
+          "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+        },
+        "seconds": 6.86,
+        "usage": {
+          "completion_tokens": 150,
+          "prompt_tokens": 2282,
+          "total_tokens": 2432,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      },
+      {
+        "role": "Independent satellite review",
+        "model": "CapRL-Qwen3VL-4B-Q4_K_M",
+        "status": "skipped",
+        "reason": "Unsupported input modality declared by profile"
+      },
+      {
+        "role": "Thermal review",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "profile": "qwen35",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+        "adapter": null,
+        "family": "Qwen",
+        "independent_observation": true,
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        },
+        "inference": {
+          "temperature": 0.7,
+          "sampling": {
+            "top_p": 0.8,
+            "top_k": 20,
+            "min_p": 0,
+            "presence_penalty": 1.5,
+            "repeat_penalty": 1,
+            "seed": 42
+          },
+          "thinking": false,
+          "image_min_tokens": 1024,
+          "image_max_tokens": 1024,
+          "context": 12288,
+          "cpu_experts": false,
+          "gpu_layers": 99,
+          "projector_cpu": false
+        },
+        "adjudication": null,
+        "input_assets": [
+          "hituav-003"
+        ],
+        "status": "complete",
+        "opinion": {
+          "scene": "Scene summary withheld because it asserts unsupported heat ordering or emissivity. Review the retained object and landform findings.",
+          "findings": [
+            {
+              "claim": "Rectangular dark feature identified as an excavation or open pit based on its sharp geometric boundaries and contrast against surrounding surfaces.",
+              "confidence": "LIKELY",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "lower-left to center foreground",
+              "alternatives": [
+                "sunken roadway cut",
+                "large storage basin"
+              ]
+            },
+            {
+              "claim": "Linear paved surface running horizontally across the mid-section, separated from the pit by a distinct edge or curb.",
+              "confidence": "CLEAR",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "horizontal band in middle of image",
+              "alternatives": [
+                "concrete apron",
+                "industrial floor"
+              ]
+            },
+            {
+              "claim": "Several small bright spots in the upper section may indicate localized thermal anomalies, vehicles, or equipment.",
+              "confidence": "TENTATIVE",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "upper third of image",
+              "alternatives": [
+                "solar reflections on pavement",
+                "small structures"
+              ]
+            },
+            {
+              "claim": "The overall scene suggests an industrial or construction-related setting due to the presence of a large void and paved areas.",
+              "confidence": "LIKELY",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "entire frame context",
+              "alternatives": [
+                "urban drainage facility",
+                "quarry site"
+              ]
+            },
+            {
+              "claim": "Material composition remains uncertain; surfaces could be concrete, asphalt, or compacted earth based on thermal response patterns.",
+              "confidence": "TENTATIVE",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "all paved and excavated areas",
+              "alternatives": [
+                "soil-filled trench",
+                "water-retention basin"
+              ]
+            }
+          ],
+          "limits": [
+            "material uncertainty",
+            "lack of radiometric calibration"
+          ],
+          "next": "verify with visible spectrum imagery to confirm surface materials and object identities",
+          "warnings": [
+            "Withheld unsupported physical thermal summary."
+          ],
+          "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+        },
+        "seconds": 13.69,
+        "usage": {
+          "completion_tokens": 402,
+          "prompt_tokens": 2327,
+          "total_tokens": 2729,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      },
+      {
+        "role": "General critic",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "profile": "qwen35",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+        "adapter": null,
+        "family": "Qwen",
+        "independent_observation": false,
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        },
+        "inference": {
+          "temperature": 0.7,
+          "sampling": {
+            "top_p": 0.8,
+            "top_k": 20,
+            "min_p": 0,
+            "presence_penalty": 1.5,
+            "repeat_penalty": 1,
+            "seed": 42
+          },
+          "thinking": false,
+          "image_min_tokens": 1024,
+          "image_max_tokens": 1024,
+          "context": 12288,
+          "cpu_experts": false,
+          "gpu_layers": 99,
+          "projector_cpu": false
+        },
+        "adjudication": null,
+        "input_assets": [
+          "hituav-003"
+        ],
+        "status": "complete",
+        "opinion": {
+          "scene": "An aerial thermal infrared view of a paved surface adjacent to a large, dark rectangular water reservoir, with several small bright spots in the upper section.",
+          "findings": [
+            {
+              "claim": "A large, dark, geometrically regular feature is identified as a water reservoir based on its uniform low thermal signature and sharp linear boundaries.",
+              "confidence": "CLEAR",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "lower-left to center foreground",
+              "alternatives": [
+                "excavated pit"
+              ]
+            },
+            {
+              "claim": "A lighter-toned paved or concrete surface runs horizontally across the mid-section, separating the reservoir from the upper terrain.",
+              "confidence": "CLEAR",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "middle horizontal band",
+              "alternatives": [
+                "concrete apron"
+              ]
+            },
+            {
+              "claim": "Small, bright thermal anomalies are present in the upper section of the image, but their specific nature (e.g., people, vehicles) is unresolved.",
+              "confidence": "TENTATIVE",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "upper third of image",
+              "alternatives": [
+                "debris piles",
+                "small structures"
+              ]
+            },
+            {
+              "claim": "The proposed 'person' detections lack sufficient morphological resolution to confirm identity against thermal noise or other small objects.",
+              "confidence": "TENTATIVE",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "upper section",
+              "alternatives": [
+                "false detections",
+                "other equipment"
+              ]
+            },
+            {
+              "claim": "No distinct vegetation patterns are visible; the surrounding terrain appears as uniform, flat ground.",
+              "confidence": "LIKELY",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "upper background area",
+              "alternatives": [
+                "agricultural fields"
+              ]
+            }
+          ],
+          "limits": [
+            "Material composition (concrete vs. asphalt) is uncertain due to uncalibrated thermal response and lack of visible texture detail."
+          ],
+          "next": "Verify candidate boxes against original image for person identification",
+          "warnings": [],
+          "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+        },
+        "seconds": 17.15,
+        "usage": {
+          "completion_tokens": 400,
+          "prompt_tokens": 5052,
+          "total_tokens": 5452,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      },
+      {
+        "role": "Satellite master opinion",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "profile": "qwen35",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+        "adapter": null,
+        "family": "Qwen",
+        "independent_observation": false,
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        },
+        "inference": {
+          "temperature": 0.7,
+          "sampling": {
+            "top_p": 0.8,
+            "top_k": 20,
+            "min_p": 0,
+            "presence_penalty": 1.5,
+            "repeat_penalty": 1,
+            "seed": 42
+          },
+          "thinking": false,
+          "image_min_tokens": 1024,
+          "image_max_tokens": 1024,
+          "context": 12288,
+          "cpu_experts": false,
+          "gpu_layers": 99,
+          "projector_cpu": false
+        },
+        "adjudication": {
+          "status": "complete",
+          "caption_sources": [
+            "P1S",
+            "P5F1",
+            "P5F2",
+            "P1F1",
+            "P1F2",
+            "P5F4",
+            "P1F3",
+            "P5F3"
+          ],
+          "decisions": [
+            {
+              "claim_id": "P1S",
+              "verdict": "accepted",
+              "reason": "The scene description is accurate, capturing the main features of the image."
+            },
+            {
+              "claim_id": "P1F1",
+              "verdict": "accepted",
+              "reason": "The claim about the rectangular water reservoir is supported by the visual evidence."
+            },
+            {
+              "claim_id": "P1F2",
+              "verdict": "accepted",
+              "reason": "The claim about the lighter-toned embankment or paved area is supported by the visual evidence."
+            },
+            {
+              "claim_id": "P1F3",
+              "verdict": "qualified",
+              "reason": "The claim about scattered small bright objects is tentative, as their specific nature is unresolved."
+            },
+            {
+              "claim_id": "P1F4",
+              "verdict": "accepted",
+              "reason": "The claim about uniform thermal tone across surrounding land is supported by the visual evidence."
+            },
+            {
+              "claim_id": "P1F5",
+              "verdict": "rejected",
+              "reason": "The claim about thermal contrast between dark water and brighter adjacent materials is not explicitly stated in the image description."
+            },
+            {
+              "claim_id": "P2F1",
+              "verdict": "qualified",
+              "reason": "The claim about external detector proposing 6 person instances is tentative, as their specific nature is unresolved."
+            },
+            {
+              "claim_id": "P5S",
+              "verdict": "accepted",
+              "reason": "The scene summary is withheld because it asserts unsupported heat ordering or emissivity."
+            },
+            {
+              "claim_id": "P5F1",
+              "verdict": "accepted",
+              "reason": "The claim about the rectangular dark feature identified as an excavation or open pit is supported by the visual evidence."
+            },
+            {
+              "claim_id": "P5F2",
+              "verdict": "accepted",
+              "reason": "The claim about linear paved surface running horizontally across the mid-section is supported by the visual evidence."
+            },
+            {
+              "claim_id": "P5F3",
+              "verdict": "qualified",
+              "reason": "The claim about several small bright spots in the upper section may indicate localized thermal anomalies, vehicles, or equipment is tentative, as their specific nature is unresolved."
+            },
+            {
+              "claim_id": "P5F4",
+              "verdict": "accepted",
+              "reason": "The claim about the overall scene suggesting an industrial or construction-related setting is supported by the visual evidence."
+            },
+            {
+              "claim_id": "P5F5",
+              "verdict": "qualified",
+              "reason": "The claim about material composition remains uncertain; surfaces could be concrete, asphalt, or compacted earth based on thermal response patterns is tentative, as their specific nature is unresolved."
+            }
+          ],
+          "errors": [],
+          "note": "Decision trace is model-authored evidence review, not independent factual verification. Caption entailment is not mechanically proven."
+        },
+        "input_assets": [
+          "hituav-003"
+        ],
+        "status": "complete",
+        "opinion": {
+          "scene": "An aerial thermal infrared view shows a large dark rectangular feature, likely a water reservoir or excavation, bordered by lighter-toned paved surfaces and flat terrain with scattered bright objects.",
+          "findings": [
+            {
+              "claim": "A large, dark, geometrically regular feature is identified as a water reservoir based on its uniform low thermal signature and sharp linear boundaries.",
+              "confidence": "CLEAR",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "lower-left to center foreground",
+              "alternatives": [
+                "excavated pit"
+              ],
+              "source_claims": [
+                "P1S",
+                "P5F1",
+                "P5F2",
+                "P1F1",
+                "P1F2",
+                "P5F4"
+              ]
+            },
+            {
+              "claim": "Small, bright thermal anomalies are present in the upper section of the image, but their specific nature (e.g., people, vehicles) is unresolved.",
+              "confidence": "TENTATIVE",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "upper third of image",
+              "alternatives": [
+                "debris piles",
+                "small structures"
+              ],
+              "source_claims": [
+                "P1F3",
+                "P5F3",
+                "P2F1"
+              ]
+            },
+            {
+              "claim": "The proposed 'person' detections lack sufficient morphological resolution to confirm identity against thermal noise or other small objects.",
+              "confidence": "TENTATIVE",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "upper section",
+              "alternatives": [
+                "false detections",
+                "other equipment"
+              ],
+              "source_claims": [
+                "P2F1",
+                "P5F5"
+              ]
+            },
+            {
+              "claim": "No distinct vegetation patterns are visible; the surrounding terrain appears as uniform, flat ground.",
+              "confidence": "LIKELY",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "upper background area",
+              "alternatives": [
+                "agricultural fields"
+              ],
+              "source_claims": [
+                "P1F4",
+                "P5F2"
+              ]
+            },
+            {
+              "claim": "Material composition remains uncertain; surfaces could be concrete, asphalt, or compacted earth based on thermal response patterns.",
+              "confidence": "TENTATIVE",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-003"
+              ],
+              "region": "all paved and excavated areas",
+              "alternatives": [
+                "soil-filled trench",
+                "water-retention basin"
+              ],
+              "source_claims": [
+                "P5F5"
+              ]
+            }
+          ],
+          "limits": [
+            "Material composition (concrete vs. asphalt) is uncertain due to uncalibrated thermal response and lack of visible texture detail.",
+            "Numerical model claim capped at TENTATIVE; use the separate tool-derived measurement panel."
+          ],
+          "next": "Verify candidate boxes against original image for person identification",
+          "warnings": [],
+          "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+        },
+        "seconds": 36.15,
+        "usage": {
+          "completion_tokens": 1065,
+          "prompt_tokens": 5738,
+          "total_tokens": 6803,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "final": {
+      "scene": "An aerial thermal infrared view shows a large dark rectangular feature, likely a water reservoir or excavation, bordered by lighter-toned paved surfaces and flat terrain with scattered bright objects.",
+      "findings": [
+        {
+          "claim": "A large, dark, geometrically regular feature is identified as a water reservoir based on its uniform low thermal signature and sharp linear boundaries.",
+          "confidence": "CLEAR",
+          "basis": "visual-interpretation",
+          "evidence": [
+            "hituav-003"
+          ],
+          "region": "lower-left to center foreground",
+          "alternatives": [
+            "excavated pit"
+          ],
+          "source_claims": [
+            "P1S",
+            "P5F1",
+            "P5F2",
+            "P1F1",
+            "P1F2",
+            "P5F4"
+          ]
+        },
+        {
+          "claim": "Small, bright thermal anomalies are present in the upper section of the image, but their specific nature (e.g., people, vehicles) is unresolved.",
+          "confidence": "TENTATIVE",
+          "basis": "visual-interpretation",
+          "evidence": [
+            "hituav-003"
+          ],
+          "region": "upper third of image",
+          "alternatives": [
+            "debris piles",
+            "small structures"
+          ],
+          "source_claims": [
+            "P1F3",
+            "P5F3",
+            "P2F1"
+          ]
+        },
+        {
+          "claim": "The proposed 'person' detections lack sufficient morphological resolution to confirm identity against thermal noise or other small objects.",
+          "confidence": "TENTATIVE",
+          "basis": "visual-interpretation",
+          "evidence": [
+            "hituav-003"
+          ],
+          "region": "upper section",
+          "alternatives": [
+            "false detections",
+            "other equipment"
+          ],
+          "source_claims": [
+            "P2F1",
+            "P5F5"
+          ]
+        },
+        {
+          "claim": "No distinct vegetation patterns are visible; the surrounding terrain appears as uniform, flat ground.",
+          "confidence": "LIKELY",
+          "basis": "visual-interpretation",
+          "evidence": [
+            "hituav-003"
+          ],
+          "region": "upper background area",
+          "alternatives": [
+            "agricultural fields"
+          ],
+          "source_claims": [
+            "P1F4",
+            "P5F2"
+          ]
+        },
+        {
+          "claim": "Material composition remains uncertain; surfaces could be concrete, asphalt, or compacted earth based on thermal response patterns.",
+          "confidence": "TENTATIVE",
+          "basis": "visual-interpretation",
+          "evidence": [
+            "hituav-003"
+          ],
+          "region": "all paved and excavated areas",
+          "alternatives": [
+            "soil-filled trench",
+            "water-retention basin"
+          ],
+          "source_claims": [
+            "P5F5"
+          ]
+        }
+      ],
+      "limits": [
+        "Material composition (concrete vs. asphalt) is uncertain due to uncalibrated thermal response and lack of visible texture detail.",
+        "Numerical model claim capped at TENTATIVE; use the separate tool-derived measurement panel."
+      ],
+      "next": "Verify candidate boxes against original image for person identification",
+      "warnings": [],
+      "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+    },
+    "seconds": 108.82,
+    "models_used": [
+      {
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+        "adapter": null,
+        "family": "Qwen",
+        "external": false,
+        "license": null,
+        "roles": [
+          "Satellite first opinion",
+          "Object morphology review",
+          "Thermal review",
+          "General critic",
+          "Satellite master opinion"
+        ],
+        "assets": [
+          "hituav-003"
+        ],
+        "completed": 5,
+        "failed": 0,
+        "seconds": 107.49
+      },
+      {
+        "model": "YOLOv8n HIT-UAV thermal",
+        "identity": "YOLOv8n HIT-UAV thermal@41fb0506cd78d75715f7ff0206337d9a9daa74062a11359318da79b887be1759",
+        "checkpoint": "41fb0506cd78d75715f7ff0206337d9a9daa74062a11359318da79b887be1759",
+        "adapter": null,
+        "family": "external-detector",
+        "external": true,
+        "license": "AGPL-3.0",
+        "roles": [
+          "External object evidence"
+        ],
+        "assets": [
+          "hituav-003"
+        ],
+        "completed": 1,
+        "failed": 0,
+        "seconds": 0.19
+      }
+    ],
+    "detector_review": {
+      "connected": true,
+      "status": "reviewed",
+      "groups": [
+        {
+          "claim_id": "P2F1",
+          "asset_ids": [
+            "hituav-003"
+          ],
+          "object_class": "person",
+          "proposal_count": 6,
+          "decision": {
+            "claim_id": "P2F1",
+            "verdict": "qualified",
+            "reason": "The claim about external detector proposing 6 person instances is tentative, as their specific nature is unresolved."
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "reference_class": null,
+      "class_literal_mention": null,
+      "caption_token_f1": null,
+      "claim_count": 5,
+      "guardrail_warnings": 0,
+      "seconds": 108.82,
+      "metric_note": "Token F1 and literal class mention are diagnostics, not factual accuracy. Ground truth was withheld from all inference prompts.",
+      "human_review": {
+        "unsupported_claims": null,
+        "important_misses": null,
+        "spatial_errors": null,
+        "thermal_errors": null,
+        "usefulness_1_to_5": null
+      }
+    }
+  },
+  {
+    "provenance": {
+      "schema_version": 2,
+      "prompt_version": "2026-10-25.3-external-object-review",
+      "prompt_sha256": "8cf36538e0175287399fc4841ceda003028828519feeb3fd0f6a71ca67af52bf",
+      "backend": "vulkan",
+      "image_max_dimension": 768,
+      "image_encoding": "lossless PNG",
+      "temperature_prose": "blocked; see deterministic measurements"
+    },
+    "id": "c26d4f95-f924-4351-bd66-56d38b903ac3",
+    "scene_id": "hituav-008",
+    "created": "2026-10-25T19:07:55.352Z",
+    "status": "complete",
+    "mode": "council",
+    "independent": true,
+    "diversity": {
+      "model_identities": 2,
+      "model_families": 2,
+      "note": "Different families reduce one source of correlation; independent factual corroboration is not established."
+    },
+    "claim_ledger": [
+      {
+        "id": "P1S",
+        "claim": "An aerial thermal infrared view shows a row of parked vehicles arranged in parallel parking spaces along the top edge of the frame. The vehicles appear as dark, elongated shapes with lighter outlines against a uniform, light-colored paved surface that dominates the lower portion.",
+        "kind": "scene",
+        "confidence": "UNSCORED",
+        "evidence": [
+          "hituav-008"
+        ],
+        "pass": 1,
+        "role": "Satellite first opinion",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-008"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P1F1",
+        "claim": "Parked vehicles identified by distinct rectangular shapes and regular spacing",
+        "confidence": "CLEAR",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-008"
+        ],
+        "region": "top half of image",
+        "alternatives": [],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 1,
+        "role": "Satellite first opinion",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-008"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P1F2",
+        "claim": "Uniform, light-colored paved surface identified as parking lot or roadway",
+        "confidence": "LIKELY",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-008"
+        ],
+        "region": "lower two-thirds of image",
+        "alternatives": [
+          "concrete apron"
+        ],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 1,
+        "role": "Satellite first opinion",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-008"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P1F3",
+        "claim": "Irregular textured area in upper-left corner may be unpaved ground or debris",
+        "confidence": "TENTATIVE",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-008"
+        ],
+        "region": "upper-left corner",
+        "alternatives": [
+          "vegetated patch",
+          "construction material"
+        ],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 1,
+        "role": "Satellite first opinion",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-008"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P1F4",
+        "claim": "Building structure partially visible at top-right edge, adjacent to parking row",
+        "confidence": "LIKELY",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-008"
+        ],
+        "region": "top-right corner",
+        "alternatives": [],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 1,
+        "role": "Satellite first opinion",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-008"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P1F5",
+        "claim": "Thermal contrast distinguishes vehicles from pavement due to material emissivity differences",
+        "confidence": "CLEAR",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-008"
+        ],
+        "region": "entire image",
+        "alternatives": [],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 1,
+        "role": "Satellite first opinion",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-008"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P2F1",
+        "claim": "External detector proposes 14 car instance(s) in hituav-008. Candidate count, not a verified count.",
+        "confidence": "TENTATIVE",
+        "basis": "model-detection",
+        "evidence": [
+          "hituav-008"
+        ],
+        "region": "x 0–640, y 0–275 native pixels",
+        "alternatives": [
+          "False detections or missed objects"
+        ],
+        "object_class": "car",
+        "proposal_count": 14,
+        "detection_ids": [
+          "hituav-008-D1",
+          "hituav-008-D2",
+          "hituav-008-D3",
+          "hituav-008-D4",
+          "hituav-008-D5",
+          "hituav-008-D6",
+          "hituav-008-D7",
+          "hituav-008-D8",
+          "hituav-008-D9",
+          "hituav-008-D10",
+          "hituav-008-D11",
+          "hituav-008-D12",
+          "hituav-008-D13",
+          "hituav-008-D14"
+        ],
+        "boxes": [
+          [
+            517.82,
+            7.56,
+            585.74,
+            106.5
+          ],
+          [
+            116.34,
+            129.98,
+            182.49,
+            231.52
+          ],
+          [
+            341.41,
+            57.51,
+            408.48,
+            158.31
+          ],
+          [
+            567.65,
+            0.31,
+            634.46,
+            99.13
+          ],
+          [
+            471.74,
+            24.53,
+            541.8,
+            124.9
+          ],
+          [
+            169.73,
+            118.2,
+            232.12,
+            217.65
+          ],
+          [
+            216.26,
+            97.19,
+            278.16,
+            198.33
+          ],
+          [
+            72.45,
+            143.1,
+            135.92,
+            243.71
+          ],
+          [
+            18.96,
+            155.37,
+            85.34,
+            265.03
+          ],
+          [
+            295.53,
+            74.86,
+            361.7,
+            175.47
+          ],
+          [
+            386.32,
+            45.56,
+            452.78,
+            145.12
+          ],
+          [
+            428.57,
+            36.36,
+            497.95,
+            136.74
+          ],
+          [
+            0.19,
+            175.72,
+            31.35,
+            274.87
+          ],
+          [
+            614.65,
+            0,
+            639.71,
+            79.95
+          ]
+        ],
+        "kind": "feature",
+        "external_object": true,
+        "pass": 2,
+        "role": "External object evidence",
+        "model": "YOLOv8n HIT-UAV thermal",
+        "identity": "YOLOv8n HIT-UAV thermal@41fb0506cd78d75715f7ff0206337d9a9daa74062a11359318da79b887be1759",
+        "family": "external-detector",
+        "input_assets": [
+          "hituav-008"
+        ],
+        "scope": {
+          "trained_domains": [
+            "Provider-declared aerial thermal detection; not independently verified"
+          ],
+          "input_modalities": [
+            "TIR"
+          ],
+          "specialist_claim": true
+        }
+      },
+      {
+        "id": "P5S",
+        "claim": "An aerial thermal infrared view shows a parking lot containing approximately fifteen vehicles arranged in parallel rows. A building structure and unpaved ground border the row of parked cars on the upper left.",
+        "kind": "scene",
+        "confidence": "UNSCORED",
+        "evidence": [
+          "hituav-008"
+        ],
+        "pass": 5,
+        "role": "Thermal review",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-008"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P5F1",
+        "claim": "Row of parked vehicles",
+        "confidence": "CLEAR",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-008"
+        ],
+        "region": "upper-left quadrant, extending horizontally",
+        "alternatives": [],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 5,
+        "role": "Thermal review",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-008"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P5F2",
+        "claim": "Building structure at top edge",
+        "confidence": "LIKELY",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-008"
+        ],
+        "region": "top center",
+        "alternatives": [],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 5,
+        "role": "Thermal review",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-008"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P5F3",
+        "claim": "Paved parking surface",
+        "confidence": "CLEAR",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-008"
+        ],
+        "region": "lower and right quadrants",
+        "alternatives": [],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 5,
+        "role": "Thermal review",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-008"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      },
+      {
+        "id": "P5F4",
+        "claim": "Unpaved ground or vegetation patch",
+        "confidence": "LIKELY",
+        "basis": "visual-interpretation",
+        "evidence": [
+          "hituav-008"
+        ],
+        "region": "upper left corner adjacent to vehicles",
+        "alternatives": [],
+        "kind": "feature",
+        "external_object": false,
+        "pass": 5,
+        "role": "Thermal review",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "family": "Qwen",
+        "input_assets": [
+          "hituav-008"
+        ],
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        }
+      }
+    ],
+    "adjudication": {
+      "status": "complete",
+      "caption_sources": [
+        "P1F1",
+        "P5F1",
+        "P2F1",
+        "P1F5",
+        "P5F2",
+        "P1F2",
+        "P5F3",
+        "P1F4"
+      ],
+      "decisions": [
+        {
+          "claim_id": "P1S",
+          "verdict": "accepted",
+          "reason": "Scene description matches visual evidence of a parking area with vehicles and pavement."
+        },
+        {
+          "claim_id": "P1F1",
+          "verdict": "accepted",
+          "reason": "Visual evidence confirms a row of parked vehicles with consistent shapes and spacing."
+        },
+        {
+          "claim_id": "P1F2",
+          "verdict": "accepted",
+          "reason": "Uniform texture and thermal properties support identification as a paved parking surface."
+        },
+        {
+          "claim_id": "P1F3",
+          "verdict": "qualified",
+          "reason": "Textured area in upper-left corner is likely unpaved ground or debris, but alternatives remain plausible."
+        },
+        {
+          "claim_id": "P1F4",
+          "verdict": "accepted",
+          "reason": "Building structure is visible at the top-right edge, adjacent to the parking row."
+        },
+        {
+          "claim_id": "P1F5",
+          "verdict": "accepted",
+          "reason": "Thermal contrast between dark vehicles and light pavement supports car identity."
+        },
+        {
+          "claim_id": "P2F1",
+          "verdict": "qualified",
+          "reason": "External detector proposes 14 car instances, but exact count cannot be verified without higher resolution or additional data."
+        },
+        {
+          "claim_id": "P5S",
+          "verdict": "accepted",
+          "reason": "Scene description matches visual evidence of a parking area with vehicles and pavement."
+        },
+        {
+          "claim_id": "P5F1",
+          "verdict": "accepted",
+          "reason": "Visual evidence confirms a row of parked vehicles with consistent shapes and spacing."
+        },
+        {
+          "claim_id": "P5F2",
+          "verdict": "accepted",
+          "reason": "Building structure is visible at the top-right edge, adjacent to the parking row."
+        },
+        {
+          "claim_id": "P5F3",
+          "verdict": "accepted",
+          "reason": "Uniform texture and thermal properties support identification as a paved parking surface."
+        },
+        {
+          "claim_id": "P5F4",
+          "verdict": "qualified",
+          "reason": "Textured area in upper-left corner is likely unpaved ground or debris, but alternatives remain plausible."
+        }
+      ],
+      "errors": [],
+      "note": "Decision trace is model-authored evidence review, not independent factual verification. Caption entailment is not mechanically proven."
+    },
+    "assets": [
+      {
+        "id": "hituav-008",
+        "sha256": "90a442cf3825d1e42223fd101aec738ddf7998b342fbbe450cc30377907d7fc5",
+        "modality": "TIR",
+        "provenance": "observed"
+      }
+    ],
+    "measurements": [
+      {
+        "id": "hituav-008",
+        "width": 640,
+        "height": 512,
+        "sha256": "90a442cf3825d1e42223fd101aec738ddf7998b342fbbe450cc30377907d7fc5",
+        "modality": "TIR",
+        "provenance": "observed",
+        "analysis_grid": [
+          640,
+          512
+        ],
+        "mean_display_intensity": 135.1,
+        "display_stddev": 40.28,
+        "entropy_bits": 6.802,
+        "black_fraction": 0,
+        "white_fraction": 0,
+        "horizontal_gradient": 2.184,
+        "vertical_gradient": 2.117,
+        "radiometric": false,
+        "polarity": "unknown"
+      }
+    ],
+    "derived_views": [
+      {
+        "asset_id": "hituav-008",
+        "native_crop": {
+          "left": 0,
+          "top": 0,
+          "width": 640,
+          "height": 295
+        },
+        "shown_detection_ids": [
+          "hituav-008-D1",
+          "hituav-008-D2",
+          "hituav-008-D3",
+          "hituav-008-D4",
+          "hituav-008-D5",
+          "hituav-008-D6",
+          "hituav-008-D7",
+          "hituav-008-D8"
+        ],
+        "note": "DERIVED INSPECTION SHEET for hituav-008. Upper half: crop at {\"left\":0,\"top\":0,\"width\":640,\"height\":295}. Lower tiles: up to eight individual candidate crops in detector order. Labels are added indexes, not source objects. Enlarged original pixels; no new resolution or independent confirmation. Inspect human silhouettes or vehicle structure rather than judging only the surrounding terrain."
+      }
+    ],
+    "limits": [
+      "Display intensity is not temperature or reflectance. Quality metrics describe the rendered image; no semantic cloud mask is inferred.",
+      "No radiometric calibration; temperatures and hot/cold ordering are unavailable unless polarity is verified.",
+      "Independent satellite review skipped: configured model does not support these modalities.",
+      "Captioning lead is a general VLM. Any scene-ranking specialist supplies limited hypotheses, not validated full captions.",
+      "No validated infrared captioning specialist connected. Small aerial objects may be missed and broader thermal scene semantics remain provisional."
+    ],
+    "passes": [
+      {
+        "role": "Satellite first opinion",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "profile": "qwen35",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+        "adapter": null,
+        "family": "Qwen",
+        "independent_observation": true,
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        },
+        "inference": {
+          "temperature": 0.7,
+          "sampling": {
+            "top_p": 0.8,
+            "top_k": 20,
+            "min_p": 0,
+            "presence_penalty": 1.5,
+            "repeat_penalty": 1,
+            "seed": 42
+          },
+          "thinking": false,
+          "image_min_tokens": 1024,
+          "image_max_tokens": 1024,
+          "context": 12288,
+          "cpu_experts": false,
+          "gpu_layers": 99,
+          "projector_cpu": false
+        },
+        "adjudication": null,
+        "input_assets": [
+          "hituav-008"
+        ],
+        "status": "complete",
+        "opinion": {
+          "scene": "An aerial thermal infrared view shows a row of parked vehicles arranged in parallel parking spaces along the top edge of the frame. The vehicles appear as dark, elongated shapes with lighter outlines against a uniform, light-colored paved surface that dominates the lower portion.",
+          "findings": [
+            {
+              "claim": "Parked vehicles identified by distinct rectangular shapes and regular spacing",
+              "confidence": "CLEAR",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "top half of image",
+              "alternatives": []
+            },
+            {
+              "claim": "Uniform, light-colored paved surface identified as parking lot or roadway",
+              "confidence": "LIKELY",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "lower two-thirds of image",
+              "alternatives": [
+                "concrete apron"
+              ]
+            },
+            {
+              "claim": "Irregular textured area in upper-left corner may be unpaved ground or debris",
+              "confidence": "TENTATIVE",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "upper-left corner",
+              "alternatives": [
+                "vegetated patch",
+                "construction material"
+              ]
+            },
+            {
+              "claim": "Building structure partially visible at top-right edge, adjacent to parking row",
+              "confidence": "LIKELY",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "top-right corner",
+              "alternatives": []
+            },
+            {
+              "claim": "Thermal contrast distinguishes vehicles from pavement due to material emissivity differences",
+              "confidence": "CLEAR",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "entire image",
+              "alternatives": []
+            }
+          ],
+          "limits": [
+            "material uncertainty"
+          ],
+          "next": "verify if surface is asphalt or concrete via multispectral data",
+          "warnings": [],
+          "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+        },
+        "seconds": 11.93,
+        "usage": {
+          "completion_tokens": 336,
+          "prompt_tokens": 2251,
+          "total_tokens": 2587,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      },
+      {
+        "role": "External object evidence",
+        "model": "YOLOv8n HIT-UAV thermal",
+        "identity": "YOLOv8n HIT-UAV thermal@41fb0506cd78d75715f7ff0206337d9a9daa74062a11359318da79b887be1759",
+        "checkpoint": "41fb0506cd78d75715f7ff0206337d9a9daa74062a11359318da79b887be1759",
+        "license": "AGPL-3.0",
+        "family": "external-detector",
+        "external": true,
+        "independent_observation": true,
+        "structured_objects": true,
+        "input_assets": [
+          "hituav-008"
+        ],
+        "scope": {
+          "trained_domains": [
+            "Provider-declared aerial thermal detection; not independently verified"
+          ],
+          "input_modalities": [
+            "TIR"
+          ],
+          "specialist_claim": true
+        },
+        "status": "complete",
+        "opinion": {
+          "scene": "External object candidates require explicit visual adjudication.",
+          "findings": [
+            {
+              "claim": "External detector proposes 14 car instance(s) in hituav-008. Candidate count, not a verified count.",
+              "confidence": "TENTATIVE",
+              "basis": "model-detection",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "x 0–640, y 0–275 native pixels",
+              "alternatives": [
+                "False detections or missed objects"
+              ],
+              "object_class": "car",
+              "proposal_count": 14,
+              "detection_ids": [
+                "hituav-008-D1",
+                "hituav-008-D2",
+                "hituav-008-D3",
+                "hituav-008-D4",
+                "hituav-008-D5",
+                "hituav-008-D6",
+                "hituav-008-D7",
+                "hituav-008-D8",
+                "hituav-008-D9",
+                "hituav-008-D10",
+                "hituav-008-D11",
+                "hituav-008-D12",
+                "hituav-008-D13",
+                "hituav-008-D14"
+              ],
+              "boxes": [
+                [
+                  517.82,
+                  7.56,
+                  585.74,
+                  106.5
+                ],
+                [
+                  116.34,
+                  129.98,
+                  182.49,
+                  231.52
+                ],
+                [
+                  341.41,
+                  57.51,
+                  408.48,
+                  158.31
+                ],
+                [
+                  567.65,
+                  0.31,
+                  634.46,
+                  99.13
+                ],
+                [
+                  471.74,
+                  24.53,
+                  541.8,
+                  124.9
+                ],
+                [
+                  169.73,
+                  118.2,
+                  232.12,
+                  217.65
+                ],
+                [
+                  216.26,
+                  97.19,
+                  278.16,
+                  198.33
+                ],
+                [
+                  72.45,
+                  143.1,
+                  135.92,
+                  243.71
+                ],
+                [
+                  18.96,
+                  155.37,
+                  85.34,
+                  265.03
+                ],
+                [
+                  295.53,
+                  74.86,
+                  361.7,
+                  175.47
+                ],
+                [
+                  386.32,
+                  45.56,
+                  452.78,
+                  145.12
+                ],
+                [
+                  428.57,
+                  36.36,
+                  497.95,
+                  136.74
+                ],
+                [
+                  0.19,
+                  175.72,
+                  31.35,
+                  274.87
+                ],
+                [
+                  614.65,
+                  0,
+                  639.71,
+                  79.95
+                ]
+              ]
+            }
+          ],
+          "limits": [
+            "External proposals are uncalibrated hypotheses, not verified objects."
+          ],
+          "warnings": [],
+          "next": "Review object morphology, location and scale."
+        },
+        "detections": [
+          {
+            "asset_id": "hituav-008",
+            "image_sha256": "90a442cf3825d1e42223fd101aec738ddf7998b342fbbe450cc30377907d7fc5",
+            "width": 640,
+            "height": 512,
+            "proposals": [
+              {
+                "id": "hituav-008-D1",
+                "category": "car",
+                "score": 0.9366,
+                "bbox_xyxy": [
+                  517.82,
+                  7.56,
+                  585.74,
+                  106.5
+                ]
+              },
+              {
+                "id": "hituav-008-D2",
+                "category": "car",
+                "score": 0.9365,
+                "bbox_xyxy": [
+                  116.34,
+                  129.98,
+                  182.49,
+                  231.52
+                ]
+              },
+              {
+                "id": "hituav-008-D3",
+                "category": "car",
+                "score": 0.9328,
+                "bbox_xyxy": [
+                  341.41,
+                  57.51,
+                  408.48,
+                  158.31
+                ]
+              },
+              {
+                "id": "hituav-008-D4",
+                "category": "car",
+                "score": 0.9312,
+                "bbox_xyxy": [
+                  567.65,
+                  0.31,
+                  634.46,
+                  99.13
+                ]
+              },
+              {
+                "id": "hituav-008-D5",
+                "category": "car",
+                "score": 0.9293,
+                "bbox_xyxy": [
+                  471.74,
+                  24.53,
+                  541.8,
+                  124.9
+                ]
+              },
+              {
+                "id": "hituav-008-D6",
+                "category": "car",
+                "score": 0.9242,
+                "bbox_xyxy": [
+                  169.73,
+                  118.2,
+                  232.12,
+                  217.65
+                ]
+              },
+              {
+                "id": "hituav-008-D7",
+                "category": "car",
+                "score": 0.9235,
+                "bbox_xyxy": [
+                  216.26,
+                  97.19,
+                  278.16,
+                  198.33
+                ]
+              },
+              {
+                "id": "hituav-008-D8",
+                "category": "car",
+                "score": 0.9214,
+                "bbox_xyxy": [
+                  72.45,
+                  143.1,
+                  135.92,
+                  243.71
+                ]
+              },
+              {
+                "id": "hituav-008-D9",
+                "category": "car",
+                "score": 0.9182,
+                "bbox_xyxy": [
+                  18.96,
+                  155.37,
+                  85.34,
+                  265.03
+                ]
+              },
+              {
+                "id": "hituav-008-D10",
+                "category": "car",
+                "score": 0.9138,
+                "bbox_xyxy": [
+                  295.53,
+                  74.86,
+                  361.7,
+                  175.47
+                ]
+              },
+              {
+                "id": "hituav-008-D11",
+                "category": "car",
+                "score": 0.9134,
+                "bbox_xyxy": [
+                  386.32,
+                  45.56,
+                  452.78,
+                  145.12
+                ]
+              },
+              {
+                "id": "hituav-008-D12",
+                "category": "car",
+                "score": 0.9016,
+                "bbox_xyxy": [
+                  428.57,
+                  36.36,
+                  497.95,
+                  136.74
+                ]
+              },
+              {
+                "id": "hituav-008-D13",
+                "category": "car",
+                "score": 0.8761,
+                "bbox_xyxy": [
+                  0.19,
+                  175.72,
+                  31.35,
+                  274.87
+                ]
+              },
+              {
+                "id": "hituav-008-D14",
+                "category": "car",
+                "score": 0.7389,
+                "bbox_xyxy": [
+                  614.65,
+                  0,
+                  639.71,
+                  79.95
+                ]
+              }
+            ]
+          }
+        ],
+        "seconds": 0.12
+      },
+      {
+        "role": "Object morphology review",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "profile": "qwen35",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+        "adapter": null,
+        "family": "Qwen",
+        "independent_observation": false,
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        },
+        "inference": {
+          "temperature": 0.7,
+          "sampling": {
+            "top_p": 0.8,
+            "top_k": 20,
+            "min_p": 0,
+            "presence_penalty": 1.5,
+            "repeat_penalty": 1,
+            "seed": 42
+          },
+          "thinking": false,
+          "image_min_tokens": 1024,
+          "image_max_tokens": 1024,
+          "context": 12288,
+          "cpu_experts": false,
+          "gpu_layers": 99,
+          "projector_cpu": false
+        },
+        "adjudication": null,
+        "input_assets": [
+          "hituav-008"
+        ],
+        "status": "complete",
+        "opinion": {
+          "scene": "The scene is an aerial thermal infrared view of a paved parking area containing a row of parked vehicles along the top edge and a building structure at the right corner.",
+          "findings": [
+            {
+              "claim": "Row of parked cars identified by consistent rectangular shapes with lighter outlines on pavement",
+              "confidence": "CLEAR",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "upper half of image, aligned horizontally",
+              "alternatives": []
+            },
+            {
+              "claim": "Thermal contrast between dark vehicle bodies and light pavement supports car identity",
+              "confidence": "CLEAR",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "entire vehicle row",
+              "alternatives": []
+            },
+            {
+              "claim": "Eight candidate crops show consistent vehicle silhouettes supporting external detector count of 14",
+              "confidence": "TENTATIVE",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "lower eight crops and upper row",
+              "alternatives": [
+                "Some detections may be false positives"
+              ]
+            },
+            {
+              "claim": "No human or bicycle silhouettes observed in the image",
+              "confidence": "CLEAR",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "entire image",
+              "alternatives": []
+            },
+            {
+              "claim": "Building structure visible at top-right edge, adjacent to parking row",
+              "confidence": "LIKELY",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "top-right corner",
+              "alternatives": []
+            }
+          ],
+          "limits": [
+            "material uncertainty"
+          ],
+          "next": "verify candidate count against bounding boxes and visual consistency",
+          "warnings": [
+            "Numerical model claim capped at TENTATIVE; use the separate tool-derived measurement panel."
+          ],
+          "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+        },
+        "seconds": 11.37,
+        "usage": {
+          "completion_tokens": 319,
+          "prompt_tokens": 2509,
+          "total_tokens": 2828,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      },
+      {
+        "role": "Independent satellite review",
+        "model": "CapRL-Qwen3VL-4B-Q4_K_M",
+        "status": "skipped",
+        "reason": "Unsupported input modality declared by profile"
+      },
+      {
+        "role": "Thermal review",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "profile": "qwen35",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+        "adapter": null,
+        "family": "Qwen",
+        "independent_observation": true,
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        },
+        "inference": {
+          "temperature": 0.7,
+          "sampling": {
+            "top_p": 0.8,
+            "top_k": 20,
+            "min_p": 0,
+            "presence_penalty": 1.5,
+            "repeat_penalty": 1,
+            "seed": 42
+          },
+          "thinking": false,
+          "image_min_tokens": 1024,
+          "image_max_tokens": 1024,
+          "context": 12288,
+          "cpu_experts": false,
+          "gpu_layers": 99,
+          "projector_cpu": false
+        },
+        "adjudication": null,
+        "input_assets": [
+          "hituav-008"
+        ],
+        "status": "complete",
+        "opinion": {
+          "scene": "An aerial thermal infrared view shows a parking lot containing approximately fifteen vehicles arranged in parallel rows. A building structure and unpaved ground border the row of parked cars on the upper left.",
+          "findings": [
+            {
+              "claim": "Row of parked vehicles",
+              "confidence": "CLEAR",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "upper-left quadrant, extending horizontally",
+              "alternatives": []
+            },
+            {
+              "claim": "Building structure at top edge",
+              "confidence": "LIKELY",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "top center",
+              "alternatives": []
+            },
+            {
+              "claim": "Paved parking surface",
+              "confidence": "CLEAR",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "lower and right quadrants",
+              "alternatives": []
+            },
+            {
+              "claim": "Unpaved ground or vegetation patch",
+              "confidence": "LIKELY",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "upper left corner adjacent to vehicles",
+              "alternatives": []
+            }
+          ],
+          "limits": [
+            "radiometric calibration unavailable; polarity unknown; material identification limited to morphology"
+          ],
+          "next": "acquire radiometric calibration data or visible spectrum imagery to distinguish pavement from vegetation",
+          "warnings": [],
+          "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+        },
+        "seconds": 8.59,
+        "usage": {
+          "completion_tokens": 248,
+          "prompt_tokens": 2327,
+          "total_tokens": 2575,
+          "prompt_tokens_details": {
+            "cached_tokens": 996
+          }
+        }
+      },
+      {
+        "role": "General critic",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "profile": "qwen35",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+        "adapter": null,
+        "family": "Qwen",
+        "independent_observation": false,
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        },
+        "inference": {
+          "temperature": 0.7,
+          "sampling": {
+            "top_p": 0.8,
+            "top_k": 20,
+            "min_p": 0,
+            "presence_penalty": 1.5,
+            "repeat_penalty": 1,
+            "seed": 42
+          },
+          "thinking": false,
+          "image_min_tokens": 1024,
+          "image_max_tokens": 1024,
+          "context": 12288,
+          "cpu_experts": false,
+          "gpu_layers": 99,
+          "projector_cpu": false
+        },
+        "adjudication": null,
+        "input_assets": [
+          "hituav-008"
+        ],
+        "status": "complete",
+        "opinion": {
+          "scene": "An aerial thermal infrared view shows a paved parking lot with a row of parked vehicles along the top edge, adjacent to unpaved ground and a building corner.",
+          "findings": [
+            {
+              "claim": "Row of parked vehicles identified by consistent rectangular shapes with lighter outlines on pavement",
+              "confidence": "CLEAR",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "upper half of image, aligned horizontally",
+              "alternatives": []
+            },
+            {
+              "claim": "Thermal contrast between dark vehicle bodies and light pavement supports car identity",
+              "confidence": "CLEAR",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "entire vehicle row",
+              "alternatives": []
+            },
+            {
+              "claim": "Paved parking surface identified by uniform texture and thermal reflectivity",
+              "confidence": "LIKELY",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "lower two-thirds of image",
+              "alternatives": [
+                "concrete apron"
+              ]
+            },
+            {
+              "claim": "Unpaved ground or vegetation patch in upper-left corner adjacent to vehicles",
+              "confidence": "TENTATIVE",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "upper-left corner",
+              "alternatives": [
+                "construction material",
+                "debris"
+              ]
+            },
+            {
+              "claim": "Building structure partially visible at top-right edge, adjacent to parking row",
+              "confidence": "LIKELY",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "top-right corner",
+              "alternatives": []
+            }
+          ],
+          "limits": [
+            "material uncertainty"
+          ],
+          "next": "verify candidate count against bounding boxes and visual consistency",
+          "warnings": [],
+          "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+        },
+        "seconds": 14.51,
+        "usage": {
+          "completion_tokens": 319,
+          "prompt_tokens": 5283,
+          "total_tokens": 5602,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      },
+      {
+        "role": "Satellite master opinion",
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "profile": "qwen35",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+        "adapter": null,
+        "family": "Qwen",
+        "independent_observation": false,
+        "scope": {
+          "trained_domains": [
+            "general multimodal understanding"
+          ],
+          "validated_domains": [],
+          "input_modalities": [
+            "TIR"
+          ],
+          "allowed_domains": null,
+          "specialist_claim": false,
+          "warning": "Training-domain fit is a prior; it does not verify this prediction. Validation on other images does not establish accuracy here."
+        },
+        "inference": {
+          "temperature": 0.7,
+          "sampling": {
+            "top_p": 0.8,
+            "top_k": 20,
+            "min_p": 0,
+            "presence_penalty": 1.5,
+            "repeat_penalty": 1,
+            "seed": 42
+          },
+          "thinking": false,
+          "image_min_tokens": 1024,
+          "image_max_tokens": 1024,
+          "context": 12288,
+          "cpu_experts": false,
+          "gpu_layers": 99,
+          "projector_cpu": false
+        },
+        "adjudication": {
+          "status": "complete",
+          "caption_sources": [
+            "P1F1",
+            "P5F1",
+            "P2F1",
+            "P1F5",
+            "P5F2",
+            "P1F2",
+            "P5F3",
+            "P1F4"
+          ],
+          "decisions": [
+            {
+              "claim_id": "P1S",
+              "verdict": "accepted",
+              "reason": "Scene description matches visual evidence of a parking area with vehicles and pavement."
+            },
+            {
+              "claim_id": "P1F1",
+              "verdict": "accepted",
+              "reason": "Visual evidence confirms a row of parked vehicles with consistent shapes and spacing."
+            },
+            {
+              "claim_id": "P1F2",
+              "verdict": "accepted",
+              "reason": "Uniform texture and thermal properties support identification as a paved parking surface."
+            },
+            {
+              "claim_id": "P1F3",
+              "verdict": "qualified",
+              "reason": "Textured area in upper-left corner is likely unpaved ground or debris, but alternatives remain plausible."
+            },
+            {
+              "claim_id": "P1F4",
+              "verdict": "accepted",
+              "reason": "Building structure is visible at the top-right edge, adjacent to the parking row."
+            },
+            {
+              "claim_id": "P1F5",
+              "verdict": "accepted",
+              "reason": "Thermal contrast between dark vehicles and light pavement supports car identity."
+            },
+            {
+              "claim_id": "P2F1",
+              "verdict": "qualified",
+              "reason": "External detector proposes 14 car instances, but exact count cannot be verified without higher resolution or additional data."
+            },
+            {
+              "claim_id": "P5S",
+              "verdict": "accepted",
+              "reason": "Scene description matches visual evidence of a parking area with vehicles and pavement."
+            },
+            {
+              "claim_id": "P5F1",
+              "verdict": "accepted",
+              "reason": "Visual evidence confirms a row of parked vehicles with consistent shapes and spacing."
+            },
+            {
+              "claim_id": "P5F2",
+              "verdict": "accepted",
+              "reason": "Building structure is visible at the top-right edge, adjacent to the parking row."
+            },
+            {
+              "claim_id": "P5F3",
+              "verdict": "accepted",
+              "reason": "Uniform texture and thermal properties support identification as a paved parking surface."
+            },
+            {
+              "claim_id": "P5F4",
+              "verdict": "qualified",
+              "reason": "Textured area in upper-left corner is likely unpaved ground or debris, but alternatives remain plausible."
+            }
+          ],
+          "errors": [],
+          "note": "Decision trace is model-authored evidence review, not independent factual verification. Caption entailment is not mechanically proven."
+        },
+        "input_assets": [
+          "hituav-008"
+        ],
+        "status": "complete",
+        "opinion": {
+          "scene": "An aerial thermal infrared view shows a paved parking area containing approximately 14 parked vehicles arranged in a single row along the upper edge of the frame, with a building structure visible at the top right.",
+          "findings": [
+            {
+              "claim": "Row of approximately 14 parked vehicles identified by consistent dark rectangular shapes and regular spacing",
+              "confidence": "TENTATIVE",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "upper half of image, aligned horizontally",
+              "alternatives": [],
+              "source_claims": [
+                "P1F1",
+                "P5F1",
+                "P2F1"
+              ]
+            },
+            {
+              "claim": "Thermal contrast between dark vehicle bodies and light pavement supports car identity",
+              "confidence": "CLEAR",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "entire vehicle row",
+              "alternatives": [],
+              "source_claims": [
+                "P1F5",
+                "P5F2",
+                "P1S"
+              ]
+            },
+            {
+              "claim": "Uniform, light-colored paved surface identified as parking lot or roadway",
+              "confidence": "LIKELY",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "lower two-thirds of image",
+              "alternatives": [
+                "concrete apron"
+              ],
+              "source_claims": [
+                "P1F2",
+                "P5F3"
+              ]
+            },
+            {
+              "claim": "Building structure partially visible at top-right edge, adjacent to parking row",
+              "confidence": "LIKELY",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "top-right corner",
+              "alternatives": [],
+              "source_claims": [
+                "P1F4",
+                "P5F2"
+              ]
+            },
+            {
+              "claim": "Irregular textured area in upper-left corner may be unpaved ground or debris",
+              "confidence": "TENTATIVE",
+              "basis": "visual-interpretation",
+              "evidence": [
+                "hituav-008"
+              ],
+              "region": "upper-left corner",
+              "alternatives": [
+                "vegetated patch",
+                "construction material"
+              ],
+              "source_claims": [
+                "P1F3",
+                "P5F4"
+              ]
+            }
+          ],
+          "limits": [
+            "material uncertainty"
+          ],
+          "next": "verify candidate count against bounding boxes and visual consistency",
+          "warnings": [
+            "Numerical model claim capped at TENTATIVE; use the separate tool-derived measurement panel."
+          ],
+          "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+        },
+        "seconds": 30.71,
+        "usage": {
+          "completion_tokens": 876,
+          "prompt_tokens": 5890,
+          "total_tokens": 6766,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "final": {
+      "scene": "An aerial thermal infrared view shows a paved parking area containing approximately 14 parked vehicles arranged in a single row along the upper edge of the frame, with a building structure visible at the top right.",
+      "findings": [
+        {
+          "claim": "Row of approximately 14 parked vehicles identified by consistent dark rectangular shapes and regular spacing",
+          "confidence": "TENTATIVE",
+          "basis": "visual-interpretation",
+          "evidence": [
+            "hituav-008"
+          ],
+          "region": "upper half of image, aligned horizontally",
+          "alternatives": [],
+          "source_claims": [
+            "P1F1",
+            "P5F1",
+            "P2F1"
+          ]
+        },
+        {
+          "claim": "Thermal contrast between dark vehicle bodies and light pavement supports car identity",
+          "confidence": "CLEAR",
+          "basis": "visual-interpretation",
+          "evidence": [
+            "hituav-008"
+          ],
+          "region": "entire vehicle row",
+          "alternatives": [],
+          "source_claims": [
+            "P1F5",
+            "P5F2",
+            "P1S"
+          ]
+        },
+        {
+          "claim": "Uniform, light-colored paved surface identified as parking lot or roadway",
+          "confidence": "LIKELY",
+          "basis": "visual-interpretation",
+          "evidence": [
+            "hituav-008"
+          ],
+          "region": "lower two-thirds of image",
+          "alternatives": [
+            "concrete apron"
+          ],
+          "source_claims": [
+            "P1F2",
+            "P5F3"
+          ]
+        },
+        {
+          "claim": "Building structure partially visible at top-right edge, adjacent to parking row",
+          "confidence": "LIKELY",
+          "basis": "visual-interpretation",
+          "evidence": [
+            "hituav-008"
+          ],
+          "region": "top-right corner",
+          "alternatives": [],
+          "source_claims": [
+            "P1F4",
+            "P5F2"
+          ]
+        },
+        {
+          "claim": "Irregular textured area in upper-left corner may be unpaved ground or debris",
+          "confidence": "TENTATIVE",
+          "basis": "visual-interpretation",
+          "evidence": [
+            "hituav-008"
+          ],
+          "region": "upper-left corner",
+          "alternatives": [
+            "vegetated patch",
+            "construction material"
+          ],
+          "source_claims": [
+            "P1F3",
+            "P5F4"
+          ]
+        }
+      ],
+      "limits": [
+        "material uncertainty"
+      ],
+      "next": "verify candidate count against bounding boxes and visual consistency",
+      "warnings": [
+        "Numerical model claim capped at TENTATIVE; use the separate tool-derived measurement panel."
+      ],
+      "confidence_note": "Evidence grades are model judgements, not calibrated probabilities; CLEAR still requires human verification."
+    },
+    "seconds": 77.35,
+    "models_used": [
+      {
+        "model": "Qwen3.5-9B-Q4_K_M",
+        "identity": "Qwen3.5-9B-Q4_K_M.gguf",
+        "checkpoint": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+        "adapter": null,
+        "family": "Qwen",
+        "external": false,
+        "license": null,
+        "roles": [
+          "Satellite first opinion",
+          "Object morphology review",
+          "Thermal review",
+          "General critic",
+          "Satellite master opinion"
+        ],
+        "assets": [
+          "hituav-008"
+        ],
+        "completed": 5,
+        "failed": 0,
+        "seconds": 77.11
+      },
+      {
+        "model": "YOLOv8n HIT-UAV thermal",
+        "identity": "YOLOv8n HIT-UAV thermal@41fb0506cd78d75715f7ff0206337d9a9daa74062a11359318da79b887be1759",
+        "checkpoint": "41fb0506cd78d75715f7ff0206337d9a9daa74062a11359318da79b887be1759",
+        "adapter": null,
+        "family": "external-detector",
+        "external": true,
+        "license": "AGPL-3.0",
+        "roles": [
+          "External object evidence"
+        ],
+        "assets": [
+          "hituav-008"
+        ],
+        "completed": 1,
+        "failed": 0,
+        "seconds": 0.12
+      }
+    ],
+    "detector_review": {
+      "connected": true,
+      "status": "reviewed",
+      "groups": [
+        {
+          "claim_id": "P2F1",
+          "asset_ids": [
+            "hituav-008"
+          ],
+          "object_class": "car",
+          "proposal_count": 14,
+          "decision": {
+            "claim_id": "P2F1",
+            "verdict": "qualified",
+            "reason": "External detector proposes 14 car instances, but exact count cannot be verified without higher resolution or additional data."
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "reference_class": null,
+      "class_literal_mention": null,
+      "caption_token_f1": null,
+      "claim_count": 5,
+      "guardrail_warnings": 1,
+      "seconds": 77.35,
+      "metric_note": "Token F1 and literal class mention are diagnostics, not factual accuracy. Ground truth was withheld from all inference prompts.",
+      "human_review": {
+        "unsupported_claims": null,
+        "important_misses": null,
+        "spatial_errors": null,
+        "thermal_errors": null,
+        "usefulness_1_to_5": null
+      }
+    }
+  }
+]

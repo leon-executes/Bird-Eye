@@ -1,0 +1,1 @@
+Raw local evaluation outputs accompanying ../COUNCIL_ABLATION.md. No benchmark image bytes or NWPU reference captions are included. Local path strings document provenance and are not portable file links. Model judgments are untrusted outputs, not verified ground truth.
